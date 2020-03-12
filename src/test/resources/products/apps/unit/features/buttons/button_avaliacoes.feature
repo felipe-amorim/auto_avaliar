@@ -1,0 +1,1 @@
+Feature: Validar o funcionamento do botão "Avaliações" no menu expansivel Avaliações dentro do menu lateral esquedo.
