@@ -36,6 +36,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' view='author-view' onclick="configureView(3)"><i class='material-icons'>person_outline</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
@@ -46,7 +47,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>2020/03/19 - 00:10:50.903</span>
+			<span class='label blue darken-3 suite-start-time'>2020/03/19 - 06:01:39.161</span>
 			</a>
 		</ul>
 	</div>
@@ -62,6 +63,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -73,9 +75,8 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>avaliacoes-vendedor</a></li>
-					<li><a href='#'>avaliacoes-avaliador</a></li>
-					<li><a href='#'>avaliacoes-gerente</a></li>
+					<li><a href='#'>unit_buttons_solicitar-vendedor</a></li>
+					<li><a href='#'>unit_buttons_solicitar-avaliador</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -116,10 +117,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -130,10 +131,10 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -151,31 +152,31 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>button_avaliacoes</span>
-						<span class='test-time'>2020/03/19 - 00:10:50.966</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>unit_mandatory_placa_focus_out</span>
+						<span class='test-time'>2020/03/19 - 06:01:39.227</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>2020/03/19 - 00:10:50.966</span>
-	<span class='label end-time'>2020/03/19 - 00:12:03.280</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 12s+314ms</span>
+	<span class='label start-time'>2020/03/19 - 06:01:39.227</span>
+	<span class='label end-time'>2020/03/19 - 06:02:45.927</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 6s+700ms</span>
 </div>
 <ul class='collapsible node-list' data-collapsible='accordion'>
-	<li class='node level-1 leaf pass' status='pass' test-id='2'>
+	<li class='node level-1 leaf fail' status='fail' test-id='2'>
 		<div class='collapsible-header'>
-			<div class='node-name'>CT_085</div>
-			<span class='node-time'>2020/03/19 - 00:10:50.966</span>
-			&middot; <span class='node-duration'>0h 0m 25s+666ms</span>
-			<span class='test-status right pass'>pass</span>
+			<div class='node-name'>Validar a obrigatoriedade do campo (placa) por perda de foco ao solicitar avaliação para o grupo abrao com perfil vendedor</div>
+			<span class='node-time'>2020/03/19 - 06:01:39.227</span>
+			&middot; <span class='node-duration'>0h 0m 53s+760ms</span>
+			<span class='test-status right fail'>fail</span>
 			<div class='category-list'>
-				<span class='category label'>avaliacoes-vendedor</span>
+				<span class='category label'>unit_buttons_solicitar-vendedor</span>
 			</div>
 		</div>
 		<div class='collapsible-body'>
-			<div class='node-desc'><span class='author label'><b>Autor: </b> Felipe_Amorim</span></br><span class='author label'><b>Categoria: </b> avaliacoes-vendedor</span></br><span class='author label'><b>Ambiente: </b> Google_Chrome</span></br></div>
+			<div class='node-desc'><span class='author label'><b>Autor: </b> Felipe_Amorim</span></br><span class='author label'><b>Categoria: </b> unit_buttons_solicitar-vendedor</span></br><span class='author label'><b>Ambiente: </b> Google_Chrome</span></br></div>
 			<div class='author-list right'>
 				<span class='author label white-text'>Felipe_Amorim</span>
 			</div>
@@ -191,81 +192,146 @@
 					<tbody>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:11:00 AM</td>
+							<td class='timestamp'>6:01:48 AM</td>
 							<td class='step-details'>
-									Navegando para a URI https://apps.autoavaliar.com.br/login/usbi# <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT085/_2.png'><i class='material-icons'>panorama</i></a>
+									Navegando para a URI https://apps.autoavaliar.com.br/login/usbi# <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_2.png'><i class='material-icons'>panorama</i></a>
 								
 							</td>
 						</tr>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:11:03 AM</td>
+							<td class='timestamp'>6:01:50 AM</td>
 							<td class='step-details'>
-									Clicando no elemento [Log do xpath não definido] <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT085/_4.png'><i class='material-icons'>panorama</i></a>
+									Clicando no elemento [Log do xpath não definido] <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_4.png'><i class='material-icons'>panorama</i></a>
 								
 							</td>
 						</tr>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:11:03 AM</td>
+							<td class='timestamp'>6:01:51 AM</td>
 							<td class='step-details'>
-									Enviando o texto 'vendedortimeqa@abrao.com.br' para o campo E-mail <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT085/_6.png'><i class='material-icons'>panorama</i></a>
+									Enviando o texto 'vendedortimeqa@abrao.com.br' para o campo E-mail <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_6.png'><i class='material-icons'>panorama</i></a>
 								
 							</td>
 						</tr>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:11:04 AM</td>
+							<td class='timestamp'>6:01:51 AM</td>
 							<td class='step-details'>
-									Enviando o texto 'timeqa0102' para o campo Senha <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT085/_8.png'><i class='material-icons'>panorama</i></a>
+									Enviando o texto 'timeqa0102' para o campo Senha <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_8.png'><i class='material-icons'>panorama</i></a>
 								
 							</td>
 						</tr>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:11:05 AM</td>
+							<td class='timestamp'>6:01:52 AM</td>
 							<td class='step-details'>
-									Clicando no elemento Login <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT085/_10.png'><i class='material-icons'>panorama</i></a>
+									Clicando no elemento Login <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_10.png'><i class='material-icons'>panorama</i></a>
 								
 							</td>
 						</tr>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:11:12 AM</td>
+							<td class='timestamp'>6:01:59 AM</td>
 							<td class='step-details'>
-									Clicando no elemento Avalicações <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT085/_12.png'><i class='material-icons'>panorama</i></a>
+									Clicando no elemento Solicitar Avaliação <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_12.png'><i class='material-icons'>panorama</i></a>
 								
 							</td>
 						</tr>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:11:13 AM</td>
+							<td class='timestamp'>6:02:00 AM</td>
 							<td class='step-details'>
-									Clicando no elemento Sub menu avalicações <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT085/_14.png'><i class='material-icons'>panorama</i></a>
+									Clicando no elemento Solicitar <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_14.png'><i class='material-icons'>panorama</i></a>
 								
 							</td>
 						</tr>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:11:14 AM</td>
+							<td class='timestamp'>6:02:07 AM</td>
 							<td class='step-details'>
-									Clicando no elemento [Log do xpath não definido] <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT085/_16.png'><i class='material-icons'>panorama</i></a>
+									Aguardando a não exibição do elemento Mensagem de obrigatoriedade do campo placa <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_16.png'><i class='material-icons'>panorama</i></a>
 								
 							</td>
 						</tr>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:11:15 AM</td>
+							<td class='timestamp'>6:02:07 AM</td>
 							<td class='step-details'>
-									Clicando no elemento [Log do xpath não definido] <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT085/_18.png'><i class='material-icons'>panorama</i></a>
+									Enviando o texto 'KZA-0263' para o campo Placa <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_18.png'><i class='material-icons'>panorama</i></a>
 								
 							</td>
 						</tr>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:11:16 AM</td>
+							<td class='timestamp'>6:02:08 AM</td>
 							<td class='step-details'>
-									Clicando no elemento E-mail <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT085/_20.png'><i class='material-icons'>panorama</i></a>
+									Limpando o campo Placa <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_20.png'><i class='material-icons'>panorama</i></a>
+								
+							</td>
+						</tr>
+						<tr class='log' status='pass'>
+							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+							<td class='timestamp'>6:02:09 AM</td>
+							<td class='step-details'>
+									Enviando o texto 'TAB' para o campo Placa <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_22.png'><i class='material-icons'>panorama</i></a>
+								
+							</td>
+						</tr>
+						<tr class='log' status='fail'>
+							<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+							<td class='timestamp'>6:02:32 AM</td>
+							<td class='step-details'>
+									[FALHA] Ocorreu uma falha <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_23.png'><i class='material-icons'>panorama</i></a>
+								
+							</td>
+						</tr>
+						<tr class='log' status='fail'>
+							<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+							<td class='timestamp'>6:02:32 AM</td>
+							<td class='step-details'>
+									<textarea disabled class="code-block">java.lang.NullPointerException: [33mFALHA NOS TESTES![0m
+	at support.error.Error.Fail(Error.java:8)
+	at products.apps.unit.stepdefs.SDAppsSolicitarAvaliacao.oUsuarioValidaAMensagemDeObrigatoriedadeDoCampoPlaca(SDAppsSolicitarAvaliacao.java:146)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+	at cucumber.runner.TestCase.run(TestCase.java:46)
+	at cucumber.runner.Runner.runPickle(Runner.java:49)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:123)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:65)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:147)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+</textarea>
 								
 							</td>
 						</tr>
@@ -276,16 +342,16 @@
 	</li>
 	<li class='node level-1 leaf pass' status='pass' test-id='3'>
 		<div class='collapsible-header'>
-			<div class='node-name'>CT_086</div>
-			<span class='node-time'>2020/03/19 - 00:11:17.327</span>
-			&middot; <span class='node-duration'>0h 0m 22s+202ms</span>
+			<div class='node-name'>Validar a obrigatoriedade do campo (placa) por perda de foco ao solicitar avaliação para o grupo abrao com perfil avaliador</div>
+			<span class='node-time'>2020/03/19 - 06:02:33.684</span>
+			&middot; <span class='node-duration'>0h 0m 12s+243ms</span>
 			<span class='test-status right pass'>pass</span>
 			<div class='category-list'>
-				<span class='category label'>avaliacoes-avaliador</span>
+				<span class='category label'>unit_buttons_solicitar-avaliador</span>
 			</div>
 		</div>
 		<div class='collapsible-body'>
-			<div class='node-desc'><span class='author label'><b>Autor: </b> Felipe_Amorim</span></br><span class='author label'><b>Categoria: </b> avaliacoes-avaliador</span></br><span class='author label'><b>Ambiente: </b> Google_Chrome</span></br></div>
+			<div class='node-desc'><span class='author label'><b>Autor: </b> Felipe_Amorim</span></br><span class='author label'><b>Categoria: </b> unit_buttons_solicitar-avaliador</span></br><span class='author label'><b>Ambiente: </b> Google_Chrome</span></br></div>
 			<div class='author-list right'>
 				<span class='author label white-text'>Felipe_Amorim</span>
 			</div>
@@ -301,191 +367,41 @@
 					<tbody>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:11:24 AM</td>
+							<td class='timestamp'>6:02:41 AM</td>
 							<td class='step-details'>
-									Navegando para a URI https://apps.autoavaliar.com.br/login/usbi# <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT086/_2.png'><i class='material-icons'>panorama</i></a>
+									Navegando para a URI https://apps.autoavaliar.com.br/login/usbi# <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilavaliador/_2.png'><i class='material-icons'>panorama</i></a>
 								
 							</td>
 						</tr>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:11:26 AM</td>
+							<td class='timestamp'>6:02:43 AM</td>
 							<td class='step-details'>
-									Clicando no elemento [Log do xpath não definido] <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT086/_4.png'><i class='material-icons'>panorama</i></a>
+									Clicando no elemento [Log do xpath não definido] <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilavaliador/_4.png'><i class='material-icons'>panorama</i></a>
 								
 							</td>
 						</tr>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:11:27 AM</td>
+							<td class='timestamp'>6:02:44 AM</td>
 							<td class='step-details'>
-									Enviando o texto 'avaliadortimeqa@abrao.com.br' para o campo E-mail <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT086/_6.png'><i class='material-icons'>panorama</i></a>
+									Enviando o texto 'avaliadortimeqa@abrao.com.br' para o campo E-mail <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilavaliador/_6.png'><i class='material-icons'>panorama</i></a>
 								
 							</td>
 						</tr>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:11:28 AM</td>
+							<td class='timestamp'>6:02:45 AM</td>
 							<td class='step-details'>
-									Enviando o texto 'timeqa0102' para o campo Senha <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT086/_8.png'><i class='material-icons'>panorama</i></a>
+									Enviando o texto 'timeqa0102' para o campo Senha <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilavaliador/_8.png'><i class='material-icons'>panorama</i></a>
 								
 							</td>
 						</tr>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:11:28 AM</td>
+							<td class='timestamp'>6:02:45 AM</td>
 							<td class='step-details'>
-									Clicando no elemento Login <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT086/_10.png'><i class='material-icons'>panorama</i></a>
-								
-							</td>
-						</tr>
-						<tr class='log' status='pass'>
-							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:11:35 AM</td>
-							<td class='step-details'>
-									Clicando no elemento Avalicações <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT086/_12.png'><i class='material-icons'>panorama</i></a>
-								
-							</td>
-						</tr>
-						<tr class='log' status='pass'>
-							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:11:36 AM</td>
-							<td class='step-details'>
-									Clicando no elemento Sub menu avalicações <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT086/_14.png'><i class='material-icons'>panorama</i></a>
-								
-							</td>
-						</tr>
-						<tr class='log' status='pass'>
-							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:11:37 AM</td>
-							<td class='step-details'>
-									Clicando no elemento [Log do xpath não definido] <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT086/_16.png'><i class='material-icons'>panorama</i></a>
-								
-							</td>
-						</tr>
-						<tr class='log' status='pass'>
-							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:11:38 AM</td>
-							<td class='step-details'>
-									Clicando no elemento [Log do xpath não definido] <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT086/_18.png'><i class='material-icons'>panorama</i></a>
-								
-							</td>
-						</tr>
-						<tr class='log' status='pass'>
-							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:11:39 AM</td>
-							<td class='step-details'>
-									Clicando no elemento E-mail <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT086/_20.png'><i class='material-icons'>panorama</i></a>
-								
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</div>
-	</li>
-	<li class='node level-1 leaf pass' status='pass' test-id='4'>
-		<div class='collapsible-header'>
-			<div class='node-name'>CT_087</div>
-			<span class='node-time'>2020/03/19 - 00:11:40.209</span>
-			&middot; <span class='node-duration'>0h 0m 23s+71ms</span>
-			<span class='test-status right pass'>pass</span>
-			<div class='category-list'>
-				<span class='category label'>avaliacoes-gerente</span>
-			</div>
-		</div>
-		<div class='collapsible-body'>
-			<div class='node-desc'><span class='author label'><b>Autor: </b> Felipe_Amorim</span></br><span class='author label'><b>Categoria: </b> avaliacoes-gerente</span></br><span class='author label'><b>Ambiente: </b> Google_Chrome</span></br></div>
-			<div class='author-list right'>
-				<span class='author label white-text'>Felipe_Amorim</span>
-			</div>
-			<div class='node-steps'>
-				<table class='bordered table-results'>
-					<thead>
-						<tr>
-							<th>Status</th>
-							<th>Timestamp</th>
-							<th>Details</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr class='log' status='pass'>
-							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:11:47 AM</td>
-							<td class='step-details'>
-									Navegando para a URI https://apps.autoavaliar.com.br/login/usbi# <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT087/_2.png'><i class='material-icons'>panorama</i></a>
-								
-							</td>
-						</tr>
-						<tr class='log' status='pass'>
-							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:11:50 AM</td>
-							<td class='step-details'>
-									Clicando no elemento [Log do xpath não definido] <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT087/_4.png'><i class='material-icons'>panorama</i></a>
-								
-							</td>
-						</tr>
-						<tr class='log' status='pass'>
-							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:11:51 AM</td>
-							<td class='step-details'>
-									Enviando o texto 'gerentetimeqa@abrao.com.br' para o campo E-mail <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT087/_6.png'><i class='material-icons'>panorama</i></a>
-								
-							</td>
-						</tr>
-						<tr class='log' status='pass'>
-							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:11:52 AM</td>
-							<td class='step-details'>
-									Enviando o texto 'timeqa0102' para o campo Senha <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT087/_8.png'><i class='material-icons'>panorama</i></a>
-								
-							</td>
-						</tr>
-						<tr class='log' status='pass'>
-							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:11:52 AM</td>
-							<td class='step-details'>
-									Clicando no elemento Login <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT087/_10.png'><i class='material-icons'>panorama</i></a>
-								
-							</td>
-						</tr>
-						<tr class='log' status='pass'>
-							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:11:59 AM</td>
-							<td class='step-details'>
-									Clicando no elemento Avalicações <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT087/_12.png'><i class='material-icons'>panorama</i></a>
-								
-							</td>
-						</tr>
-						<tr class='log' status='pass'>
-							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:12:00 AM</td>
-							<td class='step-details'>
-									Clicando no elemento Sub menu avalicações <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT087/_14.png'><i class='material-icons'>panorama</i></a>
-								
-							</td>
-						</tr>
-						<tr class='log' status='pass'>
-							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:12:01 AM</td>
-							<td class='step-details'>
-									Clicando no elemento [Log do xpath não definido] <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT087/_16.png'><i class='material-icons'>panorama</i></a>
-								
-							</td>
-						</tr>
-						<tr class='log' status='pass'>
-							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:12:02 AM</td>
-							<td class='step-details'>
-									Clicando no elemento [Log do xpath não definido] <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT087/_18.png'><i class='material-icons'>panorama</i></a>
-								
-							</td>
-						</tr>
-						<tr class='log' status='pass'>
-							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>12:12:03 AM</td>
-							<td class='step-details'>
-									Clicando no elemento E-mail <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/buttonavaliacoes/CT087/_20.png'><i class='material-icons'>panorama</i></a>
+									Clicando no elemento Login <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilavaliador/_10.png'><i class='material-icons'>panorama</i></a>
 								
 							</td>
 						</tr>
@@ -537,15 +453,15 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>avaliacoes-vendedor</span>
+						<span class='category-name'>unit_buttons_solicitar-vendedor</span>
 						<span class='category-status right'>
-						<span class='label pass'>1</span>
+						<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -559,9 +475,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>2020/03/19 - 00:10:50.966</td>
-										<td class='linked' test-id='2'>button_avaliacoes.CT_085</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>2020/03/19 - 06:01:39.227</td>
+										<td class='linked' test-id='2'>unit_mandatory_placa_focus_out.Validar a obrigatoriedade do campo (placa) por perda de foco ao solicitar avaliação para o grupo abrao com perfil vendedor</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -570,7 +486,7 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>avaliacoes-avaliador</span>
+						<span class='category-name'>unit_buttons_solicitar-avaliador</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -592,41 +508,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>2020/03/19 - 00:11:17.327</td>
-										<td class='linked' test-id='3'>button_avaliacoes.CT_086</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>avaliacoes-gerente</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>2020/03/19 - 00:11:40.209</td>
-										<td class='linked' test-id='4'>button_avaliacoes.CT_087</td>
+										<td>2020/03/19 - 06:02:33.684</td>
+										<td class='linked' test-id='3'>unit_mandatory_placa_focus_out.Validar a obrigatoriedade do campo (placa) por perda de foco ao solicitar avaliação para o grupo abrao com perfil avaliador</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -643,7 +526,103 @@
 		</div>
 	</div>
 </div>
-<!-- category view --><!-- exception view --><div id='author-view' class='view hide'>
+<!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>java.lang.NullPointerException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2020/03/19 - 06:01:39.227</td>
+										<td class='linked' test-id='2'>unit_mandatory_placa_focus_out.Validar a obrigatoriedade do campo (placa) por perda de foco ao solicitar avaliação para o grupo abrao com perfil vendedor</td>
+										<td>
+											<textarea disabled class="code-block">java.lang.NullPointerException: [33mFALHA NOS TESTES![0m
+	at support.error.Error.Fail(Error.java:8)
+	at products.apps.unit.stepdefs.SDAppsSolicitarAvaliacao.oUsuarioValidaAMensagemDeObrigatoriedadeDoCampoPlaca(SDAppsSolicitarAvaliacao.java:146)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+	at cucumber.runner.TestCase.run(TestCase.java:46)
+	at cucumber.runner.Runner.runPickle(Runner.java:49)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:123)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:65)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:147)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='author-view' class='view hide'>
 	<section id='controls'>
 		<div class='controls grey lighten-4'>
 			<!-- search -->
@@ -665,13 +644,14 @@
 					<div class='author-heading'>
 						<span class='author-name'>Felipe_Amorim</span>
 						<span class='author-status right'>
-						<span class='label pass'>3</span>
+						<span class='label pass'>1</span>
+						<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='author-content hide'>
 						<div class='author-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 3</span>
-							
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='author-tests'>
@@ -685,18 +665,13 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>2020/03/19 - 00:10:50.966</td>
-										<td class='linked' test-id='2'>button_avaliacoes.CT_085</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>2020/03/19 - 06:01:39.227</td>
+										<td class='linked' test-id='2'>unit_mandatory_placa_focus_out.Validar a obrigatoriedade do campo (placa) por perda de foco ao solicitar avaliação para o grupo abrao com perfil vendedor</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>2020/03/19 - 00:11:17.327</td>
-										<td class='linked' test-id='3'>button_avaliacoes.CT_086</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>2020/03/19 - 00:11:40.209</td>
-										<td class='linked' test-id='4'>button_avaliacoes.CT_087</td>
+										<td>2020/03/19 - 06:02:33.684</td>
+										<td class='linked' test-id='3'>unit_mandatory_placa_focus_out.Validar a obrigatoriedade do campo (placa) por perda de foco ao solicitar avaliação para o grupo abrao com perfil avaliador</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -727,25 +702,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>2020/03/19 - 00:10:50.903</div>
+					<div class='panel-lead'>2020/03/19 - 06:01:39.161</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>2020/03/19 - 00:12:03.280</div>
+			 		<div class='panel-lead'>2020/03/19 - 06:02:45.927</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 12s+377ms</div>
+					<div class='panel-lead'>0h 1m 6s+766ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -793,25 +768,16 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>avaliacoes-vendedor</td>
+							<td>unit_buttons_solicitar-vendedor</td>
+							<td>0</td>
 							<td>1</td>
 							<td>0</td>
-							<td>0</td>
 							<td>
-									100%
+									0%
 							</td>
 						</tr>
 						<tr>
-							<td>avaliacoes-avaliador</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>avaliacoes-gerente</td>
+							<td>unit_buttons_solicitar-avaliador</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -831,23 +797,23 @@
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 1,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
-				childCount: 3,
-				passChild: 3,
-				failChild: 0,
+				exceptionsParent: 1,
+				childCount: 2,
+				passChild: 1,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 1,
 				grandChildCount: 0,
 				passGrandChild: 0,
 				failGrandChild: 0,
@@ -862,7 +828,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "button_avaliacoes":72.314
+			        "unit_mandatory_placa_focus_out":66.7
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>

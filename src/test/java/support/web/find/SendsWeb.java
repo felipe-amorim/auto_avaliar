@@ -26,6 +26,22 @@ public class SendsWeb {
         }
     }
 
+    public void tab(){
+        if (!Instances.getEach()) {
+            //Instances.getLastElements().get(0).sendKeys(Keys.ENTER);
+            Instances.getLocatorClass().execute(()->{Instances.getLastElements().get(0).sendKeys(Keys.TAB);});
+            Instances.getScreenshotClass().printSelenium();
+            Instances.getReportClass().stepPass(Instances.getMessageSend().replace("arg0", "TAB") + Instances.getLastXpathLog());
+        } else {
+            for (WebElement element : Instances.getLastElements()) {
+                //element.sendKeys(Keys.ENTER);
+                Instances.getLocatorClass().execute(()->{element.sendKeys(Keys.TAB);});
+                Instances.getReportClass().stepPass(Instances.getMessageSendEach().replace("arg0", "TAB") + Instances.getLastXpathLog());
+            }
+            Instances.setEach(false);
+        }
+    }
+
     public void text(String text){
         if(!Instances.getSlow()) {
             if (!Instances.getEach()) {

@@ -10,6 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/products/apps/features/",
         glue={"products.apps.unit.stepdefs"},
         plugin = { "intern.ListCucumber" }
+        ,tags = {"@mandatory_placa_focus_out"}
 )
 
 public class Run {

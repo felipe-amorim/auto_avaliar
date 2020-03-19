@@ -8,9 +8,18 @@ public class AppsSolicitarAvaliacao {
     public static String appsAvaliadorResponsavelCombobox = "//select[@ng-model=\"ctrl.valuation.valuer_id\"]";
     public static String appsNomeDoClienteInput = "//input[@ng-model=\"ctrl.valuation.name\"]";
     public static String appsAnoDeInteresseInput = "//input[@ng-model=\"ctrl.interest.year\"]";
+    public static String appsCelularInput = "//input[@ng-model=\"ctrl.valuation.cell_phone\"]";
+    public static String appsPlacaInput = "//input[@ng-model=\"ctrl.valuation.plate\"]";
+    public static String appsSolicitarButton = "//button[@ng-click=\"ctrl.solicita()\"]";
+    public static String appsBuscarPlacaButton = "//button[@ng-click=\"ctrl.getPlateData()\"]";
     public static String appsVeiculoInput = "//av-search-filter[@label=\"Veículo\"][contains(@controller, \"oraculo/versions/listAll\")]//input[@placeholder=\"Todos\"]";
     public static String appsPrimeiroVeiculoLi = "//av-search-filter[@label=\"Veículo\"][contains(@controller, \"oraculo/versions/listAll\")]//li/a";
     public static String appsObrigatoriedadeTipoDeAvaliacaoText = "//div[text()=\"É necessário selecionar um TIPO DE AVALIAÇÃO!\"]";
+    public static String appsObrigatoriedadeAvaliadorResponsavelText = "//div[text()=\"É necessário selecionar um AVALIADOR RESPONSÁVEL!\"]";
+    public static String appsObrigatoriedadeNomeText = "//div[text()=\"É necessário digitar uma valor para: NOME!\"]";
+    public static String appsObrigatoriedadeCelularText = "//div[text()=\"É necessário digitar uma valor para: CELULAR!\"]";
+    public static String appsObrigatoriedadePlacaText = "//div[text()=\"É necessário digitar uma valor para: PLACA!\"]";
+    public static String appsPlacaInvalidaText = "//div[text()=\"Por favor informe uma PLACA válida!\"]";
 
 
     public static LinkedHashMap<String, String> appsSolicitarAvaliacao = createData();
@@ -23,7 +32,16 @@ public class AppsSolicitarAvaliacao {
         ret.put(appsAnoDeInteresseInput, "Ano de interesse");
         ret.put(appsVeiculoInput, "Veiculo");
         ret.put(appsPrimeiroVeiculoLi, "Primeiro veiculo");
+        ret.put(appsBuscarPlacaButton, "Buscar placa");
+        ret.put(appsCelularInput, "Celular");
+        ret.put(appsPlacaInput, "Placa");
+        ret.put(appsSolicitarButton, "Solicitar");
         ret.put(appsObrigatoriedadeTipoDeAvaliacaoText, "Mensagem de obrigatoriedade do campo tipo de avaliação");
+        ret.put(appsObrigatoriedadeAvaliadorResponsavelText, "Mensagem de obrigatoriedade do campo avaliador responsável");
+        ret.put(appsObrigatoriedadeNomeText, "Mensagem de obrigatoriedade do campo nome");
+        ret.put(appsObrigatoriedadeCelularText, "Mensagem de obrigatoriedade do campo celular");
+        ret.put(appsObrigatoriedadePlacaText, "Mensagem de obrigatoriedade do campo placa");
+        ret.put(appsPlacaInvalidaText, "Mensagem de placa inválida");
         return ret;
     }
 }
