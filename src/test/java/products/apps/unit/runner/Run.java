@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/products/apps/unit/features/buttons",
+        features = "src/test/resources/products/apps/features/",
         glue={"products.apps.unit.stepdefs"},
         plugin = { "intern.ListCucumber" }
 )
