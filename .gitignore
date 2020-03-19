@@ -1,0 +1,6 @@
+src/test/resources/evidencias/
+.idea/
+target/
+fabrica_automacao.iml
+src/test/resources/jenkins/
+src/test/resources/downloads/
