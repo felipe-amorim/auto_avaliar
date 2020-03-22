@@ -4,6 +4,7 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriverException;
 
 import java.io.File;
 import java.io.IOException;
@@ -47,6 +48,10 @@ public class Screenshot {
             System.out.println("Screenshot count: " + stepName + "_" + filesCount + ".png");
         } catch (IOException e) {
             e.printStackTrace();
+        } catch (WebDriverException e){
+            if(e.getMessage().contains("ocalhost/0:0:0:0:0:")){
+                Instances.getReportClass().stepFatal(e);
+            }
         }
     }
 }
