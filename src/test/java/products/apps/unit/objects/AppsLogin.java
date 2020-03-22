@@ -6,6 +6,7 @@ public class AppsLogin {
     public static String appsEmailInput = "//input[@id=\"inputEmail\"]";
     public static String appsPasswordInput = "//input[@id=\"inputPassword\"]";
     public static String appsLoginButton = "//button";
+    public static String appsCloseModalButton = "//a[@class=\"iziModal-button iziModal-button-close\"]";
 
 
     public static LinkedHashMap<String, String> appsLogin = createData();
@@ -15,6 +16,7 @@ public class AppsLogin {
         ret.put(appsEmailInput, "E-mail");
         ret.put(appsPasswordInput, "Senha");
         ret.put(appsLoginButton, "Login");
+        ret.put(appsCloseModalButton, "Fechar modal");
         return ret;
     }
 }

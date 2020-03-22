@@ -32,6 +32,10 @@ public class LocatorWeb {
             }
         } catch (InvalidSelectorException e) {
             System.out.println("The xpath '" + Instances.getLastXpath() + "' is not valid");
+        }catch (WebDriverException e){
+            if(e.getMessage().contains("ocalhost/0:0:0:0:0:")){
+                Instances.getReportClass().stepFatal(e);
+            }
         }
         Instances.setLastElements(elements);
     }

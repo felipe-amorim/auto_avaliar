@@ -36,6 +36,8 @@ public class ActionsWeb {
         if (Instances.getLastElements().size()>0){
             exist = true;
         }
+        Instances.getScreenshotClass().printSelenium();
+        Instances.getReportClass().stepPass(Instances.getMessageExists() + Instances.getLastXpathLog());
         return exist;
     }
 
@@ -87,6 +89,10 @@ public class ActionsWeb {
     }
 
     //waitDisapear
+
+    public int count(){
+        return Instances.getLastElements().size();
+    }
 
     public ComboBox comboBox() {
         throwExceptionNoElement();
