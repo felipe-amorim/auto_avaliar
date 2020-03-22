@@ -20,6 +20,7 @@ public class SDAppsMain extends CoreWeb {
 
     @And("O usuario realiza o logoff")
     public void oUsuarioRealizaOLogoff() {
+        log().setLocator(appsMain);
         find(appsIconUser).click();
         find(appsSairButton).click();
         log().setLocator(appsLogin);
@@ -40,6 +41,7 @@ public class SDAppsMain extends CoreWeb {
 
     @And("O usuario clica no botao Avaliacoes dentro do menu expandido")
     public void oUsuarioClicaNoBotaoAvaliacoesDentroDoMenuExpandido() {
+        log().setLocator(appsMain);
         find(appsAvalicoesExpandidoButton).click();
     }
 }

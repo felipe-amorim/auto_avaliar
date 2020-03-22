@@ -70,6 +70,9 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
         if(!find(appsObrigatoriedadeTipoDeAvaliacaoText).exists()){
             error().Fail();
         }else {
+            if(find(appsObrigatoriedadeTipoDeAvaliacaoText).count()>1){
+                error().Warning("Mais de uma mensagem de erro com a mesma mensagem foi exibida");
+            }
             sleep().untilDisapear(appsObrigatoriedadeTipoDeAvaliacaoText);
         }
     }
@@ -91,6 +94,9 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
         if(!find(appsObrigatoriedadeAvaliadorResponsavelText).exists()){
             error().Fail();
         }else {
+            if(find(appsObrigatoriedadeAvaliadorResponsavelText).count()>1){
+                error().Warning("Mais de uma mensagem de erro com a mesma mensagem foi exibida");
+            }
             sleep().untilDisapear(appsObrigatoriedadeAvaliadorResponsavelText);
         }
     }
@@ -107,6 +113,9 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
         if(!find(appsObrigatoriedadeNomeText).exists()){
             error().Fail();
         }else {
+            if(find(appsObrigatoriedadeNomeText).count()>1){
+                error().Warning("Mais de uma mensagem de erro com a mesma mensagem foi exibida");
+            }
             sleep().untilDisapear(appsObrigatoriedadeNomeText);
         }
     }
@@ -123,6 +132,9 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
         if(!find(appsObrigatoriedadeCelularText).exists()){
             error().Fail();
         }else {
+            if(find(appsObrigatoriedadeCelularText).count()>1){
+                error().Warning("Mais de uma mensagem de erro com a mesma mensagem foi exibida");
+            }
             sleep().untilDisapear(appsObrigatoriedadeCelularText);
         }
     }
@@ -145,6 +157,9 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
         if(!find(appsObrigatoriedadePlacaText).exists()){
             error().Fail();
         }else {
+            if(find(appsObrigatoriedadePlacaText).count()>1){
+                error().Warning("Mais de uma mensagem de erro com a mesma mensagem foi exibida");
+            }
             sleep().untilDisapear(appsObrigatoriedadePlacaText);
         }
     }
@@ -181,6 +196,9 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
         if(!find(appsPlacaInvalidaText).exists()){
             error().Fail();
         }else {
+            if(find(appsPlacaInvalidaText).count()>1){
+                error().Warning("Mais de uma mensagem de erro com a mesma mensagem foi exibida");
+            }
             sleep().untilDisapear(appsPlacaInvalidaText);
         }
     }
@@ -212,5 +230,21 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
     public void oUsuarioClicaNoBotaoSolicitar() {
         log().setLocator(appsSolicitarAvaliacao);
         find(appsSolicitarAvaliacaoButtonSolicita).click();
+    }
+    @Then("O usuario insere uma placa valida e inexistente")
+    public void oUsuarioInsereUmaPlacaValidaEInexistente() {
+        find(appsPlacaInput).send().text("AAA-0000");
+    }
+
+    @And("O usuario valida a mensagem de placa nao encontrada")
+    public void oUsuarioValidaAMensagemDePlacaNaoEncontrada() {
+        if(!find(appsPlacaNaoEncontradaText).exists()){
+            error().Fail();
+        }else {
+            if(find(appsPlacaNaoEncontradaText).count()>1){
+                error().Warning("Mais de uma mensagem de erro com a mesma mensagem foi exibida");
+            }
+            sleep().untilDisapear(appsPlacaNaoEncontradaText);
+        }
     }
 }

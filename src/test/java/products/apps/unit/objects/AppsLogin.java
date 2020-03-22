@@ -8,6 +8,7 @@ public class AppsLogin {
     public static String appsLoginButton = "//button";
     public static String appsLoginCarregandoAposLogin = "//div[@data-preloader]";
     public static String appsCaptcha = "//div[@ng-switch-default][contains(.,\"Captcha inválido!\")]";
+    public static String appsCloseModalButton = "//a[@class=\"iziModal-button iziModal-button-close\"]";
 
 
     public static LinkedHashMap<String, String> appsLogin = createData();
@@ -18,6 +19,7 @@ public class AppsLogin {
         ret.put(appsPasswordInput, "Senha");
         ret.put(appsLoginButton, "Login");
         ret.put(appsCaptcha, "Captcha");
+        ret.put(appsCloseModalButton, "Fechar modal");
         return ret;
     }
 }

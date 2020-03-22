@@ -24,6 +24,7 @@ public class AppsSolicitarAvaliacao {
     public static String appsSolicitarAvaliacaoSelectChaveReserva = "//label[contains(.,\"O veículo possui chave reserva?\")]/following-sibling::select[@class]";
     public static String appsSolicitarAvaliacaoSelectManual = "//label[contains(.,\"Tem manual?\")]/following-sibling::select[@class]";
     public static String appsSolicitarAvaliacaoButtonSolicita = "//button[@ng-click=\"ctrl.solicita()\"]";
+    public static String appsPlacaNaoEncontradaText = "//div[text()=\"Placa não encontrada!\"]";
 
 
     public static LinkedHashMap<String, String> appsSolicitarAvaliacao = createData();
@@ -50,6 +51,7 @@ public class AppsSolicitarAvaliacao {
         ret.put(appsSolicitarAvaliacaoSelectChaveReserva, "Chave Reserva SIM");
         ret.put(appsSolicitarAvaliacaoSelectManual, "Manual SIM");
         ret.put(appsSolicitarAvaliacaoButtonSolicita, "Solicita");
+        ret.put(appsPlacaNaoEncontradaText, "Mensagem de placa não encontrada");
         return ret;
     }
 }
