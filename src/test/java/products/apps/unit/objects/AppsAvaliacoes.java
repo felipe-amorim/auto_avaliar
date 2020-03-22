@@ -7,11 +7,19 @@ public class AppsAvaliacoes {
     public static String appsSolicitarButton = "//button[@ng-click=\"ctrl.solicita()\"]";
 
 
+    //Layout
+    public static String appsTextBuscarPlaca = "//input[@placeholder=\"Buscar Placa\"]/ancestor::div/label";
+    public static String textBuscarPlaca = "Buscar placa";
+
+
+
+
     public static LinkedHashMap<String, String> appsAvaliacoes = createData();
     private static LinkedHashMap<String, String> createData() {
         LinkedHashMap<String, String> ret = new LinkedHashMap<>();
         ret.put(appsAvaliacoesTitle, "Titulo avaliações");
         ret.put(appsSolicitarButton, "Solicitar");
+        ret.put(appsTextBuscarPlaca, "Buscar placa");
         return ret;
     }
 }

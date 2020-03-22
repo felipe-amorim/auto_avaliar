@@ -21,4 +21,10 @@ public class SDAppsAvaliacoes extends CoreWeb {
     public void oUsuarioValidaQueOBotaoSolicitarEExibido() {
         find(appsSolicitarButton).exists();
     }
+
+    @Then("O usuario valida que o campo buscar placa esta escrito corretamente")
+    public void oUsuarioValidaQueOCampoBuscarPlacaEstaEscritoCorretamente() {
+        log().setLocator(appsAvaliacoes);
+        assertThat(textBuscarPlaca).isEqualTo(find(appsTextBuscarPlaca).get().text().toString());
+    }
 }

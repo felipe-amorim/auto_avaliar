@@ -33,6 +33,7 @@ public class ActionsWeb {
 
     public boolean exists(){
         boolean exist = false;
+        Instances.getScreenshotClass().printSelenium();
         if (Instances.getLastElements().size()>0){
             exist = true;
         }

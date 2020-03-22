@@ -20,6 +20,10 @@ public class AppsSolicitarAvaliacao {
     public static String appsObrigatoriedadeCelularText = "//div[text()=\"É necessário digitar uma valor para: CELULAR!\"]";
     public static String appsObrigatoriedadePlacaText = "//div[text()=\"É necessário digitar uma valor para: PLACA!\"]";
     public static String appsPlacaInvalidaText = "//div[text()=\"Por favor informe uma PLACA válida!\"]";
+    public static String appsSolicitarAvaliacaoInputRenavam = "//input[@ng-model=\"ctrl.valuation.renavam\"]";
+    public static String appsSolicitarAvaliacaoSelectChaveReserva = "//label[contains(.,\"O veículo possui chave reserva?\")]/following-sibling::select[@class]";
+    public static String appsSolicitarAvaliacaoSelectManual = "//label[contains(.,\"Tem manual?\")]/following-sibling::select[@class]";
+    public static String appsSolicitarAvaliacaoButtonSolicita = "//button[@ng-click=\"ctrl.solicita()\"]";
 
 
     public static LinkedHashMap<String, String> appsSolicitarAvaliacao = createData();
@@ -42,6 +46,10 @@ public class AppsSolicitarAvaliacao {
         ret.put(appsObrigatoriedadeCelularText, "Mensagem de obrigatoriedade do campo celular");
         ret.put(appsObrigatoriedadePlacaText, "Mensagem de obrigatoriedade do campo placa");
         ret.put(appsPlacaInvalidaText, "Mensagem de placa inválida");
+        ret.put(appsSolicitarAvaliacaoInputRenavam, "Renavam");
+        ret.put(appsSolicitarAvaliacaoSelectChaveReserva, "Chave Reserva SIM");
+        ret.put(appsSolicitarAvaliacaoSelectManual, "Manual SIM");
+        ret.put(appsSolicitarAvaliacaoButtonSolicita, "Solicita");
         return ret;
     }
 }
