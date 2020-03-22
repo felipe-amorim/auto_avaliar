@@ -56,6 +56,16 @@ public class SDAppsAvaliacoes extends CoreWeb {
 
     @Then("O usuario valida que nao foram habilitados os campos de editar dados do veiculo")
     public void oUsuarioValidaQueNaoForamHabilitadosOsCamposDeEditarDadosDoVeiculo() {
+
+        if (find(appsAvaliacoesTextValidarDisponibilidadeEditarValoresVeiculos).isAvailable()){
+            System.out.println("entrou no if");
+            error().Fail();
+        } else {
+            System.out.println("entrou no else");
+        }
+
+        ;
+        /*
         log().setLocator(appsAvaliacoes);
         if (!find(appsAvaliacoesTextValidarDisponibilidadeEditarValoresVeiculos).exists()){
             System.out.println("entrou no if");
@@ -63,7 +73,7 @@ public class SDAppsAvaliacoes extends CoreWeb {
             error().Fail();
             System.out.println("Sucesso, o usuario realmente nao tem acesso a esta funcionalidade");
         }
-
+*/
         //if (!find(appsAvaliacoesTextValidarDisponibilidadeEditarValoresVeiculos).exists()){
         //    System.out.println("entrou no if de validacao");
         //    System.out.println("O botao "+appsAvaliacoesTextValidarDisponibilidadeEditarValoresVeiculos+" não habilitou o menu de edição");

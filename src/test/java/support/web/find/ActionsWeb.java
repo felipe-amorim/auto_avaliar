@@ -40,6 +40,10 @@ public class ActionsWeb {
         return exist;
     }
 
+    public int count(){
+        return Instances.getLastElements().size();
+    }
+
     public boolean isAvailable(){
         return Instances.getIsAvailable();
     }
