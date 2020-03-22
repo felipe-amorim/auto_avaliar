@@ -7,6 +7,7 @@ public class AppsLogin {
     public static String appsPasswordInput = "//input[@id=\"inputPassword\"]";
     public static String appsLoginButton = "//button";
     public static String appsLoginCaptcha = "//label[@id=\"recaptcha-anchor-label\"]";
+    public static String appsCloseModalButton = "//a[@class=\"iziModal-button iziModal-button-close\"]";
 
 
     public static LinkedHashMap<String, String> appsLogin = createData();
@@ -17,6 +18,8 @@ public class AppsLogin {
         ret.put(appsPasswordInput, "Senha");
         ret.put(appsLoginCaptcha, "Botão login");
         ret.put(appsLoginCaptcha, "Captcha");
+        ret.put(appsLoginButton, "Login");
+        ret.put(appsCloseModalButton, "Fechar modal");
         return ret;
     }
 }

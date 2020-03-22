@@ -22,7 +22,7 @@ public class SDAppsLogin extends CoreWeb { @Given("O usuario acessa {string}")
 
     @Given("O usuario acessa a url do portal apps usbi")
     public void oUsuarioAcessaAUrlDoPortalAppsUsbi() {
-        //driver().set().browser().chrome().headless();
+        driver().set().browser().chrome().headless();
         driver().navigate(Environment.url);
         driver().set().options().maximized();
     }
