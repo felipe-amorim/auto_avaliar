@@ -42,4 +42,9 @@ public class SDAppsMain extends CoreWeb {
     public void oUsuarioClicaNoBotaoAvaliacoesDentroDoMenuExpandido() {
         find(appsAvalicoesExpandidoButton).click();
     }
+
+    @And("A automacao espera o usuario resolver o captcha")
+    public void aAutomacaoEsperaOUsuarioResolverOCaptcha() {
+        sleep().until(120000);
+    }
 }

@@ -16,6 +16,7 @@ public class SDAppsLogin extends CoreWeb { @Given("O usuario acessa {string}")
 
     @When("O usuario clica no botao log in")
     public void oUsuarioClicaNoBotaoLogIn() {
+        log().setLocator(appsLogin);
         find(appsLoginButton).click();
     }
 
@@ -23,6 +24,7 @@ public class SDAppsLogin extends CoreWeb { @Given("O usuario acessa {string}")
     public void oUsuarioAcessaAUrlDoPortalAppsUsbi() {
         //driver().set().browser().chrome().headless();
         driver().navigate(Environment.url);
+        driver().set().options().maximized();
     }
 
 

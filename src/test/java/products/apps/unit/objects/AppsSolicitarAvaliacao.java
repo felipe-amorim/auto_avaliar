@@ -20,6 +20,7 @@ public class AppsSolicitarAvaliacao {
     public static String appsObrigatoriedadeCelularText = "//div[text()=\"É necessário digitar uma valor para: CELULAR!\"]";
     public static String appsObrigatoriedadePlacaText = "//div[text()=\"É necessário digitar uma valor para: PLACA!\"]";
     public static String appsPlacaInvalidaText = "//div[text()=\"Por favor informe uma PLACA válida!\"]";
+    public static String appsSolicitarAvaliacoButtonSolicitar = "//button[@class=\"btn btn-success m-sm text-uppercase ng-binding\"]";
 
 
     public static LinkedHashMap<String, String> appsSolicitarAvaliacao = createData();
@@ -42,6 +43,7 @@ public class AppsSolicitarAvaliacao {
         ret.put(appsObrigatoriedadeCelularText, "Mensagem de obrigatoriedade do campo celular");
         ret.put(appsObrigatoriedadePlacaText, "Mensagem de obrigatoriedade do campo placa");
         ret.put(appsPlacaInvalidaText, "Mensagem de placa inválida");
+        ret.put(appsSolicitarAvaliacoButtonSolicitar, "Botaão solicitar, para finalizar solicitacao de avaliação");
         return ret;
     }
 }

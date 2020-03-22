@@ -2,149 +2,76 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f64ed9dd-290d-425e-9845-06649a15f2e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/buttons/unit_button_solicitar.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/buttons/unit_button_solicitar_avaliacao.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/mandatory/unit_mandatory_tipo_de_avaliacao.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/intern/ListCucumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/intern/ListCucumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/products/apps/unit/objects/AppsAvaliacoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/products/apps/unit/objects/AppsAvaliacoes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/products/apps/unit/objects/AppsLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/products/apps/unit/objects/AppsLogin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/products/apps/unit/objects/AppsSolicitarAvaliacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/products/apps/unit/objects/AppsSolicitarAvaliacao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/products/apps/unit/runner/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/products/apps/unit/runner/Run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/products/apps/unit/stepdefs/SDAppsAvaliacoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/products/apps/unit/stepdefs/SDAppsAvaliacoes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/products/apps/unit/stepdefs/SDAppsLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/products/apps/unit/stepdefs/SDAppsLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/products/apps/unit/stepdefs/SDAppsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/products/apps/unit/stepdefs/SDAppsMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/products/apps/unit/stepdefs/SDAppsSolicitarAvaliacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/products/apps/unit/stepdefs/SDAppsSolicitarAvaliacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/support/web/find/SendsWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/support/web/find/SendsWeb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/anexos/Relatorio_detalhado_testes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/jenkins/anexos/Relatorio_detalhado_testes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT085/_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT085/_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT085/_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT085/_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT085/_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT085/_14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT085/_15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT085/_16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT085/_17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT085/_18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT085/_19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT085/_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT085/_20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT085/_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT085/_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT085/_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT085/_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT085/_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT085/_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT085/_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT086/_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT086/_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT086/_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT086/_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT086/_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT086/_14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT086/_15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT086/_16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT086/_17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT086/_18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT086/_19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT086/_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT086/_20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT086/_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT086/_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT086/_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT086/_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT086/_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT086/_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT086/_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT087/_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT087/_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT087/_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT087/_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT087/_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT087/_14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT087/_15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT087/_16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT087/_17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT087/_18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT087/_19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT087/_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT087/_20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT087/_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT087/_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT087/_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT087/_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT087/_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT087/_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/buttonavaliacoes/CT087/_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/products/apps/features/integrated/solicitar_avaliacao.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/products/apps/features/integrated/solicitar_avaliacao.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/buttons/button_avaliacoes.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/buttons/unit_button_avaliacoes.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/buttons/button_login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/buttons/unit_button_login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/buttons/button_solicitar.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/buttons/button_solicitar_avaliacao.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/masks/button_solicitar.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilavaliador/_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilavaliador/_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilavaliador/_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilavaliador/_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilavaliador/_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilavaliador/_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilavaliador/_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilavaliador/_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilavaliador/_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilavaliador/_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/intern/ListCucumber$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/intern/ListCucumber$5.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/anexos/Relatorio_detalhado_testes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/jenkins/anexos/Relatorio_detalhado_testes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT043/_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT043/_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT043/_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT043/_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT043/_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT043/_14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT043/_15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT043/_16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT043/_17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT043/_18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT043/_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT043/_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT043/_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT043/_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT043/_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT043/_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT043/_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT043/_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT044/_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT044/_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT044/_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT044/_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT044/_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT044/_14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT044/_15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT044/_16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT044/_17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT044/_18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT044/_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT044/_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT044/_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT044/_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT044/_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT044/_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT044/_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT044/_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT045/_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT045/_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT045/_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT045/_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT045/_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT045/_14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT045/_15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT045/_16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT045/_17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT045/_18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT045/_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT045/_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT045/_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT045/_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT045/_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT045/_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT045/_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/buttonsolicitaravaliacao/CT045/_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/products/apps/unit/features/buttons/button_avaliacoes.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/products/apps/unit/features/buttons/button_login.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/products/apps/unit/features/buttons/button_solicitar_avaliacao.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_9.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/products/apps/unit/objects/AppsAvaliacoes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/products/apps/unit/objects/AppsAvaliacoes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/products/apps/unit/objects/AppsLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/products/apps/unit/objects/AppsLogin.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/products/apps/unit/objects/AppsSolicitarAvaliacao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/products/apps/unit/objects/AppsSolicitarAvaliacao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/products/apps/unit/runner/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/products/apps/unit/runner/Run.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/products/apps/unit/stepdefs/SDAppsAvaliacoes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/products/apps/unit/stepdefs/SDAppsAvaliacoes.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/products/apps/unit/stepdefs/SDAppsLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/products/apps/unit/stepdefs/SDAppsLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/products/apps/unit/stepdefs/SDAppsMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/products/apps/unit/stepdefs/SDAppsMain.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/products/apps/unit/stepdefs/SDAppsSolicitarAvaliacao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/products/apps/unit/stepdefs/SDAppsSolicitarAvaliacao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/support/web/find/SendsWeb.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/support/web/find/SendsWeb.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,34 +81,6 @@
   <component name="FavoritesManager">
     <favorites_list name="fabrica_de_testes_automacao" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/products/apps/unit/stepdefs/SDAppsSolicitarAvaliacao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="189" column="44" selection-start-line="189" selection-start-column="44" selection-end-line="189" selection-end-column="44" />
-              <folding>
-                <element signature="e#6790#6791#0" expanded="true" />
-                <element signature="e#6850#6851#0" expanded="true" />
-                <element signature="e#7222#7223#0" expanded="true" />
-                <element signature="e#7272#7273#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/products/apps/unit/objects/AppsSolicitarAvaliacao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="37" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -190,156 +89,8 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>@GrupoCarrera</find>
-      <find>@Avaliacoes</find>
-      <find>@solicitarAvaliacao</find>
-      <find>Validar a obrigatoriedade do campo tipo de avaliacao</find>
-      <find>e do campo tipo de avaliacao ao solicitar avaliação, para o grup</find>
-      <find>cao) ao solicitar avaliação, para o grupo abrao co</find>
-      <find>liacao) ao solicitar avaliação, para o gru</find>
-      <find>Validar a obrigatoriedade do campo (tipo de avaliacao) ao solicitar avaliação</find>
-      <find>And O usuario valida nao existencia da mensagem de obrigatoriedade do campo tipo de avaliacao</find>
-      <find>@solicitarAvaliacao</find>
-      <find>@solicitar</find>
-      <find>@obrigatoriedade</find>
-      <find>@obrigatoriedade_nome</find>
-      <find>do campo (nome) ao sol</find>
-      <find>campo (celular) ao sol</find>
-      <find>@mandatory_celular</find>
-      <find>And O usuario valida nao existencia da mensagem de obrigatoriedade do celular</find>
-      <find>do campo (avaliador responsavel) ao</find>
-      <find>o (placa) ao sol</find>
-      <find>When O usuario expande as opcoes no menu Avaliacoes</find>
-      <find>When O usuario clica no botao solicitar avaliacao</find>
-      <find>//button[@ng-click=&quot;ctrl.solicita()&quot;]</find>
-      <find>And O usuario insere uma placa real</find>
-      <find>And O usuario valida nao existencia da mensagem de obrigatoriedade da placa</find>
-      <find>placa) ao</find>
-      <find>@mandatory_placa</find>
-      <find>And O usuario perde o foco do campo placa</find>
-      <find>Then O usuario clica no botao solicitar sem preencher os campos obrigatorios</find>
-      <find>And O usuario valida a mensagem de obrigatoriedade do campo placa</find>
-      <find>And O usuario insere uma placa invalida</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>@carrera</replace>
-      <replace>@avaliacoes</replace>
-      <replace>@solicitarAvaliacao</replace>
-      <replace>Validar a obrigatoriedade do campo tipo de avaliacao em uma nova avaliação</replace>
-      <replace>Validar a obrigatoriedade do campo tipo de avaliacao ao solicitar avaliação,</replace>
-      <replace>e do campo 'tipo de avaliacao' ao solicitar avaliação, para o grup</replace>
-      <replace>e do campo (tipo de avaliacao) ao solicitar avaliação, para o grup</replace>
-      <replace>liacao) ao solicitar avaliação para o gru</replace>
-      <replace>Validar a obrigatoriedade do campo (avaliador responsavel) ao solicitar avaliação</replace>
-      <replace>And O usuario valida nao existencia da mensagem de obrigatoriedade do campo avaliador responsavel</replace>
-      <replace>@obrigatoriedade_tipo_de_avaliacao</replace>
-      <replace>@obrigatoriedade_avaliador_responsavel</replace>
-      <replace>@solicitar_avaliacao</replace>
-      <replace>@obrigatoriedade_nome</replace>
-      <replace>@mandatory</replace>
-      <replace>@obrigatoriedade_celular</replace>
-      <replace>do campo (celular) ao sol</replace>
-      <replace>campo (placa) ao sol</replace>
-      <replace>@mandatory_placa</replace>
-      <replace>And O usuario valida nao existencia da mensagem de obrigatoriedade da placa</replace>
-      <replace>@mandatory_placa_focus_out</replace>
-      <replace>o (placa) por perda de foco ao sol</replace>
-      <replace>When O usuario expande as opcoes no menu Avaliacoes</replace>
-      <replace>do campo (nome) ao</replace>
-      <replace>And O usuario valida a mensagem de placa invalida</replace>
-      <replace>placa) por perda de foco ao</replace>
-      <replace>@masks_placa_invalida_focus_out</replace>
-      <replace>@masks_placa_invalida</replace>
-      <replace>And O usuario clica em buscar placa</replace>
-      <replace>Then O usuario insere uma placa invalida</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>D:\Artit\Repositorios\Nova_versao\fabrica_de_testes_automacao\novo\src\test</dir>
-      <dir>D:\Artit\Repositorios\Nova_versao\fabrica_de_testes_automacao\novo\src\test\java\suporte</dir>
-      <dir>D:\Artit\Repositorios\Nova_versao\fabrica_de_testes_automacao\novo\src\test\java\desenvolvimento\support</dir>
-      <dir>D:\Artit\Repositorios\Nova_versao\fabrica_de_testes_automacao\novo\src\test\java\produtos\sistema_de_auditoria\feature</dir>
-      <dir>D:\Artit\Repositorios\Nova_versao\fabrica_de_testes_automacao\novo\src\test\java\produtos\sistema_de_auditoria</dir>
-      <dir>D:\Artit\Repositorios\Nova_versao\fabrica_de_testes_automacao\novo\src\test\java\produtos\ongoing_automacao</dir>
-      <dir>D:\Artit\Repositorios\Nova_versao\fabrica_de_testes_automacao\novo\src\test\java\produtos\ongoing_automacao\features</dir>
-      <dir>D:\Projetos\Java\novo\src\test\java\produtos\ongoing_automacao\features</dir>
-      <dir>D:\Projetos\Java\novo\src\test\java\produtos\ongoing_automacao</dir>
-      <dir>D:\Projetos\Java\novo\src\test\java\produtos</dir>
-      <dir>D:\Projetos\Java\novo\src\test\java\support</dir>
-      <dir>D:\Projetos\Java\novo\src\test\java</dir>
-      <dir>D:\Projetos\Java\novo\src\test\java\intern</dir>
-      <dir>D:\Projetos\Java\novo\src\test\java\produtos\shopbanx_calculadora\features</dir>
-      <dir>D:\Projetos\Java\novo\src\test\java\support\web</dir>
-      <dir>D:\Projetos\Java\fabrica_de_testes_automacao\src\test\java</dir>
-      <dir>D:\Projetos\Java\fabrica_de_testes_automacao\src\test\java\produtos\sistema_de_auditoria\feature</dir>
-      <dir>D:\Projetos\Java\fabrica_de_testes_automacao\src\test\java\produtos\sistema_de_auditoria</dir>
-      <dir>D:\Projetos\Java\fabrica_de_testes_automacao\src\test\java\produtos\net\sms</dir>
-      <dir>D:\Projetos\Java\fabrica_de_testes_automacao\src\test\java\produtos\shopbanx_calculadora</dir>
-      <dir>D:\Projetos\Java\auto_avaliar\src\test\resources\products\apps\unit\features\buttons</dir>
-      <dir>D:\Projetos\Java\auto_avaliar\src\test\resources\products\apps\features</dir>
-      <dir>D:\Projetos\Java\auto_avaliar\src\test\resources\products\apps\features\unit\mandatory</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/test/java/produtos/desenvolvimento/stepdefs/RosieTarefas.java" />
-        <option value="$PROJECT_DIR$/src/test/java/products/apps/unit/features/buttons/button_login.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/products/apps/unit/stepdefs/AppsLogin.java" />
-        <option value="$PROJECT_DIR$/src/test/java/products/apps/unit/objetos/RosieLogin.java" />
-        <option value="$PROJECT_DIR$/src/test/java/products/apps/unit/objects/RosieLogin.java" />
-        <option value="$PROJECT_DIR$/src/test/java/products/apps/unit/objects/AppsLogin.java" />
-        <option value="$PROJECT_DIR$/src/test/java/intern/Screenshot.java" />
-        <option value="$PROJECT_DIR$/src/test/java/intern/ListCucumber.java" />
-        <option value="$PROJECT_DIR$/src/test/java/intern/Instances.java" />
-        <option value="$PROJECT_DIR$/src/test/java/support/web/sleep/SleepWeb.java" />
-        <option value="$PROJECT_DIR$/src/test/java/intern/LocatorWeb.java" />
-        <option value="$PROJECT_DIR$/src/test/java/support/web/find/ActionsWeb.java" />
-        <option value="$PROJECT_DIR$/src/test/java/support/web/find/combobox/SetterComboBox.java" />
-        <option value="$PROJECT_DIR$/src/test/java/support/web/find/combobox/GetterComboBox.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/products/apps/unit/features/buttons/button_login.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/products/apps/unit/features/buttons/button_solicitar_avaliacao.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/products/apps/unit/objects/AppsMain.java" />
-        <option value="$PROJECT_DIR$/src/test/java/products/apps/unit/stepdefs/SDAppsMain.java" />
-        <option value="$PROJECT_DIR$/src/test/java/products/apps/unit/objects/AppsAvaliacoes.java" />
-        <option value="$PROJECT_DIR$/src/test/java/products/apps/unit/stepdefs/SDAppsAvaliacoes.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/products/apps/unit/features/buttons/button_solicitar.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/products/apps/unit/features/buttons/button_avaliacoes.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/products/apps/integrated/features/solicitar_avaliacao.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/products/apps/unit/objects/Environment.java" />
-        <option value="$PROJECT_DIR$/src/test/java/products/apps/unit/stepdefs/SDAppsLogin.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/masks/button_solicitar.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/buttons/button_solicitar_avaliacao.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/buttons/button_solicitar.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/buttons/button_login.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/buttons/button_avaliacoes.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/masks/unit_mask_tipo_de_avaliacao.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/masks/unit_mask_avaliador_responsavel.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/masks/unit_mask_nome.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/support/web/find/SendsWeb.java" />
-        <option value="$PROJECT_DIR$/src/test/java/products/apps/unit/runner/Run.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/products/apps/features/integrated/solicitar_avaliacao.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/buttons/unit_button_avaliacoes.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/buttons/unit_button_solicitar.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/buttons/unit_button_solicitar_avaliacao.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/mandatory/unit_mandatory_avaliador_responsavel.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/mandatory/unit_mandatory_celular.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/mandatory/unit_mandatory_nome.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/mandatory/unit_mandatory_placa.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/mandatory/unit_mandatory_tipo_de_avaliacao.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/masks/unit_masks_placa.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/mandatory/unit_mandatory_placa_focus_out.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/masks/unit_masks_placa_focus_out.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/products/apps/unit/objects/AppsSolicitarAvaliacao.java" />
-        <option value="$PROJECT_DIR$/src/test/java/products/apps/unit/stepdefs/SDAppsSolicitarAvaliacao.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/masks/unit_masks_placa_invalida.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/products/apps/features/unit/masks/unit_masks_placa_invalida_focus_out.feature" />
-      </list>
-    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -348,205 +99,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="fabrica_automacao" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="fabrica_automacao" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="fabrica_automacao" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="clean" type="36feed69:MavenProjectsStructure$PluginNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="12" />
-    <option name="y" value="25" />
-    <option name="width" value="1575" />
-    <option name="height" value="800" />
-  </component>
+  <component name="ProjectId" id="1ZN5XtkHQK8vUtFWFxxuXcgFZ69" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="auto_avaliar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auto_avaliar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auto_avaliar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auto_avaliar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auto_avaliar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auto_avaliar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auto_avaliar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auto_avaliar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auto_avaliar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auto_avaliar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="intern" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auto_avaliar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auto_avaliar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auto_avaliar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auto_avaliar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
-              <item name="objects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auto_avaliar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auto_avaliar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
-              <item name="runner" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auto_avaliar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auto_avaliar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
-              <item name="stepdefs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auto_avaliar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auto_avaliar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auto_avaliar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auto_avaliar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auto_avaliar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auto_avaliar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="jenkins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auto_avaliar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auto_avaliar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="jenkins" type="462c0819:PsiDirectoryNode" />
-              <item name="anexos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auto_avaliar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auto_avaliar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auto_avaliar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auto_avaliar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="integrated" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auto_avaliar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auto_avaliar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auto_avaliar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auto_avaliar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
-              <item name="buttons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auto_avaliar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auto_avaliar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
-              <item name="mandatory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auto_avaliar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auto_avaliar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
-              <item name="masks" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
@@ -760,38 +315,6 @@
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="Run_(1) - 2020.03.18 at 23h 11m 03s.xml">
-      <configuration name="Run (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Run_(1) - 2020.03.18 at 23h 26m 40s.xml">
-      <configuration name="Run (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Run_(1) - 2020.03.18 at 23h 39m 03s.xml">
-      <configuration name="Run (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Run_(1) - 2020.03.18 at 23h 40m 53s.xml">
-      <configuration name="Run (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Run_(1) - 2020.03.18 at 23h 41m 41s.xml">
-      <configuration name="Run (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Run_(1) - 2020.03.18 at 23h 44m 00s.xml">
-      <configuration name="Run (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Run_(1) - 2020.03.19 at 00h 12m 04s.xml">
-      <configuration name="Run (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Run_(1) - 2020.03.19 at 05h 50m 22s.xml">
-      <configuration name="Run (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Run_(1) - 2020.03.19 at 05h 59m 21s.xml">
-      <configuration name="Run (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Run_(1) - 2020.03.19 at 06h 02m 47s.xml">
-      <configuration name="Run (1)" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="489156000" />
   </component>
@@ -804,640 +327,26 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="1" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" sideWeight="0.25460455" side_tool="true" weight="0.3065032" />
-      <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.7453954" visible="true" weight="0.19509594" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.27952328" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5010661" side_tool="true" weight="0.30985916" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.2979415" />
-      <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32942432" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Remote Host" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="JSF" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="1" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" sideWeight="0.25460455" side_tool="true" weight="0.3065032" />
-      <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.7453954" visible="true" weight="0.19509594" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.27952328" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5010661" side_tool="true" weight="0.30985916" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.2979415" />
-      <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32942432" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Remote Host" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="JSF" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/products/development/runner/Run.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/products/development/stepdefs/RosieTarefas.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/products/development/features/inclusao_tarefas_rosie.feature" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/products/development/objetos/RosieTarefas.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/products/apps/Hold.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/products/apps/unit/Hold.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/products/apps/unit/features/teste_multi_telas.feature" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/products/apps/unit/objects/AppsLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/intern/Screenshot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/intern/ListCucumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="124" selection-start-line="124" selection-end-line="124" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/intern/Report.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/support/CoreWeb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/support/web/find/combobox/ComboBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/support/web/find/ActionsWeb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="99" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/support/web/find/combobox/SetterComboBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="50" column="9" selection-start-line="31" selection-start-column="8" selection-end-line="50" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/support/web/find/combobox/GetterComboBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/jenkins/anexos/Relatorio_detalhado_testes.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/support/web/driver/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/support/log/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="e#166#167#0" expanded="true" />
-            <element signature="e#211#212#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/support">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>support</OriginalElement>
-          <nodes>
-            <node x="2678.0564516129025" y="559.0">support.log.Log</node>
-            <node x="0.0" y="537.0">support.db.Db</node>
-            <node x="1460.056451612903" y="325.0">support.convert.dates.Datter</node>
-            <node x="1390.556451612903" y="135.0">support.convert.dates.Adder</node>
-            <node x="1038.806451612903" y="0.0">support.web.driver.IEOptions</node>
-            <node x="1254.306451612903" y="790.0">support.CoreWeb</node>
-            <node x="1152.0" y="559.0">support.web.driver.Driver</node>
-            <node x="1645.056451612903" y="325.0">support.web.find.exceptionals.Frames</node>
-            <node x="1056.556451612903" y="325.0">support.web.driver.SetterConfig</node>
-            <node x="927.0" y="537.0">support.web.find.AssertThat</node>
-            <node x="1744.0" y="570.0">support.web.find.exceptionals.Exceptionals</node>
-            <node x="2493.056451612903" y="124.0">support.web.find.combobox.SetterComboBox</node>
-            <node x="1268.556451612903" y="325.0">support.web.driver.GetterConfig</node>
-            <node x="141.5" y="270.0">support.db.SetDb</node>
-            <node x="1842.056451612903" y="314.0">support.web.find.exceptionals.PopUps</node>
-            <node x="1861.556451612903" y="146.0">support.web.find.exceptionals.GetterPopUps</node>
-            <node x="1171.306451612903" y="135.0">support.web.driver.DriverOptions</node>
-            <node x="166.5" y="135.0">support.db.TypeDB</node>
-            <node x="866.8064516129028" y="11.0">support.web.driver.ChromeCapabilities</node>
-            <node x="2030.056451612903" y="303.0">support.web.find.GetterActionsWeb</node>
-            <node x="486.0" y="526.0">support.web.sleep.SleepWeb</node>
-            <node x="2513.056451612903" y="570.0">support.web.find.Scroll</node>
-            <node x="1552.556451612903" y="135.0">support.convert.dates.Remover</node>
-            <node x="2687.0564516129025" y="146.0">support.web.find.combobox.GetterComboBox</node>
-            <node x="2398.056451612903" y="314.0">support.web.find.SendsWeb</node>
-            <node x="707.0" y="559.0">support.error.Error</node>
-            <node x="2575.0564516129025" y="325.0">support.web.find.combobox.ComboBox</node>
-            <node x="928.3064516129028" y="124.0">support.web.driver.BrowserTypes</node>
-            <node x="2297.056451612903" y="504.0">support.web.find.ActionsWeb</node>
-            <node x="2249.056451612903" y="336.0">support.web.find.ClicksWeb</node>
-            <node x="1423.056451612903" y="526.0">support.convert.Converter</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="support.web.find.ActionsWeb" target="support.web.find.combobox.ComboBox">
-              <point x="73.5" y="-103.0" />
-              <point x="2468.556451612903" y="484.0" />
-              <point x="2668.5564516129025" y="484.0" />
-              <point x="0.0" y="37.0" />
-            </edge>
-            <edge source="support.web.driver.SetterConfig" target="support.web.driver.DriverOptions">
-              <point x="48.0" y="-37.0" />
-              <point x="1200.556451612903" y="245.0" />
-              <point x="1265.306451612903" y="245.0" />
-              <point x="0.0" y="37.0" />
-            </edge>
-            <edge source="support.web.find.combobox.ComboBox" target="support.web.find.combobox.GetterComboBox">
-              <point x="46.75" y="-37.0" />
-              <point x="2715.3064516129025" y="245.0" />
-              <point x="2757.0564516129025" y="245.0" />
-              <point x="0.0" y="26.0" />
-            </edge>
-            <edge source="support.web.driver.BrowserTypes" target="support.web.driver.ChromeCapabilities">
-              <point x="-55.75" y="-48.0" />
-              <point x="984.0564516129028" y="99.0" />
-              <point x="942.8064516129028" y="99.0" />
-              <point x="0.0" y="26.0" />
-            </edge>
-            <edge source="support.CoreWeb" target="support.convert.Converter">
-              <point x="10.849999999999909" y="-125.0" />
-              <point x="1373.6564516129029" y="730.0" />
-              <point x="1542.556451612903" y="730.0" />
-              <point x="0.0" y="81.0" />
-            </edge>
-            <edge source="support.CoreWeb" target="support.web.find.Scroll">
-              <point x="75.95000000000005" y="-125.0" />
-              <point x="1438.7564516129028" y="760.0" />
-              <point x="2585.556451612903" y="760.0" />
-              <point x="0.0" y="37.0" />
-            </edge>
-            <edge source="support.web.find.exceptionals.PopUps" target="support.web.find.exceptionals.GetterPopUps">
-              <point x="0.0" y="-48.0" />
-              <point x="0.0" y="26.0" />
-            </edge>
-            <edge source="support.CoreWeb" target="support.web.sleep.SleepWeb">
-              <point x="-75.94999999999982" y="-125.0" />
-              <point x="1286.8564516129031" y="760.0" />
-              <point x="586.5" y="760.0" />
-              <point x="0.0" y="81.0" />
-            </edge>
-            <edge source="support.web.find.exceptionals.Exceptionals" target="support.web.find.exceptionals.PopUps">
-              <point x="38.75" y="-37.0" />
-              <point x="1860.25" y="484.0" />
-              <point x="1926.056451612903" y="484.0" />
-              <point x="0.0" y="48.0" />
-            </edge>
-            <edge source="support.web.find.ActionsWeb" target="support.web.find.GetterActionsWeb">
-              <point x="-73.5" y="-103.0" />
-              <point x="2321.556451612903" y="484.0" />
-              <point x="2129.556451612903" y="484.0" />
-              <point x="0.0" y="59.0" />
-            </edge>
-            <edge source="support.convert.dates.Datter" target="support.convert.dates.Remover">
-              <point x="41.25" y="-37.0" />
-              <point x="1583.806451612903" y="245.0" />
-              <point x="1623.556451612903" y="245.0" />
-              <point x="0.0" y="37.0" />
-            </edge>
-            <edge source="support.web.find.combobox.ComboBox" target="support.web.find.combobox.SetterComboBox">
-              <point x="-46.75" y="-37.0" />
-              <point x="2621.8064516129025" y="245.0" />
-              <point x="2580.056451612903" y="245.0" />
-              <point x="0.0" y="48.0" />
-            </edge>
-            <edge source="support.CoreWeb" target="support.error.Error">
-              <point x="-54.25" y="-125.0" />
-              <point x="1308.556451612903" y="750.0" />
-              <point x="807.0" y="750.0" />
-              <point x="0.0" y="48.0" />
-            </edge>
-            <edge source="support.web.find.exceptionals.Exceptionals" target="support.web.find.exceptionals.Frames">
-              <point x="-38.75" y="-37.0" />
-              <point x="1782.75" y="484.0" />
-              <point x="1733.556451612903" y="484.0" />
-              <point x="0.0" y="37.0" />
-            </edge>
-            <edge source="support.CoreWeb" target="support.web.find.ActionsWeb">
-              <point x="54.25" y="-125.0" />
-              <point x="1417.056451612903" y="750.0" />
-              <point x="2395.056451612903" y="750.0" />
-              <point x="0.0" y="103.0" />
-            </edge>
-            <edge source="support.CoreWeb" target="support.log.Log">
-              <point x="97.65000000000009" y="-125.0" />
-              <point x="1460.456451612903" y="770.0" />
-              <point x="2841.0564516129025" y="770.0" />
-              <point x="0.0" y="48.0" />
-            </edge>
-            <edge source="support.web.driver.SetterConfig" target="support.web.driver.BrowserTypes">
-              <point x="-48.0" y="-37.0" />
-              <point x="1104.556451612903" y="245.0" />
-              <point x="1039.806451612903" y="245.0" />
-              <point x="0.0" y="48.0" />
-            </edge>
-            <edge source="support.CoreWeb" target="support.web.driver.Driver">
-              <point x="-10.849999999999909" y="-125.0" />
-              <point x="1351.956451612903" y="730.0" />
-              <point x="1240.5" y="730.0" />
-              <point x="0.0" y="48.0" />
-            </edge>
-            <edge source="support.web.driver.BrowserTypes" target="support.web.driver.IEOptions">
-              <point x="55.75" y="-48.0" />
-              <point x="1095.556451612903" y="99.0" />
-              <point x="1136.806451612903" y="99.0" />
-              <point x="0.0" y="37.0" />
-            </edge>
-            <edge source="support.db.SetDb" target="support.db.TypeDB">
-              <point x="0.0" y="-92.0" />
-              <point x="0.0" y="37.0" />
-            </edge>
-            <edge source="support.CoreWeb" target="support.web.find.AssertThat">
-              <point x="-32.549999999999955" y="-125.0" />
-              <point x="1330.2564516129028" y="740.0" />
-              <point x="1029.5" y="740.0" />
-              <point x="0.0" y="70.0" />
-            </edge>
-            <edge source="support.CoreWeb" target="support.web.find.exceptionals.Exceptionals">
-              <point x="32.549999999999955" y="-125.0" />
-              <point x="1395.3564516129027" y="740.0" />
-              <point x="1821.5" y="740.0" />
-              <point x="0.0" y="37.0" />
-            </edge>
-            <edge source="support.db.Db" target="support.db.SetDb">
-              <point x="0.0" y="-70.0" />
-              <point x="0.0" y="92.0" />
-            </edge>
-            <edge source="support.CoreWeb" target="support.db.Db">
-              <point x="-97.64999999999986" y="-125.0" />
-              <point x="1265.1564516129029" y="770.0" />
-              <point x="233.0" y="770.0" />
-              <point x="0.0" y="70.0" />
-            </edge>
-            <edge source="support.web.driver.Driver" target="support.web.driver.SetterConfig">
-              <point x="-44.25" y="-48.0" />
-              <point x="1196.25" y="484.0" />
-              <point x="1152.556451612903" y="484.0" />
-              <point x="0.0" y="37.0" />
-            </edge>
-            <edge source="support.convert.Converter" target="support.convert.dates.Datter">
-              <point x="0.0" y="-81.0" />
-              <point x="0.0" y="37.0" />
-            </edge>
-            <edge source="support.convert.dates.Datter" target="support.convert.dates.Adder">
-              <point x="-41.25" y="-37.0" />
-              <point x="1501.306451612903" y="245.0" />
-              <point x="1461.556451612903" y="245.0" />
-              <point x="0.0" y="37.0" />
-            </edge>
-            <edge source="support.web.find.ActionsWeb" target="support.web.find.SendsWeb">
-              <point x="24.5" y="-103.0" />
-              <point x="2419.556451612903" y="474.0" />
-              <point x="2476.556451612903" y="474.0" />
-              <point x="0.0" y="48.0" />
-            </edge>
-            <edge source="support.web.driver.Driver" target="support.web.driver.GetterConfig">
-              <point x="44.25" y="-48.0" />
-              <point x="1284.75" y="484.0" />
-              <point x="1345.056451612903" y="484.0" />
-              <point x="0.0" y="37.0" />
-            </edge>
-            <edge source="support.web.find.ActionsWeb" target="support.web.find.ClicksWeb">
-              <point x="-24.5" y="-103.0" />
-              <point x="2370.556451612903" y="474.0" />
-              <point x="2313.556451612903" y="474.0" />
-              <point x="0.0" y="26.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="750.0" y="445.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>public</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/support/web/sleep/SleepWeb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/intern/Instances.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="485" column="40" selection-start-line="485" selection-start-column="40" selection-end-line="485" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#17301#17302#0" expanded="true" />
-            <element signature="e#17344#17345#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/intern/LocatorWeb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="101" lean-forward="true" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/products/apps/unit/features/buttons/button_login.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="370" lean-forward="true" selection-start-line="370" selection-end-line="370" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/products/apps/unit/features/buttons/button_solicitar_avaliacao.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3910">
-          <caret line="21" column="34" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="21" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/products/apps/unit/stepdefs/SDAppsAvaliacoes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-          <folding>
-            <element signature="e#868#869#0" expanded="true" />
-            <element signature="e#889#890#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/products/apps/unit/objects/AppsAvaliacoes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/products/apps/unit/features/buttons/button_solicitar.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="34" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="24" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/products/apps/unit/features/buttons/button_avaliacoes.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5457">
-          <caret line="321" lean-forward="true" selection-start-line="321" selection-end-line="321" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/products/apps/integrated/features/solicitar_avaliacao.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/products/apps/unit/stepdefs/SDAppsLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="14" column="78" selection-start-line="14" selection-start-column="78" selection-end-line="14" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1198#1199#0" expanded="true" />
-            <element signature="e#1243#1244#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/products/apps/unit/objects/Environment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="58" column="66" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/support/web/find/SendsWeb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="33" column="95" selection-start-line="33" selection-start-column="95" selection-end-line="33" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/products/apps/features/integrated/solicitar_avaliacao.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="74" lean-forward="true" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/products/apps/features/unit/buttons/unit_button_login.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/products/apps/features/unit/buttons/unit_button_avaliacoes.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/products/apps/features/unit/buttons/unit_button_solicitar.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/products/apps/features/unit/buttons/unit_button_solicitar_avaliacao.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/products/apps/features/unit/mandatory/unit_mandatory_avaliador_responsavel.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/products/apps/features/unit/mandatory/unit_mandatory_celular.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/products/apps/features/unit/mandatory/unit_mandatory_nome.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/products/apps/unit/runner/Run.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/products/apps/unit/stepdefs/SDAppsMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-          <folding>
-            <element signature="e#1476#1477#0" expanded="true" />
-            <element signature="e#1534#1535#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/products/apps/unit/objects/AppsMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="86" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/products/apps/features/unit/mandatory/unit_mandatory_tipo_de_avaliacao.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="80" selection-start-line="9" selection-start-column="80" selection-end-line="9" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/products/apps/features/unit/mandatory/unit_mandatory_placa.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="79" lean-forward="true" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/products/apps/features/unit/mandatory/unit_mandatory_placa_focus_out.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="48" lean-forward="true" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/products/apps/unit/objects/AppsSolicitarAvaliacao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="37" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/products/apps/features/unit/masks/unit_masks_placa_invalida.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/products/apps/features/unit/masks/unit_masks_placa_invalida_focus_out.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/products/apps/unit/stepdefs/SDAppsSolicitarAvaliacao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="189" column="44" selection-start-line="189" selection-start-column="44" selection-end-line="189" selection-end-column="44" />
-          <folding>
-            <element signature="e#6790#6791#0" expanded="true" />
-            <element signature="e#6850#6851#0" expanded="true" />
-            <element signature="e#7222#7223#0" expanded="true" />
-            <element signature="e#7272#7273#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>

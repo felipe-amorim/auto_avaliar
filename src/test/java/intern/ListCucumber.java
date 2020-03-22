@@ -140,9 +140,9 @@ public class ListCucumber implements ConcurrentEventListener {
                     Instances.getReportClass().stepError(event.result.getError());
                 }
             }
-            Instances.setTestsKilled(false);
+            //Instances.setTestsKilled(false);
             System.out.println("result: "+event.result.getStatus());
-            Instances.killWebDriver();
+            //Instances.killWebDriver();
         }
     };
 
@@ -152,7 +152,7 @@ public class ListCucumber implements ConcurrentEventListener {
         public void receive(TestRunFinished event) {
             System.out.println("-------FINALIZANDO TESTES-------");
             System.out.println("Removendo processos remanescentes do chromedriver");
-            Instances.commandEx("taskkill /F /IM \"chromedriver.exe\" /T");
+            //Instances.commandEx("taskkill /F /IM \"chromedriver.exe\" /T");
             System.out.println("--------------------------------");
         }
     };

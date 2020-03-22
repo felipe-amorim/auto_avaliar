@@ -189,4 +189,21 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
     public void oUsuarioClicaEmBuscarPlaca() {
         find(appsBuscarPlacaButton).click();
     }
+
+    @And("O usuario clica no botao solicitar para realizar solicitacao de avaliacao")
+    public void oUsuarioClicaNoBotaoSolicitarParaRealizarSolicitacaoDeAvaliacao() {
+        log().setLocator(appsSolicitarAvaliacao);
+        sleep().until(1000);
+        find(appsSolicitarAvaliacoButtonSolicitar).click();
+    }
+
+    @And("O usuario utiliza scroll para navegar em {int}")
+    public void oUsuarioUtilizaScrollParaNavegarEm(int arg0) {
+        if (arg0 > 0){
+            scroll().up(arg0);
+        }
+        if (arg0 < 0){
+            scroll().down(arg0);
+        }
+    }
 }
