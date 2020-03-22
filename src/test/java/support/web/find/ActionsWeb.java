@@ -2,15 +2,16 @@ package support.web.find;
 
 import intern.Instances;
 import org.openqa.selenium.NoSuchElementException;
-import support.web.find.combobox.ComboBox;
 import org.openqa.selenium.WebElement;
+import support.web.find.combobox.ComboBox;
 
 public class ActionsWeb {
     public ClicksWeb click() {
         throwExceptionNoElement();
         if (!Instances.getEach()) {
             //Instances.getLastElements().get(0).click();
-            Instances.getLocatorClass().execute(()->{Instances.getLastElements().get(0).click();});
+            Instances.getLocatorClass().execute(()->{
+                Instances.getLastElements().get(0).click();});
             Instances.getScreenshotClass().printSelenium();
             Instances.getReportClass().stepPass(Instances.getMessageClick() + Instances.getLastXpathLog());
         } else {
@@ -36,10 +37,13 @@ public class ActionsWeb {
         if (Instances.getLastElements().size()>0){
             exist = true;
         }
-        Instances.getScreenshotClass().printSelenium();
-        Instances.getReportClass().stepPass(Instances.getMessageExists() + Instances.getLastXpathLog());
         return exist;
     }
+
+    public boolean isAvailable(){
+        return Instances.getIsAvailable();
+    }
+
 
     public SendsWeb send() {
         throwExceptionNoElement();
@@ -50,7 +54,8 @@ public class ActionsWeb {
         throwExceptionNoElement();
         if (!Instances.getEach()) {
             //Instances.getLastElements().get(0).clear();
-            Instances.getLocatorClass().execute(()->{Instances.getLastElements().get(0).clear();});
+            Instances.getLocatorClass().execute(()->{
+                Instances.getLastElements().get(0).clear();});
             Instances.getScreenshotClass().printSelenium();
             Instances.getReportClass().stepPass(Instances.getMessageClear() + Instances.getLastXpathLog());
         } else {
@@ -89,10 +94,6 @@ public class ActionsWeb {
     }
 
     //waitDisapear
-
-    public int count(){
-        return Instances.getLastElements().size();
-    }
 
     public ComboBox comboBox() {
         throwExceptionNoElement();

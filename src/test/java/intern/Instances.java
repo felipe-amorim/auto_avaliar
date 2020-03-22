@@ -5,18 +5,22 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerOptions;
-import support.web.sleep.SleepWeb;
+import org.openqa.selenium.remote.CapabilityType;
 import support.convert.Converter;
 import support.convert.dates.Adder;
-import support.convert.dates.Remover;
 import support.convert.dates.Datter;
+import support.convert.dates.Remover;
 import support.db.Db;
 import support.db.SetDb;
 import support.db.TypeDB;
 import support.error.Error;
+import support.log.Log;
+import support.screen.driver.Screen;
 import support.web.driver.*;
-import support.web.find.ClicksWeb;
 import support.web.find.*;
 import support.web.find.combobox.ComboBox;
 import support.web.find.combobox.GetterComboBox;
@@ -25,13 +29,7 @@ import support.web.find.exceptionals.Exceptionals;
 import support.web.find.exceptionals.Frames;
 import support.web.find.exceptionals.GetterPopUps;
 import support.web.find.exceptionals.PopUps;
-import support.log.Log;
-
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.remote.DesiredCapabilities;
+import support.web.sleep.SleepWeb;
 
 import java.io.*;
 import java.lang.reflect.Field;
@@ -86,6 +84,7 @@ public class Instances {
     private static Screenshot screenshotInstance = null;
     private static Report reportInstance = null;
     private static AssertThat assertThatInstance = null;
+    private static Screen screenInstance = null;
     //endregion
 
     //region DB VARIABLES
@@ -115,6 +114,8 @@ public class Instances {
     //endregion
 
     //region EXECUTION VARIABLES
+    private static List<List<Object>> tabName = new ArrayList<>();
+    private static List<List<Object>> tabNameClosed = new ArrayList<>();
     private static boolean testsKilled = false;
     private static boolean each = false;
     private static boolean slow = false;
@@ -126,7 +127,25 @@ public class Instances {
     private static int defaultWaitMilis = 20000;
     //endregion
 
+    //region SCREEN VARIABLES
+    private static org.sikuli.script.Screen screenSikuli = null;
+    //endregion
+
+    //region SCREEN GET AND SET
+
+    public static org.sikuli.script.Screen getScreenSikuli() {
+        if(screenSikuli==null){
+            screenSikuli = new org.sikuli.script.Screen();
+        }
+        return screenSikuli;
+    }
+
+    //endregion
+
     //region WEBDRIVER VARIABLES
+    public static Set<String> lastWindows = null;
+    public static Iterator<String> lastIeratos = null;
+    public static boolean isAvailable = false;
     public static String chrome = "chrome";
     private static boolean headless = false;
 
@@ -150,6 +169,30 @@ public class Instances {
 
     public static void setAssertionText(String assertionText) {
         Instances.assertionText = assertionText;
+    }
+
+    public static boolean getIsAvailable() {
+        return isAvailable;
+    }
+
+    public static void setIsAvailable(boolean isAvailable) {
+        Instances.isAvailable = isAvailable;
+    }
+
+    public static Set<String> getLastWindows() {
+        return lastWindows;
+    }
+
+    public static void setLastWindows(Set<String> lastWindows) {
+        Instances.lastWindows = lastWindows;
+    }
+
+    public static Iterator<String> getLastIeratos() {
+        return lastIeratos;
+    }
+
+    public static void setLastIeratos(Iterator<String> lastIeratos) {
+        Instances.lastIeratos = lastIeratos;
     }
 
     public static WebDriver getWebDriver() {
@@ -259,6 +302,12 @@ public class Instances {
     }
 
     //region GET CLASS INSTANCES
+    public static Screen getScreenClass() {
+        if (screenInstance == null) {
+            screenInstance = new Screen();
+        }
+        return screenInstance;
+    }
     public static Report getReportClass() {
         if (reportInstance == null) {
             reportInstance = new Report();
@@ -464,6 +513,24 @@ public class Instances {
     //endregion
 
     //region GETTER AND SETTER COMMONS
+
+
+    public static List<List<Object>> getTabName() {
+        return tabName;
+    }
+
+    public static void setTabName(List<List<Object>> tabName) {
+        Instances.tabName = tabName;
+    }
+
+    public static List<List<Object>> getTabNameClosed() {
+        return tabNameClosed;
+    }
+
+    public static void setTabNameClosed(List<List<Object>> tabNameClosed) {
+        Instances.tabNameClosed = tabNameClosed;
+    }
+
     public static LinkedHashMap<String, String> getLocator() {
         return locator;
     }
@@ -483,6 +550,7 @@ public class Instances {
     }
     public static void setLastXpath(String xpath) {
         lastXpath = xpath;
+        Instances.setIsAvailable(false);
         Instances.getLocatorClass().locate();
     }
 
@@ -859,7 +927,7 @@ public class Instances {
     private static String messageWaitAppearStillHasElement = yellow+"O ELEMENTO ALMEJADO PARA APARECER NÃO ESTAVA DISPONÍVEL APÓS O TEMPO MÁXIMO DE ESPERA!"+reset;
     private static String messageExecutionInterrupted = yellow+"EXECUÇÃO INTERROMPIDA!"+reset;
     private static String messageFailTests = yellow+"FALHA NOS TESTES!"+reset;
-    private static String messageWarning = yellow+"ALERTA!"+reset;
+    private static String messageWarning = yellow+"[ALERTA]"+reset;
     private static String messageEnvironmentError = yellow+"FALHA NO AMBIENTE!"+reset;
     private static String messageNumberTooLong = yellow+"\n\nO NÚMERO EXTRAÍDO ERA MUITO LONGO, PERTENCE AO TIPO DE VARIÁVEL "+cyan+"LONG"+yellow+"!\n\n" +
             "UTILIZE A FUNÇÃO "+cyan+" convert().toLong("+purple+"SEUVALOR"+cyan+");"+yellow+" PARA RESOLVER O PROBLEMA!"+reset;
