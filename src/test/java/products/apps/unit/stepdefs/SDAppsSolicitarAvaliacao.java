@@ -3,6 +3,7 @@ package products.apps.unit.stepdefs;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.junit.Test;
 import org.openqa.selenium.Keys;
 import support.CoreWeb;
 
@@ -217,11 +218,15 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
 
     @And("O usuario utiliza scroll para navegar em {int}")
     public void oUsuarioUtilizaScrollParaNavegarEm(int arg0) {
-        if (arg0 > 0){
-            scroll().up(arg0);
-        }
-        if (arg0 < 0) {
+        if (arg0 >= 0){
+            System.out.println("if down");
+            sleep().until(2000);
             scroll().down(arg0);
+        }
+        if (arg0 < 0){
+            sleep().until(2000);
+            System.out.println("if up");
+            scroll().up(arg0);
         }
     }
     @Then("O usuario insere uma placa valida e inexistente")
@@ -239,5 +244,58 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
             }
             sleep().untilDisapear(appsPlacaNaoEncontradaText);
         }
+    }
+
+    @And("O usuario insere um cpf valido")
+    public void oUsuarioInsereUmCpfValido() {
+        log().setLocator(appsSolicitarAvaliacao);
+        find(appsSolicitarAvaliacaoInputCPF).send().text("87399971897");
+    }
+
+    @And("O usuario insere um numero de renavam")
+    public void oUsuarioInsereUmNumeroDeRenavam() {
+        log().setLocator(appsSolicitarAvaliacao);
+        find(appsSolicitarAvaliacaoInputRenavam).send().text("123456789");
+    }
+
+    @And("O usuario insere um valor para expectativa do cliente")
+    public void oUsuarioInsereUmValorParaExpectativaDoCliente() {
+        log().setLocator(appsSolicitarAvaliacao);
+        find(appsSolicitarAvaliacaoInputExpectativaDoCliente).send().text("1500000");
+
+
+    }
+
+    @And("O usuario preenche o campo observacoes")
+    public void oUsuarioPreencheOCampoObservacoes() {
+        log().setLocator(appsSolicitarAvaliacao);
+        find(appsSolicitarAvaliacaoButtonOpenFieldObs).click();
+        find(appsSolicitarAvaliacaoInputTextObs).send().text("Observações Testes Automatizados");
+    }
+
+    @And("O usuario insere um telefone")
+    public void oUsuarioInsereUmTelefone() {
+        long t = Calendar.getInstance().getTimeInMillis();
+        log().setLocator(appsSolicitarAvaliacao);
+        find(appsSolicitarAvaliacaoInputNumeroTelefone).send().text(""+t);
+    }
+
+    @And("O usuario preenche o campo e-mail para solicitacao de avaliacao")
+    public void oUsuarioPreencheOCampoEMailParaSolicitacaoDeAvaliacao() {
+        log().setLocator(appsSolicitarAvaliacao);
+        find(appsSolicitarAvaliacaoInputEmailCliente).send().text("automacao@teste.com");
+    }
+
+    private void denis(){
+        driver().navigate("http://www.youtube.com.br");
+        sleep().until(5000);
+
+        scroll().down(500);
+        sleep().until(5000);
+    }
+
+    @Test
+    public void teste(){
+        denis();
     }
 }

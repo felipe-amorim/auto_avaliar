@@ -2,6 +2,7 @@ package products.apps.unit.stepdefs;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
+import org.junit.Test;
 import support.CoreWeb;
 
 import static products.apps.unit.objects.AppsAvaliacoes.*;
@@ -52,34 +53,33 @@ public class SDAppsAvaliacoes extends CoreWeb {
     public void oUsuarioClicaNoBotaoEditarDadosDoVeiculoAvaliado() {
         log().setLocator(appsAvaliacoes);
         find(appsAvaliacoesButtonEditarDadosDoVeiculoAvaliado).click();
+        System.out.println("clicou no botao editar");
     }
 
-    @Then("O usuario valida que nao foram habilitados os campos de editar dados do veiculo")
-    public void oUsuarioValidaQueNaoForamHabilitadosOsCamposDeEditarDadosDoVeiculo() {
+    @Then("o usuario valida que o perfil tem acesso ao campo editar dados do veiculo")
+    public void oUsuarioValidaQueOPerfilTemAcessoAoCampoEditarDadosDoVeiculo() {
+        System.out.println("antes do if ");
+        if (find(appsAvaliacoesTextValidarDisponibilidadeEditarValoresVeiculos).exists()){
+        } else {
+            error().Fail();
+        }
+    }
 
+    @Then("o usuario valida que o perfil nao tem acesso ao campo editar dados do veiculo")
+    public void oUsuarioValidaQueOPerfilNaoTemAcessoAoCampoEditarDadosDoVeiculo() {
         if (find(appsAvaliacoesTextValidarDisponibilidadeEditarValoresVeiculos).isAvailable()){
             System.out.println("entrou no if");
             error().Fail();
         } else {
             System.out.println("entrou no else");
         }
+    }
 
-        ;
-        /*
-        log().setLocator(appsAvaliacoes);
-        if (!find(appsAvaliacoesTextValidarDisponibilidadeEditarValoresVeiculos).exists()){
-            System.out.println("entrou no if");
-        } else {
-            error().Fail();
-            System.out.println("Sucesso, o usuario realmente nao tem acesso a esta funcionalidade");
-        }
-*/
-        //if (!find(appsAvaliacoesTextValidarDisponibilidadeEditarValoresVeiculos).exists()){
-        //    System.out.println("entrou no if de validacao");
-        //    System.out.println("O botao "+appsAvaliacoesTextValidarDisponibilidadeEditarValoresVeiculos+" não habilitou o menu de edição");
-        //} else {
-        //    System.out.println("entrou no else de validacao");
-        //    error().Fail();
-        //}
+    @Test
+    public void teste(){
+        driver().navigate("http://www.youtube.com.br");
+        sleep().until(5000);
+        scroll().down(500);
+        sleep().until(5000);
     }
 }

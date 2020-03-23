@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/products/apps/features/",
         glue={"products.apps.unit.stepdefs"},
         plugin = { "intern.ListCucumber" }
-        ,tags = {"@botaoEditar"}
+        ,tags = {"@botaoEditarAbrao"}
 )
 
 public class Run {

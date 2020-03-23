@@ -5,6 +5,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import cucumber.runtime.Env;
+import org.junit.Test;
 import products.apps.unit.objects.Environment;
 import support.CoreWeb;
 
@@ -24,7 +25,7 @@ public class SDAppsLogin extends CoreWeb { @Given("O usuario acessa {string}")
     public void oUsuarioAcessaAUrlDoPortalAppsUsbi() {
         //driver().set().browser().chrome().headless();
         driver().navigate(Environment.url);
-        driver().set().options().maximized();
+        //driver().set().options().maximized();
     }
 
 

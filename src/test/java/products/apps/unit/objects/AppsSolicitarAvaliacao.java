@@ -22,6 +22,13 @@ public class AppsSolicitarAvaliacao {
     public static String appsPlacaInvalidaText = "//div[text()=\"Por favor informe uma PLACA válida!\"]";
     public static String appsSolicitarAvaliacoButtonSolicitar = "//button[@class=\"btn btn-success m-sm text-uppercase ng-binding\"]";
     public static String appsPlacaNaoEncontradaText = "//div[text()=\"Placa não encontrada!\"]";
+    public static String appsSolicitarAvaliacaoInputCPF = "//div[@class=\"row mt-sm\"]//div[@class=\"col-lg-4 col-sm-4 mb-lg\"]//input[@class=\"form-control ng-pristine ng-untouched ng-valid ng-empty ng-valid-cpf ng-valid-cnpj\"]";
+    public static String appsSolicitarAvaliacaoInputRenavam = "//input[@ng-model=\"ctrl.valuation.renavam\"]";
+    public static String appsSolicitarAvaliacaoInputExpectativaDoCliente = "//input[@ng-model=\"ctrl.valuation.expected_value\"]";
+    public static String appsSolicitarAvaliacaoButtonOpenFieldObs = "//i[@class=\"fa fa-arrow-down\"]";
+    public static String appsSolicitarAvaliacaoInputTextObs = "//textarea[@class=\"form-control note-editor ng-pristine ng-untouched ng-valid ng-empty\"]";
+    public static String appsSolicitarAvaliacaoInputNumeroTelefone = "//input[@class=\"form-control phone_mask\"]";
+    public static String appsSolicitarAvaliacaoInputEmailCliente = "//input[@ng-model=\"ctrl.valuation.email\"]";
 
 
     public static LinkedHashMap<String, String> appsSolicitarAvaliacao = createData();
@@ -46,6 +53,13 @@ public class AppsSolicitarAvaliacao {
         ret.put(appsPlacaInvalidaText, "Mensagem de placa inválida");
         ret.put(appsSolicitarAvaliacoButtonSolicitar, "Botaão solicitar, para finalizar solicitacao de avaliação");
         ret.put(appsPlacaNaoEncontradaText, "Mensagem de placa não encontrada");
+        ret.put(appsSolicitarAvaliacaoInputCPF, "Input cpf para solicitar avaliação");
+        ret.put(appsSolicitarAvaliacaoInputRenavam, "Input renavan para solicitar avaliação");
+        ret.put(appsSolicitarAvaliacaoInputExpectativaDoCliente, "Input expectativa de preco do cliente para avaliação");
+        ret.put(appsSolicitarAvaliacaoButtonOpenFieldObs, "Botão para abrir o campo observações");
+        ret.put(appsSolicitarAvaliacaoInputTextObs, "Text area observações");
+        ret.put(appsSolicitarAvaliacaoInputNumeroTelefone, "Input numero de telefone");
+        ret.put(appsSolicitarAvaliacaoInputEmailCliente, "Input e-mail cliente");
         return ret;
     }
 }

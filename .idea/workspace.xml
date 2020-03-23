@@ -3,35 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="f64ed9dd-290d-425e-9845-06649a15f2e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/intern/Instances.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/intern/Instances.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/products/apps/unit/objects/AppsSolicitarAvaliacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/products/apps/unit/objects/AppsSolicitarAvaliacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/products/apps/unit/runner/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/products/apps/unit/runner/Run.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/products/apps/unit/stepdefs/SDAppsAvaliacoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/products/apps/unit/stepdefs/SDAppsAvaliacoes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/products/apps/unit/stepdefs/SDAppsLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/products/apps/unit/stepdefs/SDAppsLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/support/web/find/ActionsWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/support/web/find/ActionsWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/support/web/find/SendsWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/support/web/find/SendsWeb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/products/apps/unit/stepdefs/SDAppsSolicitarAvaliacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/products/apps/unit/stepdefs/SDAppsSolicitarAvaliacao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/anexos/Relatorio_detalhado_testes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/jenkins/anexos/Relatorio_detalhado_testes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilavaliador/_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilavaliador/_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilavaliador/_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilavaliador/_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilavaliador/_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilavaliador/_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilavaliador/_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilavaliador/_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilavaliador/_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilavaliador/_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/jenkins/evidencias/unitmandatoryplacafocusout/Validaraobrigatoriedadedocampoplacaporperdadefocoaosolicitaravaliaoparaogrupoabraocomperfilvendedor/_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/products/apps/features/integrated/disponibilidade_botao_editar.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/products/apps/features/integrated/disponibilidade_botao_editar.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/jenkins/anexos/Relatorio_detalhado_testes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/jenkins/anexos/Relatorio_detalhado_testes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/products/apps/unit/stepdefs/SDAppsAvaliacoes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/products/apps/unit/stepdefs/SDAppsAvaliacoes.class" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,8 +22,16 @@
   <component name="FavoritesManager">
     <favorites_list name="fabrica_de_testes_automacao" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ZUfkHxqNtjTZaNgWfXoHt6Wq9K" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -55,7 +45,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.Run">
     <configuration name="Run" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fabrica_automacao" />
       <extension name="coverage">
@@ -71,9 +61,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SDAppsAvaliacoes.teste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fabrica_automacao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="products.apps.unit.stepdefs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="products.apps.unit.stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="products.apps.unit.stepdefs.SDAppsAvaliacoes" />
+      <option name="METHOD_NAME" value="teste" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SDAppsLogin.teste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fabrica_automacao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="products.apps.unit.stepdefs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="products.apps.unit.stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="products.apps.unit.stepdefs.SDAppsLogin" />
+      <option name="METHOD_NAME" value="teste" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SDAppsSolicitarAvaliacao.teste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fabrica_automacao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="products.apps.unit.stepdefs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="products.apps.unit.stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="products.apps.unit.stepdefs.SDAppsSolicitarAvaliacao" />
+      <option name="METHOD_NAME" value="teste" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Run" />
+        <item itemvalue="JUnit.SDAppsAvaliacoes.teste" />
+        <item itemvalue="JUnit.SDAppsSolicitarAvaliacao.teste" />
+        <item itemvalue="JUnit.SDAppsLogin.teste" />
       </list>
     </recent_temporary>
   </component>
@@ -81,6 +122,31 @@
     <configuration />
   </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f64ed9dd-290d-425e-9845-06649a15f2e3" name="Default Changelist" comment="" />
+      <created>1584898736666</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584898736666</updated>
+    </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
   </component>
 </project>
