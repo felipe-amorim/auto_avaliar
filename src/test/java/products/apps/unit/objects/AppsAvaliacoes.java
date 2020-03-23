@@ -14,6 +14,13 @@ public class AppsAvaliacoes {
     public static String appsAvaliacoesTextValidarDisponibilidadeEditarValoresVeiculos = "//input[@ng-blur=\"ctrl.subVehicleDataHandler('', 'year')\"]";
 
 
+    //Layout
+    public static String appsTextBuscarPlaca = "//input[@placeholder=\"Buscar Placa\"]/ancestor::div/label";
+    public static String textBuscarPlaca = "Buscar placa";
+
+
+
+
     public static LinkedHashMap<String, String> appsAvaliacoes = createData();
     private static LinkedHashMap<String, String> createData() {
         LinkedHashMap<String, String> ret = new LinkedHashMap<>();
@@ -26,6 +33,7 @@ public class AppsAvaliacoes {
         ret.put(appsAvaliacoesTextValidarAvaliacao, "Validar carregou tela dentro da avaliação");
         ret.put(appsAvaliacoesButtonEditarDadosDoVeiculoAvaliado, "Editar dados do veiculo avaliado");
         ret.put(appsAvaliacoesTextValidarDisponibilidadeEditarValoresVeiculos, "Campo usado para validar funcionalidade do botao editar");
+        ret.put(appsTextBuscarPlaca, "Buscar placa");
         return ret;
     }
 }

@@ -31,6 +31,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
@@ -45,7 +48,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Run">
+  <component name="RunManager" selected="JUnit.Run (1)">
+    <configuration name="Run (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="auto_avaliar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="products.apps.unit.runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="products.apps.unit.runner" />
+      <option name="MAIN_CLASS_NAME" value="products.apps.unit.runner.Run" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Run" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fabrica_automacao" />
       <extension name="coverage">
@@ -111,6 +129,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Run (1)" />
         <item itemvalue="JUnit.Run" />
         <item itemvalue="JUnit.SDAppsAvaliacoes.teste" />
         <item itemvalue="JUnit.SDAppsSolicitarAvaliacao.teste" />

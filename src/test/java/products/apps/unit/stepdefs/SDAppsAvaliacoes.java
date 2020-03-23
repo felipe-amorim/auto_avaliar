@@ -75,11 +75,9 @@ public class SDAppsAvaliacoes extends CoreWeb {
         }
     }
 
-    @Test
-    public void teste(){
-        driver().navigate("http://www.youtube.com.br");
-        sleep().until(5000);
-        scroll().down(500);
-        sleep().until(5000);
+    @Then("O usuario valida que o campo buscar placa esta escrito corretamente")
+    public void oUsuarioValidaQueOCampoBuscarPlacaEstaEscritoCorretamente() {
+        log().setLocator(appsAvaliacoes);
+        assertThat(textBuscarPlaca).isEqualTo(find(appsTextBuscarPlaca).get().text().toString());
     }
 }

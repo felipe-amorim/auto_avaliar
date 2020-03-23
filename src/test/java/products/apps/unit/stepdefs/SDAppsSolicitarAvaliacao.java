@@ -16,6 +16,8 @@ import static products.apps.unit.objects.AppsSolicitarAvaliacao.*;
 
 
 public class SDAppsSolicitarAvaliacao extends CoreWeb {
+    private static String veiculo = "";
+
     @Then("O usuario valida que a tela solicitar avaliacao carregou com sucesso")
     public void oUsuarioValidaQueATelaSolicitarAvaliacaoCarregouComSucesso() {
         log().setLocator(appsSolicitarAvaliacao);
@@ -35,13 +37,13 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
     @And("O usuario insere um nome do cliente")
     public void oUsuarioInsereUmNomeDoCliente() {
         long t = Calendar.getInstance().getTimeInMillis();
-        find(appsNomeDoClienteInput).send().text("Cliente "+t);
+        find(appsNomeDoClienteInput).send().text("Cliente " + t);
     }
 
     @And("O usuario insere o ano do veiculo de interesse como {int}")
     public void oUsuarioInsereOAnoDoVeiculoDeInteresseComo(int arg0) {
         find(appsAnoDeInteresseInput).clear();
-        find(appsAnoDeInteresseInput).send().text(""+arg0);
+        find(appsAnoDeInteresseInput).send().text("" + arg0);
     }
 
     @And("O usuario insere o veiculo {string}")
@@ -50,12 +52,10 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
         veiculo = arg0;
     }
 
-    private static String veiculo = "";
-
     @And("O usuario seleciona o primeiro veiculo da busca")
     public void oUsuarioSelecionaOPrimeiroVeiculoDaBusca() {
-        if(!find(appsPrimeiroVeiculoLi).get().attribute("title").toString().toLowerCase().contains(veiculo)){
-            error().Warning("O primeiro veiculo não possuia o critério de busca inserido ("+veiculo+")");
+        if (!find(appsPrimeiroVeiculoLi).get().attribute("title").toString().toLowerCase().contains(veiculo)) {
+            error().Warning("O primeiro veiculo não possuia o critério de busca inserido (" + veiculo + ")");
         }
         find(appsPrimeiroVeiculoLi).click();
     }
@@ -68,10 +68,10 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
 
     @And("O usuario valida a mensagem de obrigatoriedade do campo tipo de avaliacao")
     public void oUsuarioValidaAMensagemDeObrigatoriedadeDoCampoTipoDeAvaliacao() {
-        if(!find(appsObrigatoriedadeTipoDeAvaliacaoText).exists()){
+        if (!find(appsObrigatoriedadeTipoDeAvaliacaoText).exists()) {
             error().Fail();
-        }else {
-            if(find(appsObrigatoriedadeTipoDeAvaliacaoText).count()>1){
+        } else {
+            if (find(appsObrigatoriedadeTipoDeAvaliacaoText).count() > 1) {
                 error().Warning("Mais de uma mensagem de erro com a mesma mensagem foi exibida");
             }
             sleep().untilDisapear(appsObrigatoriedadeTipoDeAvaliacaoText);
@@ -85,17 +85,17 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
 
     @And("O usuario valida nao existencia da mensagem de obrigatoriedade do campo tipo de avaliacao")
     public void oUsuarioValidaNaoExistenciaDaMensagemDeObrigatoriedadeDoCampoTipoDeAvaliacao() {
-        if(find(appsObrigatoriedadeTipoDeAvaliacaoText).exists()){
+        if (find(appsObrigatoriedadeTipoDeAvaliacaoText).exists()) {
             error().Fail();
         }
     }
 
     @And("O usuario valida a mensagem de obrigatoriedade do campo avaliador responsavel")
     public void oUsuarioValidaAMensagemDeObrigatoriedadeDoCampoAvaliadorResponsavel() {
-        if(!find(appsObrigatoriedadeAvaliadorResponsavelText).exists()){
+        if (!find(appsObrigatoriedadeAvaliadorResponsavelText).exists()) {
             error().Fail();
-        }else {
-            if(find(appsObrigatoriedadeAvaliadorResponsavelText).count()>1){
+        } else {
+            if (find(appsObrigatoriedadeAvaliadorResponsavelText).count() > 1) {
                 error().Warning("Mais de uma mensagem de erro com a mesma mensagem foi exibida");
             }
             sleep().untilDisapear(appsObrigatoriedadeAvaliadorResponsavelText);
@@ -104,17 +104,17 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
 
     @And("O usuario valida nao existencia da mensagem de obrigatoriedade do campo avaliador responsavel")
     public void oUsuarioValidaNaoExistenciaDaMensagemDeObrigatoriedadeDoCampoAvaliadorResponsavel() {
-        if(find(appsObrigatoriedadeAvaliadorResponsavelText).exists()){
+        if (find(appsObrigatoriedadeAvaliadorResponsavelText).exists()) {
             error().Fail();
         }
     }
 
     @And("O usuario valida a mensagem de obrigatoriedade do campo nome")
     public void oUsuarioValidaAMensagemDeObrigatoriedadeDoCampoNome() {
-        if(!find(appsObrigatoriedadeNomeText).exists()){
+        if (!find(appsObrigatoriedadeNomeText).exists()) {
             error().Fail();
-        }else {
-            if(find(appsObrigatoriedadeNomeText).count()>1){
+        } else {
+            if (find(appsObrigatoriedadeNomeText).count() > 1) {
                 error().Warning("Mais de uma mensagem de erro com a mesma mensagem foi exibida");
             }
             sleep().untilDisapear(appsObrigatoriedadeNomeText);
@@ -123,17 +123,17 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
 
     @And("O usuario valida nao existencia da mensagem de obrigatoriedade do campo nome")
     public void oUsuarioValidaNaoExistenciaDaMensagemDeObrigatoriedadeDoCampoNome() {
-        if(find(appsObrigatoriedadeNomeText).exists()){
+        if (find(appsObrigatoriedadeNomeText).exists()) {
             error().Fail();
         }
     }
 
     @And("O usuario valida a mensagem de obrigatoriedade do campo celular")
     public void oUsuarioValidaAMensagemDeObrigatoriedadeDoCampoCelular() {
-        if(!find(appsObrigatoriedadeCelularText).exists()){
+        if (!find(appsObrigatoriedadeCelularText).exists()) {
             error().Fail();
-        }else {
-            if(find(appsObrigatoriedadeCelularText).count()>1){
+        } else {
+            if (find(appsObrigatoriedadeCelularText).count() > 1) {
                 error().Warning("Mais de uma mensagem de erro com a mesma mensagem foi exibida");
             }
             sleep().untilDisapear(appsObrigatoriedadeCelularText);
@@ -143,22 +143,22 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
     @And("O usuario insere um celular")
     public void oUsuarioInsereUmCelular() {
         long t = Calendar.getInstance().getTimeInMillis();
-        find(appsCelularInput).send().text(""+t);
+        find(appsCelularInput).send().text("" + t);
     }
 
     @And("O usuario valida nao existencia da mensagem de obrigatoriedade do celular")
     public void oUsuarioValidaNaoExistenciaDaMensagemDeObrigatoriedadeDoCelular() {
-        if(find(appsObrigatoriedadeCelularText).exists()){
+        if (find(appsObrigatoriedadeCelularText).exists()) {
             error().Fail();
         }
     }
 
     @And("O usuario valida a mensagem de obrigatoriedade do campo placa")
     public void oUsuarioValidaAMensagemDeObrigatoriedadeDoCampoPlaca() {
-        if(!find(appsObrigatoriedadePlacaText).exists()){
+        if (!find(appsObrigatoriedadePlacaText).exists()) {
             error().Fail();
-        }else {
-            if(find(appsObrigatoriedadePlacaText).count()>1){
+        } else {
+            if (find(appsObrigatoriedadePlacaText).count() > 1) {
                 error().Warning("Mais de uma mensagem de erro com a mesma mensagem foi exibida");
             }
             sleep().untilDisapear(appsObrigatoriedadePlacaText);
@@ -172,7 +172,7 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
 
     @And("O usuario valida nao existencia da mensagem de obrigatoriedade da placa")
     public void oUsuarioValidaNaoExistenciaDaMensagemDeObrigatoriedadeDaPlaca() {
-        if(find(appsObrigatoriedadePlacaText).exists()){
+        if (find(appsObrigatoriedadePlacaText).exists()) {
             error().Fail();
         }
     }
@@ -194,10 +194,10 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
 
     @And("O usuario valida a mensagem de placa invalida")
     public void oUsuarioValidaAMensagemDePlacaInvalida() {
-        if(!find(appsPlacaInvalidaText).exists()){
+        if (!find(appsPlacaInvalidaText).exists()) {
             error().Fail();
-        }else {
-            if(find(appsPlacaInvalidaText).count()>1){
+        } else {
+            if (find(appsPlacaInvalidaText).count() > 1) {
                 error().Warning("Mais de uma mensagem de erro com a mesma mensagem foi exibida");
             }
             sleep().untilDisapear(appsPlacaInvalidaText);
@@ -218,17 +218,42 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
 
     @And("O usuario utiliza scroll para navegar em {int}")
     public void oUsuarioUtilizaScrollParaNavegarEm(int arg0) {
-        if (arg0 >= 0){
+        if (arg0 >= 0) {
             System.out.println("if down");
             sleep().until(2000);
             scroll().down(arg0);
         }
-        if (arg0 < 0){
+        if (arg0 < 0) {
             sleep().until(2000);
             System.out.println("if up");
             scroll().up(arg0);
         }
     }
+
+    @And("O usuario insere o renavam")
+    public void oUsuarioInsereORenavam() {
+        log().setLocator(appsSolicitarAvaliacao);
+        find(appsSolicitarAvaliacaoInputRenavam).send().text("144003058");
+    }
+
+    @And("O usuario seleciona sim para chave reserva")
+    public void oUsuarioSelecionaSimParaChaveReserva() {
+        log().setLocator(appsSolicitarAvaliacao);
+        find(appsSolicitarAvaliacaoSelectChaveReserva).comboBox().set().byIndex(1);
+    }
+
+    @And("O usuario seleciona sim para manual")
+    public void oUsuarioSelecionaSimParaManual() {
+        log().setLocator(appsSolicitarAvaliacao);
+        find(appsSolicitarAvaliacaoSelectManual).comboBox().set().byIndex(1);
+    }
+
+    @And("O usuario clica no botao solicitar")
+    public void oUsuarioClicaNoBotaoSolicitar() {
+        log().setLocator(appsSolicitarAvaliacao);
+        find(appsSolicitarAvaliacaoButtonSolicita).click();
+    }
+
     @Then("O usuario insere uma placa valida e inexistente")
     public void oUsuarioInsereUmaPlacaValidaEInexistente() {
         find(appsPlacaInput).send().text("AAA-0000");
@@ -236,10 +261,10 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
 
     @And("O usuario valida a mensagem de placa nao encontrada")
     public void oUsuarioValidaAMensagemDePlacaNaoEncontrada() {
-        if(!find(appsPlacaNaoEncontradaText).exists()){
+        if (!find(appsPlacaNaoEncontradaText).exists()) {
             error().Fail();
-        }else {
-            if(find(appsPlacaNaoEncontradaText).count()>1){
+        } else {
+            if (find(appsPlacaNaoEncontradaText).count() > 1) {
                 error().Warning("Mais de uma mensagem de erro com a mesma mensagem foi exibida");
             }
             sleep().untilDisapear(appsPlacaNaoEncontradaText);
@@ -277,7 +302,7 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
     public void oUsuarioInsereUmTelefone() {
         long t = Calendar.getInstance().getTimeInMillis();
         log().setLocator(appsSolicitarAvaliacao);
-        find(appsSolicitarAvaliacaoInputNumeroTelefone).send().text(""+t);
+        find(appsSolicitarAvaliacaoInputNumeroTelefone).send().text("" + t);
     }
 
     @And("O usuario preenche o campo e-mail para solicitacao de avaliacao")
@@ -286,7 +311,7 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
         find(appsSolicitarAvaliacaoInputEmailCliente).send().text("automacao@teste.com");
     }
 
-    private void denis(){
+    private void denis() {
         driver().navigate("http://www.youtube.com.br");
         sleep().until(5000);
 
@@ -294,8 +319,4 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
         sleep().until(5000);
     }
 
-    @Test
-    public void teste(){
-        denis();
-    }
 }

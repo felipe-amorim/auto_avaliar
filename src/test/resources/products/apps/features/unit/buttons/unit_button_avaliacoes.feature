@@ -1,6 +1,6 @@
 Feature: Validar o funcionamento do botão "Avaliações" no menu expansivel Avaliações dentro do menu lateral esquedo.
 
-  @abrao @vendedor @unit @avaliacoes
+  @abrao @vendedor @unit @avaliacoes @Felipe
   Scenario: Validar o funcionamento do botão (Avaliações) no menu expansivel (Avaliações) no menu lateral esquedo para o grupo abrao com perfil vendedor, Author: Felipe Amorim, Category: unit_buttons_avaliacoes-vendedor, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "vendedor" do grupo "abrao"
