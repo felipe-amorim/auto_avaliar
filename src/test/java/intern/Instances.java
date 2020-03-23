@@ -19,7 +19,6 @@ import support.db.SetDb;
 import support.db.TypeDB;
 import support.error.Error;
 import support.log.Log;
-import support.screen.driver.Screen;
 import support.web.driver.*;
 import support.web.find.*;
 import support.web.find.combobox.ComboBox;
@@ -84,7 +83,6 @@ public class Instances {
     private static Screenshot screenshotInstance = null;
     private static Report reportInstance = null;
     private static AssertThat assertThatInstance = null;
-    private static Screen screenInstance = null;
     //endregion
 
     //region DB VARIABLES
@@ -302,12 +300,6 @@ public class Instances {
     }
 
     //region GET CLASS INSTANCES
-    public static Screen getScreenClass() {
-        if (screenInstance == null) {
-            screenInstance = new Screen();
-        }
-        return screenInstance;
-    }
     public static Report getReportClass() {
         if (reportInstance == null) {
             reportInstance = new Report();
