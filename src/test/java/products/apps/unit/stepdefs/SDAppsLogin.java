@@ -12,16 +12,20 @@ import static products.apps.unit.objects.AppsLogin.*;
 import static products.apps.unit.objects.AppsMain.*;
 
 
-public class SDAppsLogin extends CoreWeb { @Given("O usuario acessa {string}")
+public class SDAppsLogin extends CoreWeb {
+    @Given("O usuario acessa {string}")
 
     @When("O usuario clica no botao log in")
     public void oUsuarioClicaNoBotaoLogIn() {
         find(appsLoginButton).click();
+        //sleep().untilAppear(appsLoginCarregandoAposLogin);
+      //  sleep().until(60000);
+        //sleep().untilDisapear(appsLoginCarregandoAposLogin);
+        //sleep().setMaxTime(20000);
     }
 
     @Given("O usuario acessa a url do portal apps usbi")
     public void oUsuarioAcessaAUrlDoPortalAppsUsbi() {
-        //driver().set().browser().chrome().headless();
         driver().navigate(Environment.url);
     }
 
@@ -34,7 +38,7 @@ public class SDAppsLogin extends CoreWeb { @Given("O usuario acessa {string}")
     @And("O usuario preenche o campo e-mail como {string} do grupo {string}")
     public void oUsuarioPreencheOCampoEMailComoDoGrupo(String arg0, String arg1) {
         String email = "";
-        switch (arg1){
+        switch (arg1) {
             case "abrao":
                 email = arg0.equals("avaliador") ? Environment.avaliadorAbraao : arg0.equals("vendedor") ? Environment.vendedorAbraao : Environment.gerenteAbraao;
                 break;
@@ -80,7 +84,7 @@ public class SDAppsLogin extends CoreWeb { @Given("O usuario acessa {string}")
         }
 
         log().setLocator(appsLogin);
-        if(find(appsCloseModalButton).exists()){
+        if (find(appsCloseModalButton).exists()) {
             find(appsCloseModalButton).click();
         }
         find(appsEmailInput).send().text(email);

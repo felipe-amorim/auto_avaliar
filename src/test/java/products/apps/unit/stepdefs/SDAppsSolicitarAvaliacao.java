@@ -208,6 +208,29 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
         find(appsBuscarPlacaButton).click();
     }
 
+    @And("O usuario insere o renavam")
+    public void oUsuarioInsereORenavam() {
+        log().setLocator(appsSolicitarAvaliacao);
+        find(appsSolicitarAvaliacaoInputRenavam).send().text("144003058");
+    }
+
+    @And("O usuario seleciona sim para chave reserva")
+    public void oUsuarioSelecionaSimParaChaveReserva() {
+        log().setLocator(appsSolicitarAvaliacao);
+        find(appsSolicitarAvaliacaoSelectChaveReserva).comboBox().set().byIndex(1);
+    }
+
+    @And("O usuario seleciona sim para manual")
+    public void oUsuarioSelecionaSimParaManual() {
+        log().setLocator(appsSolicitarAvaliacao);
+        find(appsSolicitarAvaliacaoSelectManual).comboBox().set().byIndex(1);
+    }
+
+    @And("O usuario clica no botao solicitar")
+    public void oUsuarioClicaNoBotaoSolicitar() {
+        log().setLocator(appsSolicitarAvaliacao);
+        find(appsSolicitarAvaliacaoButtonSolicita).click();
+    }
     @Then("O usuario insere uma placa valida e inexistente")
     public void oUsuarioInsereUmaPlacaValidaEInexistente() {
         find(appsPlacaInput).send().text("AAA-0000");
