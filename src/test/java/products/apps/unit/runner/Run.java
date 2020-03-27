@@ -9,7 +9,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/products/apps/features/",
         glue={"products.apps.unit.stepdefs"},
-        plugin = { "intern.ListCucumber" }
+        plugin = { "intern.ListCucumber" },
+        tags = {"@buscaFiltroIncompativel"}
 )
 
 public class Run {

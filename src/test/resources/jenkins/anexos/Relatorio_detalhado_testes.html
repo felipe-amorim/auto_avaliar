@@ -36,6 +36,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' view='author-view' onclick="configureView(3)"><i class='material-icons'>person_outline</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
@@ -46,7 +47,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>2020/03/22 - 16:36:18.168</span>
+			<span class='label blue darken-3 suite-start-time'>2020/03/27 - 04:40:02.207</span>
 			</a>
 		</ul>
 	</div>
@@ -61,7 +62,7 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+										<li status='error'><a href='#!'>Error <i class='material-icons red-text lighten-2'>error</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -73,7 +74,7 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>integrated_verificar_imagem_duplicada-gerente</a></li>
+					<li><a href='#'>bugs_marca_modelo_versao_incompativeis</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -114,10 +115,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> others
                 </div>
             </div>
         </div>
@@ -128,10 +129,10 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> others
                 </div>
             </div>
         </div>
@@ -149,31 +150,31 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf error' status='error' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>imagem_duplicada_removida</span>
-						<span class='test-time'>2020/03/22 - 16:36:18.323</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>filtro_permite_marca_modelo_versao_incompativeis</span>
+						<span class='test-time'>2020/03/27 - 04:40:02.314</span>
+						<span class='test-status right error'>error</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>2020/03/22 - 16:36:18.323</span>
-	<span class='label end-time'>2020/03/22 - 16:37:13.682</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 55s+359ms</span>
+	<span class='label start-time'>2020/03/27 - 04:40:02.314</span>
+	<span class='label end-time'>2020/03/27 - 04:41:06.378</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 4s+64ms</span>
 </div>
 <ul class='collapsible node-list' data-collapsible='accordion'>
-	<li class='node level-1 leaf pass' status='pass' test-id='2'>
+	<li class='node level-1 leaf error' status='error' test-id='2'>
 		<div class='collapsible-header'>
-			<div class='node-name'>Verificar a atuação do sistema ao subir duas imagens com o mesmo nome</div>
-			<span class='node-time'>2020/03/22 - 16:36:18.323</span>
-			&middot; <span class='node-duration'>0h 0m 55s+359ms</span>
-			<span class='test-status right pass'>pass</span>
+			<div class='node-name'>Verificar o comportamento dos filtros marca modelo e versao permitindo valores incompativeis</div>
+			<span class='node-time'>2020/03/27 - 04:40:02.314</span>
+			&middot; <span class='node-duration'>0h 1m 4s+64ms</span>
+			<span class='test-status right error'>error</span>
 			<div class='category-list'>
-				<span class='category label'>integrated_verificar_imagem_duplicada-gerente</span>
+				<span class='category label'>bugs_marca_modelo_versao_incompativeis</span>
 			</div>
 		</div>
 		<div class='collapsible-body'>
-			<div class='node-desc'><span class='author label'><b>Autor: </b> Marcelo_Roland</span></br><span class='author label'><b>Categoria: </b> integrated_verificar_imagem_duplicada-gerente</span></br><span class='author label'><b>Ambiente: </b> Google_Chrome</span></br></div>
+			<div class='node-desc'><span class='author label'><b>Autor: </b> Marcelo_Roland</span></br><span class='author label'><b>Categoria: </b> bugs_marca_modelo_versao_incompativeis</span></br><span class='author label'><b>Ambiente: </b> Google_Chrome</span></br></div>
 			<div class='author-list right'>
 				<span class='author label white-text'>Marcelo_Roland</span>
 			</div>
@@ -189,145 +190,119 @@
 					<tbody>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>4:36:32 PM</td>
+							<td class='timestamp'>4:40:09 AM</td>
 							<td class='step-details'>
-									Navegando para a URI https://apps.autoavaliar.com.br/login/usbi# <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/imagemduplicadaremovida/Verificaraatuaodosistemaaosubirduasimagenscomomesmonome/_2.png'><i class='material-icons'>panorama</i></a>
+									Navegando para a URI https://apps.autoavaliar.com.br/login/usbi# <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/filtropermitemarcamodeloversaoincompativeis/Verificarocomportamentodosfiltrosmarcamodeloeversaopermitindovaloresincompativeis/_2.png'><i class='material-icons'>panorama</i></a>
 								
 							</td>
 						</tr>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>4:36:54 PM</td>
+							<td class='timestamp'>4:40:32 AM</td>
 							<td class='step-details'>
-									Enviando o texto 'gerentetimeqa@abrao.com.br' para o campo E-mail <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/imagemduplicadaremovida/Verificaraatuaodosistemaaosubirduasimagenscomomesmonome/_4.png'><i class='material-icons'>panorama</i></a>
+									Enviando o texto 'avaliadortimeqaabrao@autoavaliar.com.br' para o campo E-mail <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/filtropermitemarcamodeloversaoincompativeis/Verificarocomportamentodosfiltrosmarcamodeloeversaopermitindovaloresincompativeis/_4.png'><i class='material-icons'>panorama</i></a>
 								
 							</td>
 						</tr>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>4:36:55 PM</td>
+							<td class='timestamp'>4:40:32 AM</td>
 							<td class='step-details'>
-									Enviando o texto 'timeqa0102' para o campo Senha <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/imagemduplicadaremovida/Verificaraatuaodosistemaaosubirduasimagenscomomesmonome/_6.png'><i class='material-icons'>panorama</i></a>
+									Enviando o texto 'timeqa0102' para o campo Senha <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/filtropermitemarcamodeloversaoincompativeis/Verificarocomportamentodosfiltrosmarcamodeloeversaopermitindovaloresincompativeis/_6.png'><i class='material-icons'>panorama</i></a>
 								
 							</td>
 						</tr>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>4:36:56 PM</td>
+							<td class='timestamp'>4:40:33 AM</td>
 							<td class='step-details'>
-									Clicando no elemento Login <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/imagemduplicadaremovida/Verificaraatuaodosistemaaosubirduasimagenscomomesmonome/_8.png'><i class='material-icons'>panorama</i></a>
+									Clicando no elemento Login <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/filtropermitemarcamodeloversaoincompativeis/Verificarocomportamentodosfiltrosmarcamodeloeversaopermitindovaloresincompativeis/_8.png'><i class='material-icons'>panorama</i></a>
 								
 							</td>
 						</tr>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>4:37:03 PM</td>
+							<td class='timestamp'>4:40:41 AM</td>
 							<td class='step-details'>
-									Clicando no elemento Solicitar Avaliação <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/imagemduplicadaremovida/Verificaraatuaodosistemaaosubirduasimagenscomomesmonome/_10.png'><i class='material-icons'>panorama</i></a>
+									Clicando no elemento Avalicações <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/filtropermitemarcamodeloversaoincompativeis/Verificarocomportamentodosfiltrosmarcamodeloeversaopermitindovaloresincompativeis/_10.png'><i class='material-icons'>panorama</i></a>
 								
 							</td>
 						</tr>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>4:37:04 PM</td>
+							<td class='timestamp'>4:40:42 AM</td>
 							<td class='step-details'>
-									Selecionando o texto 'Somente compra' no ComboBox Combobox tipo avaliação <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/imagemduplicadaremovida/Verificaraatuaodosistemaaosubirduasimagenscomomesmonome/_12.png'><i class='material-icons'>panorama</i></a>
+									Clicando no elemento Sub menu avalicações <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/filtropermitemarcamodeloversaoincompativeis/Verificarocomportamentodosfiltrosmarcamodeloeversaopermitindovaloresincompativeis/_12.png'><i class='material-icons'>panorama</i></a>
 								
 							</td>
 						</tr>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>4:37:05 PM</td>
+							<td class='timestamp'>4:40:44 AM</td>
 							<td class='step-details'>
-									Selecionando o index '1' no ComboBox Combobox avaliador responsável <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/imagemduplicadaremovida/Verificaraatuaodosistemaaosubirduasimagenscomomesmonome/_14.png'><i class='material-icons'>panorama</i></a>
+									Enviando o texto 'CHERY QQ 1.0 MPFI 12V GASOLINA 4P MANUAL (2011)' para o campo Versão <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/filtropermitemarcamodeloversaoincompativeis/Verificarocomportamentodosfiltrosmarcamodeloeversaopermitindovaloresincompativeis/_14.png'><i class='material-icons'>panorama</i></a>
 								
 							</td>
 						</tr>
-						<tr class='log' status='pass'>
-							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>4:37:06 PM</td>
+						<tr class='log' status='error'>
+							<td class='status error' title='error' alt='error'><i class='material-icons'>error</i></td>
+							<td class='timestamp'>4:41:06 AM</td>
 							<td class='step-details'>
-									Enviando o texto 'Cliente 1584905825405' para o campo Nome do cliente <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/imagemduplicadaremovida/Verificaraatuaodosistemaaosubirduasimagenscomomesmonome/_16.png'><i class='material-icons'>panorama</i></a>
+									[ERRO] ocorreu um erro de compilação
 								
 							</td>
 						</tr>
-						<tr class='log' status='pass'>
-							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>4:37:06 PM</td>
+						<tr class='log' status='error'>
+							<td class='status error' title='error' alt='error'><i class='material-icons'>error</i></td>
+							<td class='timestamp'>4:41:06 AM</td>
 							<td class='step-details'>
-									Enviando o texto '1584905826182' para o campo Celular <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/imagemduplicadaremovida/Verificaraatuaodosistemaaosubirduasimagenscomomesmonome/_18.png'><i class='material-icons'>panorama</i></a>
-								
-							</td>
-						</tr>
-						<tr class='log' status='pass'>
-							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>4:37:07 PM</td>
-							<td class='step-details'>
-									Limpando o campo Ano de interesse <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/imagemduplicadaremovida/Verificaraatuaodosistemaaosubirduasimagenscomomesmonome/_20.png'><i class='material-icons'>panorama</i></a>
-								
-							</td>
-						</tr>
-						<tr class='log' status='pass'>
-							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>4:37:08 PM</td>
-							<td class='step-details'>
-									Enviando o texto '2018' para o campo Ano de interesse <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/imagemduplicadaremovida/Verificaraatuaodosistemaaosubirduasimagenscomomesmonome/_22.png'><i class='material-icons'>panorama</i></a>
-								
-							</td>
-						</tr>
-						<tr class='log' status='pass'>
-							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>4:37:09 PM</td>
-							<td class='step-details'>
-									Enviando o texto 'palio' para o campo Veiculo <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/imagemduplicadaremovida/Verificaraatuaodosistemaaosubirduasimagenscomomesmonome/_24.png'><i class='material-icons'>panorama</i></a>
-								
-							</td>
-						</tr>
-						<tr class='log' status='pass'>
-							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>4:37:09 PM</td>
-							<td class='step-details'>
-									Clicando no elemento Primeiro veiculo <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/imagemduplicadaremovida/Verificaraatuaodosistemaaosubirduasimagenscomomesmonome/_26.png'><i class='material-icons'>panorama</i></a>
-								
-							</td>
-						</tr>
-						<tr class='log' status='pass'>
-							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>4:37:10 PM</td>
-							<td class='step-details'>
-									Enviando o texto 'KZA-0263' para o campo Placa <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/imagemduplicadaremovida/Verificaraatuaodosistemaaosubirduasimagenscomomesmonome/_28.png'><i class='material-icons'>panorama</i></a>
-								
-							</td>
-						</tr>
-						<tr class='log' status='pass'>
-							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>4:37:11 PM</td>
-							<td class='step-details'>
-									Enviando o texto '144003058' para o campo Renavam <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/imagemduplicadaremovida/Verificaraatuaodosistemaaosubirduasimagenscomomesmonome/_30.png'><i class='material-icons'>panorama</i></a>
-								
-							</td>
-						</tr>
-						<tr class='log' status='pass'>
-							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>4:37:12 PM</td>
-							<td class='step-details'>
-									Selecionando o index '1' no ComboBox Chave Reserva SIM <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/imagemduplicadaremovida/Verificaraatuaodosistemaaosubirduasimagenscomomesmonome/_32.png'><i class='material-icons'>panorama</i></a>
-								
-							</td>
-						</tr>
-						<tr class='log' status='pass'>
-							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>4:37:12 PM</td>
-							<td class='step-details'>
-									Selecionando o index '1' no ComboBox Manual SIM <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/imagemduplicadaremovida/Verificaraatuaodosistemaaosubirduasimagenscomomesmonome/_34.png'><i class='material-icons'>panorama</i></a>
-								
-							</td>
-						</tr>
-						<tr class='log' status='pass'>
-							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>4:37:13 PM</td>
-							<td class='step-details'>
-									Clicando no elemento Solicita <a data-featherlight='image' style='float: right;padding: 0px;' href='../evidencias/imagemduplicadaremovida/Verificaraatuaodosistemaaosubirduasimagenscomomesmonome/_36.png'><i class='material-icons'>panorama</i></a>
+									<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: O xpath //a[@title="CHERY QQ 1.0 MPFI 12V GASOLINA 4P MANUAL (2011)"] não retornou nenhum elemento
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-IHCA6L1', ip: '10.230.240.73', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: unknown
+	at support.web.find.ActionsWeb.throwExceptionNoElement(ActionsWeb.java:31)
+	at support.web.find.ActionsWeb.click(ActionsWeb.java:10)
+	at products.apps.unit.stepdefs.SDAppsAvaliacoes.oUsuarioSelecionaOPrimeiroValorDaBuscaVersao(SDAppsAvaliacoes.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+	at cucumber.runner.TestCase.run(TestCase.java:46)
+	at cucumber.runner.Runner.runPickle(Runner.java:49)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:123)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:65)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:147)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+</textarea>
 								
 							</td>
 						</tr>
@@ -379,14 +354,13 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>integrated_verificar_imagem_duplicada-gerente</span>
+						<span class='category-name'>bugs_marca_modelo_versao_incompativeis</span>
 						<span class='category-status right'>
-						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
 							
 							
 						</div>
@@ -401,9 +375,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>2020/03/22 - 16:36:18.323</td>
-										<td class='linked' test-id='2'>imagem_duplicada_removida.Verificar a atuação do sistema ao subir duas imagens com o mesmo nome</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>2020/03/27 - 04:40:02.314</td>
+										<td class='linked' test-id='2'>filtro_permite_marca_modelo_versao_incompativeis.Verificar o comportamento dos filtros marca modelo e versao permitindo valores incompativeis</td>
+										<td><span class='test-status error'>error</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -419,7 +393,108 @@
 		</div>
 	</div>
 </div>
-<!-- category view --><!-- exception view --><div id='author-view' class='view hide'>
+<!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2020/03/27 - 04:40:02.314</td>
+										<td class='linked' test-id='2'>filtro_permite_marca_modelo_versao_incompativeis.Verificar o comportamento dos filtros marca modelo e versao permitindo valores incompativeis</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: O xpath //a[@title="CHERY QQ 1.0 MPFI 12V GASOLINA 4P MANUAL (2011)"] não retornou nenhum elemento
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-IHCA6L1', ip: '10.230.240.73', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: unknown
+	at support.web.find.ActionsWeb.throwExceptionNoElement(ActionsWeb.java:31)
+	at support.web.find.ActionsWeb.click(ActionsWeb.java:10)
+	at products.apps.unit.stepdefs.SDAppsAvaliacoes.oUsuarioSelecionaOPrimeiroValorDaBuscaVersao(SDAppsAvaliacoes.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+	at cucumber.runner.TestCase.run(TestCase.java:46)
+	at cucumber.runner.Runner.runPickle(Runner.java:49)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:123)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:65)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:147)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='author-view' class='view hide'>
 	<section id='controls'>
 		<div class='controls grey lighten-4'>
 			<!-- search -->
@@ -441,14 +516,14 @@
 					<div class='author-heading'>
 						<span class='author-name'>Marcelo_Roland</span>
 						<span class='author-status right'>
-						<span class='label pass'>1</span>
+						<span class='label others'>1</span>
 						</span>
 					</div>
 					<div class='author-content hide'>
 						<div class='author-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
 							
+							<span class='label yellow darken-2 white-text'>Others: 1</span>
 						</div>
 						<div class='author-tests'>
 							<table class='bordered table-results'>
@@ -461,9 +536,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>2020/03/22 - 16:36:18.323</td>
-										<td class='linked' test-id='2'>imagem_duplicada_removida.Verificar a atuação do sistema ao subir duas imagens com o mesmo nome</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>2020/03/27 - 04:40:02.314</td>
+										<td class='linked' test-id='2'>filtro_permite_marca_modelo_versao_incompativeis.Verificar o comportamento dos filtros marca modelo e versao permitindo valores incompativeis</td>
+										<td><span class='test-status error'>error</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -499,19 +574,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>2020/03/22 - 16:36:18.168</div>
+					<div class='panel-lead'>2020/03/27 - 04:40:02.207</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>2020/03/22 - 16:37:13.682</div>
+			 		<div class='panel-lead'>2020/03/27 - 04:41:06.379</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 55s+514ms</div>
+					<div class='panel-lead'>0h 1m 4s+172ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -559,12 +634,12 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>integrated_verificar_imagem_duplicada-gerente</td>
+							<td>bugs_marca_modelo_versao_incompativeis</td>
+							<td>0</td>
+							<td>0</td>
 							<td>1</td>
-							<td>0</td>
-							<td>0</td>
 							<td>
-									100%
+									0%
 							</td>
 						</tr>
 					</table>
@@ -579,23 +654,23 @@
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 1,
+				passParent: 0,
 				failParent: 0,
 				fatalParent: 0,
-				errorParent: 0,
+				errorParent: 1,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				childCount: 1,
-				passChild: 1,
+				passChild: 0,
 				failChild: 0,
 				fatalChild: 0,
-				errorChild: 0,
+				errorChild: 1,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 1,
 				grandChildCount: 0,
 				passGrandChild: 0,
 				failGrandChild: 0,
@@ -610,7 +685,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "imagem_duplicada_removida":55.359
+			        "filtro_permite_marca_modelo_versao_incompativeis":64.064
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>

@@ -25,6 +25,9 @@ public class AppsSolicitarAvaliacao {
     public static String appsSolicitarAvaliacaoSelectManual = "//label[contains(.,\"Tem manual?\")]/following-sibling::select[@class]";
     public static String appsSolicitarAvaliacaoButtonSolicita = "//button[@ng-click=\"ctrl.solicita()\"]";
     public static String appsPlacaNaoEncontradaText = "//div[text()=\"Placa não encontrada!\"]";
+    public static String appsButtonResultadoMarca = "//a[@title=\"FERRARI\"]";
+    public static String appsButtonResultadoModelo = "//a[@title=\"UNO\"]";
+    public static String appsButtonResultadoVersao = "//a[@title=\"CHERY QQ 1.0 MPFI 12V GASOLINA 4P MANUAL (2011)\"]";
 
 
     public static LinkedHashMap<String, String> appsSolicitarAvaliacao = createData();
@@ -52,6 +55,9 @@ public class AppsSolicitarAvaliacao {
         ret.put(appsSolicitarAvaliacaoSelectManual, "Manual SIM");
         ret.put(appsSolicitarAvaliacaoButtonSolicita, "Solicita");
         ret.put(appsPlacaNaoEncontradaText, "Mensagem de placa não encontrada");
+        ret.put(appsButtonResultadoMarca, "FERRARI");
+        ret.put(appsButtonResultadoModelo, "UNO");
+        ret.put(appsButtonResultadoVersao, "CHERY QQ 1.0 MPFI 12V GASOLINA 4P MANUAL (2011)");
         return ret;
     }
 }
