@@ -1,6 +1,6 @@
 Feature: Verificar o comportamento dos filtros marca, modelo e versao permitindo valores incompativeis
 
-  @vendedor @Integrated @buscaFiltroIncompativel @bugs
+  @vendedor @Integrated @buscaFiltroIncompativel @bugs @EmConstrução
   Scenario: Verificar o comportamento dos filtros marca, modelo e versao permitindo valores incompativeis, Author: Marcelo Roland, Category: bugs_marca_modelo_versao_incompativeis, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "avaliador" do grupo "abrao"
