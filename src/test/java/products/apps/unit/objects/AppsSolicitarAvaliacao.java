@@ -34,6 +34,21 @@ public class AppsSolicitarAvaliacao {
     public static String appsSolicitarAvaliacaoInputEmailCliente = "//input[@ng-model=\"ctrl.valuation.email\"]";
 
 
+    public static String appsSolicitarAvaliacaoAndretaInputCPF = "//div[@ng-show=\"ctrl.$api.showFields.cpf_cnpj && !($root.configKeyExists('dataprovider:use:bci'))\"]//input";
+    public static String appsSolicitarAvaliacaoInputEmail = "//input[@type=\"mail\"]";
+    public static String appsSolicitarAvaliacaoInputTelefone = "//input[@class=\"form-control phone_mask\"]";
+    public static String appsSolicitarAvaliacaoInputRenavamAndreta = "//div[@ng-show=\"ctrl.$api.showFields.renavam\"]//input";
+    public static String appsSolicitarAvaliacaoButtonAbrirObservacoes = "//button[@class=\"btn btn-xs btn-default\"]";
+    public static String appsSolicitarAvaliacaoTextAreaObservacoes = "//textarea[@class=\"form-control note-editor ng-pristine ng-untouched ng-valid ng-empty\"]";
+    public static String appsSolicitarAvaliacaoComboboxPossuiManualDoVeiculo = "//label[text()=\"Possui manual do veículo?\"]/../select";
+    public static String appsSolicitarAvaliacaoComboboxVeiculoPossuiGarantia = "//label[text()=\"Veículo possui garantia?\"]/../select";
+    public static String appsSolicitarAvaliacaoComboboxRevisoes = "//label[text()=\"5 - Todas as revisões feitas em concessionárias?\"]/../select";
+    public static String appsSolicitarAvaliacaoComboboxForamEfetuadasRevisoes = "//label[text()=\"Foram efetuadas revisões?\"]/../select";
+    public static String appsSolicitarAvaliacaoComboboxManualDoProprietario = "//label[text()=\"O veículo possui manual do proprietário?\"]/../select";
+    public static String appsSolicitarAvaliacaoComboboxLivrete = "//label[text()=\"Livrete\"]/../select";
+    public static String appsSolicitarAvaliacaoComboboxVeiculoEmGarantiaDeFabrica = "//label[text()=\"Veículo esta em garantia de fabrica?\"]/../select";
+
+
     public static LinkedHashMap<String, String> appsSolicitarAvaliacao = createData();
     private static LinkedHashMap<String, String> createData() {
         LinkedHashMap<String, String> ret = new LinkedHashMap<>();
@@ -66,6 +81,19 @@ public class AppsSolicitarAvaliacao {
         ret.put(appsSolicitarAvaliacaoInputTextObs, "Text area observações");
         ret.put(appsSolicitarAvaliacaoInputNumeroTelefone, "Input numero de telefone");
         ret.put(appsSolicitarAvaliacaoInputEmailCliente, "Input e-mail cliente");
+        ret.put(appsSolicitarAvaliacaoAndretaInputCPF, "Input cpf para solciitar avaliacao");
+        ret.put(appsSolicitarAvaliacaoInputTelefone, "Input telefone para solciitar avaliacao");
+        ret.put(appsSolicitarAvaliacaoInputRenavamAndreta, "Input renavam para solciitar avaliacao");
+        ret.put(appsSolicitarAvaliacaoButtonAbrirObservacoes, "Button abrir campo observacoes");
+        ret.put(appsSolicitarAvaliacaoTextAreaObservacoes, "Text area observacoes");
+        ret.put(appsSolicitarAvaliacaoComboboxPossuiManualDoVeiculo, "Combobox possui manual do veiculo");
+        ret.put(appsSolicitarAvaliacaoComboboxVeiculoPossuiGarantia, "Combobox veiculo possui garantia");
+        ret.put(appsSolicitarAvaliacaoComboboxRevisoes, "Combobox todas as revisoes foram feitas em concessionarias");
+        ret.put(appsSolicitarAvaliacaoComboboxManualDoProprietario, "Combobox o veiculo possui manual do proprietario");
+        ret.put(appsSolicitarAvaliacaoInputEmail, "Input email");
+        ret.put(appsSolicitarAvaliacaoComboboxForamEfetuadasRevisoes, "Combobox pergunta foram efetuadas revisoes?");
+        ret.put(appsSolicitarAvaliacaoComboboxLivrete, "Combobox livrete");
+        ret.put(appsSolicitarAvaliacaoComboboxVeiculoEmGarantiaDeFabrica, "Combobox este veiculo esta em garantia de fabrica ?");
         return ret;
     }
 }

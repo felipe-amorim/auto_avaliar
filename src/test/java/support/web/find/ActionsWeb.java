@@ -45,6 +45,15 @@ public class ActionsWeb {
     }
 
     public boolean isAvailable(){
+        if (!Instances.getEach()) {
+            Instances.getLocatorClass().execute(()->{
+                Instances.getLastElements().get(0).clear();}, true);
+        } else {
+            for (WebElement element : Instances.getLastElements()) {
+                Instances.getLocatorClass().execute(element::clear, true);
+            }
+            Instances.setEach(false);
+        }
         return Instances.getIsAvailable();
     }
 

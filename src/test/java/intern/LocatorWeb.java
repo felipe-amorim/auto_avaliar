@@ -56,6 +56,7 @@ public class LocatorWeb {
         try {
             runnable.run();
             executed = true;
+            Instances.setIsAvailable(true);
         }catch (WebDriverException e){
             lastException = e;
             int localTime = Instances.getDefaultWaitMilis();

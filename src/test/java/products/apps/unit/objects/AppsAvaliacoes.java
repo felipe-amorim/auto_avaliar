@@ -11,7 +11,11 @@ public class AppsAvaliacoes {
     public static String appsAvaliacoesTextValidarCarregouTelaDeBusca = "//label[@class=\"control-label ng-binding\"][text()=\"Empresa\"]";
     public static String appsAvaliacoesTextValidarAvaliacao = "//h1[@class=\"m0 pull-left ng-binding\"]";
     public static String appsAvaliacoesButtonEditarDadosDoVeiculoAvaliado = "//div[@class=\"row bg-gray-lighter p-sm\"]//span[@class=\"pull-right ng-scope\"]";
-    public static String appsAvaliacoesTextValidarDisponibilidadeEditarValoresVeiculos = "//input[@ng-blur=\"ctrl.subVehicleDataHandler('', 'year')\"]";
+    public static String appsAvaliacoesEditarAnoVeiculoText = "//input[@ng-blur=\"ctrl.subVehicleDataHandler('', 'year')\"]";
+
+
+
+    public static String appsAvaliacoesInputChassiEditarTeste = "//label[text()=\"Veículo\"]";
 
 
     //Layout
@@ -32,8 +36,9 @@ public class AppsAvaliacoes {
         ret.put(appsAvaliacoesTextValidarCarregouTelaDeBusca, "Validar carregou tela de busca de avaliacoes");
         ret.put(appsAvaliacoesTextValidarAvaliacao, "Validar carregou tela dentro da avaliação");
         ret.put(appsAvaliacoesButtonEditarDadosDoVeiculoAvaliado, "Editar dados do veiculo avaliado");
-        ret.put(appsAvaliacoesTextValidarDisponibilidadeEditarValoresVeiculos, "Campo usado para validar funcionalidade do botao editar");
+        ret.put(appsAvaliacoesEditarAnoVeiculoText, "Campo usado para validar funcionalidade do botao editar");
         ret.put(appsTextBuscarPlaca, "Buscar placa");
+        ret.put(appsAvaliacoesInputChassiEditarTeste, "Input chassi teste");
         return ret;
     }
 }

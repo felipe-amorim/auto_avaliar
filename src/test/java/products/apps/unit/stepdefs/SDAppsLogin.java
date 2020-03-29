@@ -19,18 +19,15 @@ public class SDAppsLogin extends CoreWeb {
     @When("O usuario clica no botao log in")
     public void oUsuarioClicaNoBotaoLogIn() {
         log().setLocator(appsLogin);
+        driver().set().options().maximized();
         find(appsLoginButton).click();
-        //sleep().untilAppear(appsLoginCarregandoAposLogin);
-      //  sleep().until(60000);
-        //sleep().untilDisapear(appsLoginCarregandoAposLogin);
-        //sleep().setMaxTime(20000);
+
     }
 
     @Given("O usuario acessa a url do portal apps usbi")
     public void oUsuarioAcessaAUrlDoPortalAppsUsbi() {
         //driver().set().browser().chrome().headless();
         driver().navigate(Environment.url);
-        //driver().set().options().maximized();
     }
 
 

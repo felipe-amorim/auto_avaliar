@@ -2,12 +2,9 @@ package products.apps.unit.stepdefs;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
-import org.junit.Test;
 import support.CoreWeb;
 
 import static products.apps.unit.objects.AppsAvaliacoes.*;
-import static products.apps.unit.objects.AppsSolicitarAvaliacao.appsSolicitarAvaliacao;
-import static products.apps.unit.objects.AppsSolicitarAvaliacao.appsSolicitarAvaliacaoTitle;
 
 
 public class SDAppsAvaliacoes extends CoreWeb {
@@ -59,19 +56,21 @@ public class SDAppsAvaliacoes extends CoreWeb {
     @Then("o usuario valida que o perfil tem acesso ao campo editar dados do veiculo")
     public void oUsuarioValidaQueOPerfilTemAcessoAoCampoEditarDadosDoVeiculo() {
         System.out.println("antes do if ");
-        if (find(appsAvaliacoesTextValidarDisponibilidadeEditarValoresVeiculos).exists()){
+        if (find(appsAvaliacoesEditarAnoVeiculoText).exists()) {
+            System.out.println("entrou no if, o usuario tem acesso");
         } else {
+            System.out.println("o usuario nao tem acesso");
             error().Fail();
         }
     }
 
     @Then("o usuario valida que o perfil nao tem acesso ao campo editar dados do veiculo")
     public void oUsuarioValidaQueOPerfilNaoTemAcessoAoCampoEditarDadosDoVeiculo() {
-        if (find(appsAvaliacoesTextValidarDisponibilidadeEditarValoresVeiculos).isAvailable()){
-            System.out.println("entrou no if");
+        if (find(appsAvaliacoesEditarAnoVeiculoText).isAvailable()) {
+            System.out.println("entrou no if, o elemento esta dispnivel para clique");
             error().Fail();
         } else {
-            System.out.println("entrou no else");
+            System.out.println("o elemento nao esta disponivel para clique");
         }
     }
 
@@ -79,5 +78,16 @@ public class SDAppsAvaliacoes extends CoreWeb {
     public void oUsuarioValidaQueOCampoBuscarPlacaEstaEscritoCorretamente() {
         log().setLocator(appsAvaliacoes);
         assertThat(textBuscarPlaca).isEqualTo(find(appsTextBuscarPlaca).get().text().toString());
+    }
+
+    @Then("O usuario valida que o perfil logado nao tem acesso a funcionalidade de editar dados do veiculo")
+    public void oUsuarioValidaQueOPerfilLogadoNaoTemAcessoAFuncionalidadeDeEditarDadosDoVeiculo() {
+        log().setLocator(appsAvaliacoes);
+        if (!find(appsAvaliacoesButtonEditarDadosDoVeiculoAvaliado).exists()) {
+            System.out.println("sucesso, usuario realmente nao tem acesso a esta funcionalidade");
+        } else {
+            System.out.println("falha, usuario tem acesso ao botao editar");
+            error().Fail();
+        }
     }
 }
