@@ -1,6 +1,6 @@
 Feature: Validar o layout da página Avaliações dentro do menu lateral esquerdo.
 
-  @abrao @vendedor @unit @avaliacoes @layout
+  @abrao @vendedor @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo abrao com perfil vendedor, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-vendedor, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "vendedor" do grupo "abrao"
@@ -11,7 +11,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @abrao @avaliador @unit @avaliacoes @layout
+  @abrao @avaliador @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo abrao com perfil avaliador, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-avaliador, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "avaliador" do grupo "abrao"
@@ -22,7 +22,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @abrao @gerente @unit @avaliacoes @layout
+  @abrao @gerente @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo abrao com perfil gerente, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-gerente, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "gerente" do grupo "abrao"
@@ -36,7 +36,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
 
 
 
-  @andreta @vendedor @unit @avaliacoes @layout
+  @andreta @vendedor @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo andreta com perfil vendedor, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-vendedor, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "vendedor" do grupo "andreta"
@@ -47,7 +47,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @andreta @avaliador @unit @avaliacoes @layout
+  @andreta @avaliador @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo andreta com perfil avaliador, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-avaliador, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "avaliador" do grupo "andreta"
@@ -58,7 +58,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @andreta @gerente @unit @avaliacoes @layout
+  @andreta @gerente @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo andreta com perfil gerente, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-gerente, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "gerente" do grupo "andreta"
@@ -72,7 +72,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
 
 
 
-  @caoa @vendedor @unit @avaliacoes @layout
+  @caoa @vendedor @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo caoa com perfil vendedor, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-vendedor, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "vendedor" do grupo "caoa"
@@ -83,7 +83,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @caoa @avaliador @unit @avaliacoes @layout
+  @caoa @avaliador @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo caoa com perfil avaliador, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-avaliador, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "avaliador" do grupo "caoa"
@@ -94,7 +94,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @caoa @gerente @unit @avaliacoes @layout
+  @caoa @gerente @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo caoa com perfil gerente, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-gerente, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "gerente" do grupo "caoa"
@@ -108,7 +108,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
 
 
 
-  @carhouse @vendedor @unit @avaliacoes @layout
+  @carhouse @vendedor @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo carhouse com perfil vendedor, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-vendedor, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "vendedor" do grupo "carhouse"
@@ -119,7 +119,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @carhouse @avaliador @unit @avaliacoes @layout
+  @carhouse @avaliador @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo carhouse com perfil avaliador, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-avaliador, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "avaliador" do grupo "carhouse"
@@ -130,7 +130,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @carhouse @gerente @unit @avaliacoes @layout
+  @carhouse @gerente @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo carhouse com perfil gerente, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-gerente, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "gerente" do grupo "carhouse"
@@ -144,7 +144,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
 
 
 
-  @gnc @vendedor @unit @avaliacoes @layout
+  @gnc @vendedor @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo gnc com perfil vendedor, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-vendedor, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "vendedor" do grupo "gnc"
@@ -155,7 +155,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @gnc @avaliador @unit @avaliacoes @layout
+  @gnc @avaliador @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo gnc com perfil avaliador, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-avaliador, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "avaliador" do grupo "gnc"
@@ -166,7 +166,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @gnc @gerente @unit @avaliacoes @layout
+  @gnc @gerente @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo gnc com perfil gerente, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-gerente, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "gerente" do grupo "gnc"
@@ -180,7 +180,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
 
 
 
-  @jorlan @vendedor @unit @avaliacoes @layout
+  @jorlan @vendedor @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo jorlan com perfil vendedor, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-vendedor, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "vendedor" do grupo "jorlan"
@@ -191,7 +191,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @jorlan @avaliador @unit @avaliacoes @layout
+  @jorlan @avaliador @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo jorlan com perfil avaliador, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-avaliador, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "avaliador" do grupo "jorlan"
@@ -202,7 +202,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @jorlan @gerente @unit @avaliacoes @layout
+  @jorlan @gerente @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo jorlan com perfil gerente, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-gerente, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "gerente" do grupo "jorlan"
@@ -216,7 +216,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
 
 
 
-  @localiza @vendedor @unit @avaliacoes @layout
+  @localiza @vendedor @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo localiza com perfil vendedor, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-vendedor, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "vendedor" do grupo "localiza"
@@ -227,7 +227,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @localiza @avaliador @unit @avaliacoes @layout
+  @localiza @avaliador @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo localiza com perfil avaliador, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-avaliador, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "avaliador" do grupo "localiza"
@@ -238,7 +238,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @localiza @gerente @unit @avaliacoes @layout
+  @localiza @gerente @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo localiza com perfil gerente, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-gerente, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "gerente" do grupo "localiza"
@@ -252,7 +252,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
 
 
 
-  @newland @vendedor @unit @avaliacoes @layout
+  @newland @vendedor @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo newland com perfil vendedor, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-vendedor, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "vendedor" do grupo "newland"
@@ -263,7 +263,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @newland @avaliador @unit @avaliacoes @layout
+  @newland @avaliador @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo newland com perfil avaliador, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-avaliador, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "avaliador" do grupo "newland"
@@ -274,7 +274,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @newland @gerente @unit @avaliacoes @layout
+  @newland @gerente @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo newland com perfil gerente, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-gerente, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "gerente" do grupo "newland"
@@ -288,7 +288,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
 
 
 
-  @parvi @vendedor @unit @avaliacoes @layout
+  @parvi @vendedor @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo parvi com perfil vendedor, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-vendedor, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "vendedor" do grupo "parvi"
@@ -299,7 +299,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @parvi @avaliador @unit @avaliacoes @layout
+  @parvi @avaliador @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo parvi com perfil avaliador, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-avaliador, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "avaliador" do grupo "parvi"
@@ -310,7 +310,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @parvi @gerente @unit @avaliacoes @layout
+  @parvi @gerente @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo parvi com perfil gerente, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-gerente, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "gerente" do grupo "parvi"
@@ -324,7 +324,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
 
 
 
-  @saga @vendedor @unit @avaliacoes @layout
+  @saga @vendedor @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo saga com perfil vendedor, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-vendedor, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "vendedor" do grupo "saga"
@@ -335,7 +335,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @saga @avaliador @unit @avaliacoes @layout
+  @saga @avaliador @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo saga com perfil avaliador, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-avaliador, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "avaliador" do grupo "saga"
@@ -346,7 +346,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @saga @gerente @unit @avaliacoes @layout
+  @saga @gerente @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo saga com perfil gerente, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-gerente, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "gerente" do grupo "saga"
@@ -360,7 +360,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
 
 
 
-  @servopa @vendedor @unit @avaliacoes @layout
+  @servopa @vendedor @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo servopa com perfil vendedor, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-vendedor, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "vendedor" do grupo "servopa"
@@ -371,7 +371,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @servopa @avaliador @unit @avaliacoes @layout
+  @servopa @avaliador @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo servopa com perfil avaliador, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-avaliador, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "avaliador" do grupo "servopa"
@@ -382,7 +382,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @servopa @gerente @unit @avaliacoes @layout
+  @servopa @gerente @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo servopa com perfil gerente, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-gerente, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "gerente" do grupo "servopa"
@@ -396,7 +396,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
 
 
 
-  @autoavaliar @vendedor @unit @avaliacoes @layout
+  @autoavaliar @vendedor @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo autoavaliar com perfil vendedor, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-vendedor, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "vendedor" do grupo "autoavaliar"
@@ -407,7 +407,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @autoavaliar @avaliador @unit @avaliacoes @layout
+  @autoavaliar @avaliador @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo autoavaliar com perfil avaliador, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-avaliador, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "avaliador" do grupo "autoavaliar"
@@ -418,7 +418,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @autoavaliar @gerente @unit @avaliacoes @layout
+  @autoavaliar @gerente @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo autoavaliar com perfil gerente, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-gerente, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "gerente" do grupo "autoavaliar"
@@ -432,7 +432,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
 
 
 
-  @viamar @vendedor @unit @avaliacoes @layout
+  @viamar @vendedor @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo viamar com perfil vendedor, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-vendedor, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "vendedor" do grupo "viamar"
@@ -443,7 +443,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @viamar @avaliador @unit @avaliacoes @layout
+  @viamar @avaliador @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo viamar com perfil avaliador, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-avaliador, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "avaliador" do grupo "viamar"
@@ -454,7 +454,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @viamar @gerente @unit @avaliacoes @layout
+  @viamar @gerente @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo viamar com perfil gerente, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-gerente, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "gerente" do grupo "viamar"
@@ -468,7 +468,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
 
 
 
-  @carrera @vendedor @unit @avaliacoes @layout
+  @carrera @vendedor @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo carrera com perfil vendedor, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-vendedor, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "vendedor" do grupo "carrera"
@@ -479,7 +479,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @carrera @avaliador @unit @avaliacoes @layout
+  @carrera @avaliador @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo carrera com perfil avaliador, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-avaliador, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "avaliador" do grupo "carrera"
@@ -490,7 +490,7 @@ Feature: Validar o layout da página Avaliações dentro do menu lateral esquerd
     And O usuario valida que a tela Avaliacoes carregou com sucesso
     Then O usuario valida que o campo buscar placa esta escrito corretamente
 
-  @carrera @gerente @unit @avaliacoes @layout
+  @carrera @gerente @unit @avaliacoes @layout @bugs
   Scenario: Validar o layout da página Avaliações para o grupo carrera com perfil gerente, Author: Marcelo Roland, Category: unit_layout_solicitar_avaliacoes-gerente, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "gerente" do grupo "carrera"

@@ -1,6 +1,6 @@
 Feature: Verificar o comportamento do sistema ao subir duas imagens na avaliação com o mesmo nome
 
-  @vendedor @Integrated @verificarImagemDuplicada
+  @vendedor @Integrated @verificarImagemDuplicada @bugs @EmConstrução
   Scenario: Verificar a atuação do sistema ao subir duas imagens com o mesmo nome, Author: Marcelo Roland, Category: integrated_verificar_imagem_duplicada-gerente, Environment: Google Chrome
     Given O usuario acessa a url do portal apps usbi
     And O usuario preenche o campo e-mail como "gerente" do grupo "abrao"
@@ -20,4 +20,10 @@ Feature: Verificar o comportamento do sistema ao subir duas imagens na avaliaç�
     And O usuario seleciona sim para chave reserva
     And O usuario seleciona sim para manual
     And O usuario clica no botao solicitar
+
+    And O usuario seleciona o veiculo recem avaliado na lista de avaliacoes
+    And O usuario clica no botao para adicionar imagem a avaliacao solicitada
+    And O usuario clica em selecionar para documento
+    And O usuario envia o endereco de uma imagem
+    And O usuario clica em selecionar para frente lado diagonal
 

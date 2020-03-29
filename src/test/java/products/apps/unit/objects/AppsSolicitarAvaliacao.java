@@ -47,6 +47,9 @@ public class AppsSolicitarAvaliacao {
     public static String appsSolicitarAvaliacaoComboboxManualDoProprietario = "//label[text()=\"O veículo possui manual do proprietário?\"]/../select";
     public static String appsSolicitarAvaliacaoComboboxLivrete = "//label[text()=\"Livrete\"]/../select";
     public static String appsSolicitarAvaliacaoComboboxVeiculoEmGarantiaDeFabrica = "//label[text()=\"Veículo esta em garantia de fabrica?\"]/../select";
+    public static String appsButtonResultadoMarca = "//a[@title=\"FERRARI\"]";
+    public static String appsButtonResultadoModelo = "//a[@title=\"UNO\"]";
+    public static String appsButtonResultadoVersao = "//a[@title=\"CHERY QQ 1.0 MPFI 12V GASOLINA 4P MANUAL (2011)\"]";
 
 
     public static LinkedHashMap<String, String> appsSolicitarAvaliacao = createData();
@@ -94,6 +97,9 @@ public class AppsSolicitarAvaliacao {
         ret.put(appsSolicitarAvaliacaoComboboxForamEfetuadasRevisoes, "Combobox pergunta foram efetuadas revisoes?");
         ret.put(appsSolicitarAvaliacaoComboboxLivrete, "Combobox livrete");
         ret.put(appsSolicitarAvaliacaoComboboxVeiculoEmGarantiaDeFabrica, "Combobox este veiculo esta em garantia de fabrica ?");
+        ret.put(appsButtonResultadoMarca, "FERRARI");
+        ret.put(appsButtonResultadoModelo, "UNO");
+        ret.put(appsButtonResultadoVersao, "CHERY QQ 1.0 MPFI 12V GASOLINA 4P MANUAL (2011)");
         return ret;
     }
 }

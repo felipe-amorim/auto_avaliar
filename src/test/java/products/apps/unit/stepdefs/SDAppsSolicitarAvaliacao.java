@@ -17,6 +17,9 @@ import static products.apps.unit.objects.AppsSolicitarAvaliacao.*;
 
 public class SDAppsSolicitarAvaliacao extends CoreWeb {
     private static String veiculo = "";
+    public static String placaVeiculo = "";
+
+
 
     @Then("O usuario valida que a tela solicitar avaliacao carregou com sucesso")
     public void oUsuarioValidaQueATelaSolicitarAvaliacaoCarregouComSucesso() {
@@ -168,6 +171,7 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
     @And("O usuario insere uma placa real")
     public void oUsuarioInsereUmaPlacaReal() {
         find(appsPlacaInput).send().text("KZA-0263");
+        placaVeiculo = "KZA-0263";
     }
 
     @And("O usuario valida nao existencia da mensagem de obrigatoriedade da placa")
