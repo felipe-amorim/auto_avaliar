@@ -9,9 +9,6 @@ import support.CoreWeb;
 
 import java.util.Calendar;
 
-import static products.apps.unit.objects.AppsLogin.appsEmailInput;
-import static products.apps.unit.objects.AppsLogin.appsLogin;
-import static products.apps.unit.objects.AppsMain.*;
 import static products.apps.unit.objects.AppsSolicitarAvaliacao.*;
 
 
