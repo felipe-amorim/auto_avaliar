@@ -295,14 +295,6 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
         find(appsSolicitarAvaliacaoEmailClienteInput).send().text("automacao@teste.com");
     }
 
-    private void denis() {
-        driver().navigate("http://www.youtube.com.br");
-        sleep().until(5000);
-
-        scroll().down(500);
-        sleep().until(5000);
-    }
-
     @And("O usuario insere um cpf valido para solicitar avaliacao")
     public void oUsuarioInsereUmCpfValidoParaSolicitarAvaliacao() {
         log().setLocator(appsSolicitarAvaliacao);
