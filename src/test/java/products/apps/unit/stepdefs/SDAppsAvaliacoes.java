@@ -17,7 +17,7 @@ public class SDAppsAvaliacoes extends CoreWeb {
     @Then("O usuario valida que a tela Avaliacoes carregou com sucesso")
     public void oUsuarioValidaQueATelaAvaliacoesCarregouComSucesso() {
         log().setLocator(appsAvaliacoes);
-        find(appsAvaliacoesTitle).exists();
+        find(appsAvaliacoesTitleText).exists();
     }
 
     @And("O usuario valida que o botao solicitar e exibido")
@@ -28,33 +28,33 @@ public class SDAppsAvaliacoes extends CoreWeb {
     @And("O usuario insere uma placa para o campo buscar placa avaliacoes cadastradas")
     public void oUsuarioInsereUmaPlacaParaOCampoBuscarPlacaAvaliacoesCadastradas() {
         log().setLocator(appsAvaliacoes);
-        sleep().untilAppear(appsAvaliacoesTextValidarCarregouTelaDeBusca);
-        find(appsAvaliacoesInputBuscarPlaca).send().text("KZA-0263");
+        sleep().untilAppear(appsAvaliacoesValidarCarregouTelaDeBuscaText);
+        find(appsAvaliacoesBuscarPlacaInput).send().text("KZA-0263");
     }
 
     @And("O usuario clica em buscar para filtrar avaliacoes")
     public void oUsuarioClicaEmBuscarParaFiltrarAvaliacoes() {
         log().setLocator(appsAvaliacoes);
-        find(appsAvaliacoesButtonBuscar).click();
+        find(appsAvaliacoesBuscarButton).click();
     }
 
     @And("O usuario seleciona o primeiro veiculo da busca de veiculos cadastrados")
     public void oUsuarioSelecionaOPrimeiroVeiculoDaBuscaDeVeiculosCadastrados() {
         log().setLocator(appsAvaliacoes);
-        find(appsAvaliacoesButtonPrimeiroVeiculoCadastrado).click();
+        find(appsAvaliacoesPrimeiroVeiculoCadastradoButton).click();
     }
 
     @And("O usuario valida que a tela de avaliacao de veiculo carregou")
     public void oUsuarioValidaQueATelaDeAvaliacaoDeVeiculoCarregou() {
         log().setLocator(appsAvaliacoes);
-        sleep().untilAppear(appsAvaliacoesTextValidarAvaliacao);
+        sleep().untilAppear(appsAvaliacoesValidarAvaliacaoText);
     }
 
 
     @And("O usuario clica no botao editar dados do veiculo avaliado")
     public void oUsuarioClicaNoBotaoEditarDadosDoVeiculoAvaliado() {
         log().setLocator(appsAvaliacoes);
-        find(appsAvaliacoesButtonEditarDadosDoVeiculoAvaliado).click();
+        find(appsAvaliacoesEditarDadosDoVeiculoAvaliadoButton).click();
         System.out.println("clicou no botao editar");
     }
 
@@ -82,13 +82,13 @@ public class SDAppsAvaliacoes extends CoreWeb {
     @Then("O usuario valida que o campo buscar placa esta escrito corretamente")
     public void oUsuarioValidaQueOCampoBuscarPlacaEstaEscritoCorretamente() {
         log().setLocator(appsAvaliacoes);
-        assertThat(textBuscarPlaca).isEqualTo(find(appsTextBuscarPlaca).get().text().toString());
+        assertThat(BuscarPlacatext).isEqualTo(find(appsAvaliacoesBuscarPlacaText).get().text().toString());
     }
 
     @Then("O usuario valida que o perfil logado nao tem acesso a funcionalidade de editar dados do veiculo")
     public void oUsuarioValidaQueOPerfilLogadoNaoTemAcessoAFuncionalidadeDeEditarDadosDoVeiculo() {
         log().setLocator(appsAvaliacoes);
-        if (!find(appsAvaliacoesButtonEditarDadosDoVeiculoAvaliado).exists()) {
+        if (!find(appsAvaliacoesEditarDadosDoVeiculoAvaliadoButton).exists()) {
             System.out.println("sucesso, usuario realmente nao tem acesso a esta funcionalidade");
         } else {
             System.out.println("falha, usuario tem acesso ao botao editar");
@@ -99,25 +99,25 @@ public class SDAppsAvaliacoes extends CoreWeb {
     @And("O usuario seleciona o veiculo recem avaliado na lista de avaliacoes")
     public void oUsuarioSelecionaOVeiculoRecemAvaliadoNaListaDeAvaliacoes() {
         log().setLocator(appsAvaliacoes);
-        find(appsButtonVeiculoRecemAvaliado.replace("arg0",placaVeiculo)).click();
+        find(appsAvaliacoesVeiculoRecemAvaliadoButton.replace("arg0",placaVeiculo)).click();
     }
 
     @And("O usuario clica no botao para adicionar imagem a avaliacao solicitada")
     public void oUsuarioClicaNoBotaoParaAdicionarImagemAAvaliacaoSolicitada() {
         log().setLocator(appsAvaliacoes);
-        find(appsButtonAdicionarImagemAvaliacaoSolicitada).click();
+        find(appsAvaliacoesAdicionarImagemAvaliacaoSolicitadaButton).click();
     }
 
     @And("O usuario clica em selecionar para documento")
     public void oUsuarioClicaEmSelecionarParaDocumento() {
         log().setLocator(appsAvaliacoes);
-        find(appsButtonSelecionarImagemDocumento).click();
+        find(appsAvaliacoesSelecionarImagemDocumentoButton).click();
     }
 
     @And("O usuario clica em selecionar para frente lado diagonal")
     public void oUsuarioClicaEmSelecionarParaFrenteLadoDiagonal() {
         log().setLocator(appsAvaliacoes);
-        find(appsButtonSelecionarImagemFrenteLado).click();
+        find(appsAvaliacoesSelecionarImagemFrenteLadoButton).click();
     }
 
     @And("O usuario envia o endereco de uma imagem")
@@ -133,7 +133,7 @@ public class SDAppsAvaliacoes extends CoreWeb {
     @And("O usuario seleciona a versao no filtro de avaliacoes")
     public void oUsuarioSelecionaAVersaoNoFiltroDeAvaliacoes() {
         log().setLocator(appsAvaliacoes);
-        find(appsInputFiltroVersao).send().text("CHERY QQ 1.0 MPFI 12V GASOLINA 4P MANUAL (2011)");
+        find(appsAvaliacoesFiltroVersaoInput).send().text("CHERY QQ 1.0 MPFI 12V GASOLINA 4P MANUAL (2011)");
     }
 
     @And("O usuario seleciona a marca no filtro de avaliacoes")
@@ -145,13 +145,13 @@ public class SDAppsAvaliacoes extends CoreWeb {
     @And("O usuario seleciona a modelo no filtro de avaliacoes")
     public void oUsuarioSelecionaAModeloNoFiltroDeAvaliacoes() {
         log().setLocator(appsAvaliacoes);
-        find(appsInputFiltroModelo).send().text("UNO");
+        find(appsAvaliacoesFiltroModeloInput).send().text("UNO");
     }
 
     @And("O usuario clica em buscar em avaliacoes")
     public void oUsuarioClicaEmBuscarEmAvaliacoes() {
         log().setLocator(appsAvaliacoes);
-        find(appsButtonFiltroBuscar).click();
+        find(appsAvaliacoesFiltroBuscarButton).click();
     }
 
     @Then("O usuario valida que e possivel buscar com filtros incompativeis")
@@ -161,18 +161,18 @@ public class SDAppsAvaliacoes extends CoreWeb {
     @And("O usuario seleciona o primeiro valor da busca versao")
     public void oUsuarioSelecionaOPrimeiroValorDaBuscaVersao() {
         log().setLocator(appsAvaliacoes);
-        find(appsButtonResultadoVersao).click();
+        find(appsResultadoVersaoButton).click();
     }
 
     @And("O usuario seleciona o primerio valor da busca marca")
     public void oUsuarioSelecionaOPrimerioValorDaBuscaMarca() {
         log().setLocator(appsAvaliacoes);
-        find(appsButtonResultadoMarca).click();
+        find(appsResultadoMarcaButton).click();
     }
 
     @And("O usuario seleciona o primeiro valor da busca modelo")
     public void oUsuarioSelecionaOPrimeiroValorDaBuscaModelo() {
         log().setLocator(appsAvaliacoes);
-        find(appsButtonResultadoModelo).click();
+        find(appsResultadoModeloButton).click();
     }
 }

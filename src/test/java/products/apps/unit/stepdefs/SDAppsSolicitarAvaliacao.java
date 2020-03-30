@@ -2,9 +2,6 @@ package products.apps.unit.stepdefs;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
-import org.junit.Test;
-import org.openqa.selenium.Keys;
 import support.CoreWeb;
 
 import java.util.Calendar;
@@ -214,31 +211,31 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
     public void oUsuarioClicaNoBotaoSolicitarParaRealizarSolicitacaoDeAvaliacao() {
         log().setLocator(appsSolicitarAvaliacao);
         sleep().until(1000);
-        find(appsSolicitarAvaliacoButtonSolicitar).click();
+        find(appsSolicitarAvaliacoSolicitarButton).click();
     }
 
     @And("O usuario insere o renavam")
     public void oUsuarioInsereORenavam() {
         log().setLocator(appsSolicitarAvaliacao);
-        find(appsSolicitarAvaliacaoInputRenavam).send().text("144003058");
+        find(appsSolicitarAvaliacaoRenavamInput).send().text("144003058");
     }
 
     @And("O usuario seleciona sim para chave reserva")
     public void oUsuarioSelecionaSimParaChaveReserva() {
         log().setLocator(appsSolicitarAvaliacao);
-        find(appsSolicitarAvaliacaoSelectChaveReserva).comboBox().set().byIndex(1);
+        find(appsSolicitarAvaliacaoChaveReservaSelect).comboBox().set().byIndex(1);
     }
 
     @And("O usuario seleciona sim para manual")
     public void oUsuarioSelecionaSimParaManual() {
         log().setLocator(appsSolicitarAvaliacao);
-        find(appsSolicitarAvaliacaoSelectManual).comboBox().set().byIndex(1);
+        find(appsSolicitarAvaliacaoManualSelect).comboBox().set().byIndex(1);
     }
 
     @And("O usuario clica no botao solicitar")
     public void oUsuarioClicaNoBotaoSolicitar() {
         log().setLocator(appsSolicitarAvaliacao);
-        find(appsSolicitarAvaliacaoButtonSolicita).click();
+        find(appsSolicitarAvaliacaoSolicitaButton).click();
     }
 
     @Then("O usuario insere uma placa valida e inexistente")
@@ -261,19 +258,19 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
     @And("O usuario insere um cpf valido")
     public void oUsuarioInsereUmCpfValido() {
         log().setLocator(appsSolicitarAvaliacao);
-        find(appsSolicitarAvaliacaoInputCPF).send().text("87399971897");
+        find(appsSolicitarAvaliacaoCPFInput).send().text("87399971897");
     }
 
     @And("O usuario insere um numero de renavam")
     public void oUsuarioInsereUmNumeroDeRenavam() {
         log().setLocator(appsSolicitarAvaliacao);
-        find(appsSolicitarAvaliacaoInputRenavam).send().text("123456789");
+        find(appsSolicitarAvaliacaoRenavamInput).send().text("123456789");
     }
 
     @And("O usuario insere um valor para expectativa do cliente")
     public void oUsuarioInsereUmValorParaExpectativaDoCliente() {
         log().setLocator(appsSolicitarAvaliacao);
-        find(appsSolicitarAvaliacaoInputExpectativaDoCliente).send().text("1500000");
+        find(appsSolicitarAvaliacaoExpectativaDoClienteInput).send().text("1500000");
 
 
     }
@@ -281,21 +278,21 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
     @And("O usuario preenche o campo observacoes")
     public void oUsuarioPreencheOCampoObservacoes() {
         log().setLocator(appsSolicitarAvaliacao);
-        find(appsSolicitarAvaliacaoButtonOpenFieldObs).click();
-        find(appsSolicitarAvaliacaoInputTextObs).send().text("Observações Testes Automatizados");
+        find(appsSolicitarAvaliacaoOpenFieldObsButton).click();
+        find(appsSolicitarAvaliacaoTextObsInput).send().text("Observações Testes Automatizados");
     }
 
     @And("O usuario insere um telefone")
     public void oUsuarioInsereUmTelefone() {
         long t = Calendar.getInstance().getTimeInMillis();
         log().setLocator(appsSolicitarAvaliacao);
-        find(appsSolicitarAvaliacaoInputNumeroTelefone).send().text("" + t);
+        find(appsSolicitarAvaliacaoNumeroTelefoneInput).send().text("" + t);
     }
 
     @And("O usuario preenche o campo e-mail para solicitacao de avaliacao")
     public void oUsuarioPreencheOCampoEMailParaSolicitacaoDeAvaliacao() {
         log().setLocator(appsSolicitarAvaliacao);
-        find(appsSolicitarAvaliacaoInputEmailCliente).send().text("automacao@teste.com");
+        find(appsSolicitarAvaliacaoEmailClienteInput).send().text("automacao@teste.com");
     }
 
     private void denis() {
@@ -309,73 +306,73 @@ public class SDAppsSolicitarAvaliacao extends CoreWeb {
     @And("O usuario insere um cpf valido para solicitar avaliacao")
     public void oUsuarioInsereUmCpfValidoParaSolicitarAvaliacao() {
         log().setLocator(appsSolicitarAvaliacao);
-        find(appsSolicitarAvaliacaoAndretaInputCPF).send().text("43711064043");
+        find(appsSolicitarAvaliacaoAndretaCPFInput).send().text("43711064043");
     }
 
     @And("O usuario insere um email")
     public void oUsuarioInsereUmEmail() {
         log().setLocator(appsSolicitarAvaliacao);
-        find(appsSolicitarAvaliacaoInputEmail).send().text("automacao@email.com");
+        find(appsSolicitarAvaliacaoEmailInput).send().text("automacao@email.com");
     }
 
     @And("O usuario insere um telefone para solicitar avaliacao")
     public void oUsuarioInsereUmTelefoneParaSolicitarAvaliacao() {
         log().setLocator(appsSolicitarAvaliacao);
-        find(appsSolicitarAvaliacaoInputTelefone).send().text("1111111111");
+        find(appsSolicitarAvaliacaoTelefoneInput).send().text("1111111111");
     }
 
     @And("O usuario preenche o campo observacoes para solicitar avaliacao")
     public void oUsuarioPreencheOCampoObservacoesParaSolicitarAvaliacao() {
         log().setLocator(appsSolicitarAvaliacao);
-        find(appsSolicitarAvaliacaoButtonAbrirObservacoes).click();
-        find(appsSolicitarAvaliacaoTextAreaObservacoes).send().text("automacao");
+        find(appsSolicitarAvaliacaoAbrirObservacoesButton).click();
+        find(appsSolicitarAvaliacaoAreaObservacoesText).send().text("automacao");
     }
 
     @And("O usuario preenche o campo renavam")
     public void oUsuarioPreencheOCampoRenavam() {
         log().setLocator(appsSolicitarAvaliacao);
-        find(appsSolicitarAvaliacaoInputRenavamAndreta).send().text("03309259996");
+        find(appsSolicitarAvaliacaoRenavamAndretaInput).send().text("03309259996");
     }
 
     @And("O usuario preenche o combobox o veiculo possui garantia com {string}")
     public void oUsuarioPreencheOComboboxOVeiculoPossuiGarantiaCom(String arg0) {
         log().setLocator(appsSolicitarAvaliacao);
-        find(appsSolicitarAvaliacaoComboboxVeiculoPossuiGarantia).comboBox().set().byText(arg0);
+        find(appsSolicitarAvaliacaoVeiculoPossuiGarantiaCombobox).comboBox().set().byText(arg0);
     }
 
     @And("O usuario preenche o combobox possui manual para solicitar avaliacao com {string}")
     public void oUsuarioPreencheOComboboxPossuiManualParaSolicitarAvaliacaoCom(String arg0) {
         log().setLocator(appsSolicitarAvaliacao);
-        find(appsSolicitarAvaliacaoComboboxPossuiManualDoVeiculo).comboBox().set().byText(arg0);
+        find(appsSolicitarAvaliacaoPossuiManualDoVeiculoCombobox).comboBox().set().byText(arg0);
     }
 
     @And("O usuario preenche o combobox todas as revisoes feitas em concessionarias com {string}")
     public void oUsuarioPreencheOComboboxTodasAsRevisoesFeitasEmConcessionariasCom(String arg0) {
         log().setLocator(appsSolicitarAvaliacao);
-        find(appsSolicitarAvaliacaoComboboxRevisoes).comboBox().set().byText(arg0);
+        find(appsSolicitarAvaliacaoRevisoesCombobox).comboBox().set().byText(arg0);
     }
 
     @And("O usuario preenche o combobox possui manual do proprietario para solicitar avaliacao com {string}")
     public void oUsuarioPreencheOComboboxPossuiManualDoProprietarioParaSolicitarAvaliacaoCom(String arg0) {
         log().setLocator(appsSolicitarAvaliacao);
-        find(appsSolicitarAvaliacaoComboboxManualDoProprietario).comboBox().set().byText(arg0);
+        find(appsSolicitarAvaliacaoManualDoProprietarioCombobox).comboBox().set().byText(arg0);
     }
 
     @And("O usuario preenche o combobox foram efetuadas revisoes com {string}")
     public void oUsuarioPreencheOComboboxForamEfetuadasRevisoesCom(String arg0) {
         log().setLocator(appsSolicitarAvaliacao);
-        find(appsSolicitarAvaliacaoComboboxForamEfetuadasRevisoes).comboBox().set().byText(arg0);
+        find(appsSolicitarAvaliacaoForamEfetuadasRevisoesCombobox).comboBox().set().byText(arg0);
     }
 
     @And("O usuario preenche o combobox livrete para solicitar avaliacao com {string}")
     public void oUsuarioPreencheOComboboxLivreteParaSolicitarAvaliacaoCom(String arg0) {
         log().setLocator(appsSolicitarAvaliacao);
-        find(appsSolicitarAvaliacaoComboboxLivrete).comboBox().set().byText(arg0);
+        find(appsSolicitarAvaliacaoLivreteCombobox).comboBox().set().byText(arg0);
     }
 
     @And("O usuario preenche o combobox de o veiculo esta em garantia de fabrica com {string}")
     public void oUsuarioPreencheOComboboxDeOVeiculoEstaEmGarantiaDeFabricaCom(String arg0) {
         log().setLocator(appsSolicitarAvaliacao);
-        find(appsSolicitarAvaliacaoComboboxVeiculoEmGarantiaDeFabrica).comboBox().set().byText(arg0);
+        find(appsSolicitarAvaliacaoVeiculoEmGarantiaDeFabricaCombobox).comboBox().set().byText(arg0);
     }
 }
