@@ -61,7 +61,7 @@ public class SDAppsAvaliacoes extends CoreWeb {
     @Then("o usuario valida que o perfil tem acesso ao campo editar dados do veiculo")
     public void oUsuarioValidaQueOPerfilTemAcessoAoCampoEditarDadosDoVeiculo() {
         System.out.println("antes do if ");
-        if (find(appsAvaliacoesEditarAnoVeiculoText).exists()) {
+        if (find(appsAvaliacoesEditarAnoVeiculoText).isAvailable()) {
             System.out.println("entrou no if, o usuario tem acesso");
         } else {
             System.out.println("o usuario nao tem acesso");
