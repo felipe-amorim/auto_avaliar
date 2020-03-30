@@ -139,7 +139,7 @@ public class SDAppsAvaliacoes extends CoreWeb {
     @And("O usuario seleciona a marca no filtro de avaliacoes")
     public void oUsuarioSelecionaAMarcaNoFiltroDeAvaliacoes() {
         log().setLocator(appsAvaliacoes);
-        find(appsInputFiltroMarca).send().text("FERRARI");
+        find(appsAvaliacoesFiltroMarcaInput).send().text("FERRARI");
     }
 
     @And("O usuario seleciona a modelo no filtro de avaliacoes")
