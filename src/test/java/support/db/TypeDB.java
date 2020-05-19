@@ -11,4 +11,12 @@ public class TypeDB {
     public void mysql(){
         Instances.setDbtype("mysql");
     }
+
+    public void postgres(){
+        Instances.setDbtype("postgres");
+    }
+
+    public void mongo(){
+        Instances.setDbtype("mongo");
+    }
 }

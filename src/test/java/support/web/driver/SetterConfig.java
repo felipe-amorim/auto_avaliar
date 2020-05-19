@@ -4,10 +4,10 @@ import intern.Instances;
 
 public class SetterConfig {
     public BrowserTypes browser(){
-        return Instances.getBrowserTypesClass();
+        return Instances.getBrowserTypesClassInstance();
     }
 
     public DriverOptions options(){
-        return Instances.getDriverOptionsClass();
+        return Instances.getDriverOptionsClassInstance();
     }
 }

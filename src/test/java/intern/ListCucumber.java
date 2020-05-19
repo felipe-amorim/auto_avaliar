@@ -1,24 +1,16 @@
 package intern;
 
-import com.aventstack.extentreports.gherkin.model.And;
-import com.aventstack.extentreports.gherkin.model.Given;
-import com.aventstack.extentreports.gherkin.model.Then;
-import com.aventstack.extentreports.gherkin.model.When;
 import cucumber.api.PickleStepTestStep;
-import cucumber.api.StepDefinitionReporter;
-import cucumber.api.TestCase;
 import cucumber.api.event.*;
-import intern.Instances;
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.Calendar;
-import java.util.Collections;
-import java.util.List;
+
+//import org.apache.log4j.Level;
+//import org.apache.log4j.LogManager;
+//import org.apache.log4j.Logger;
 
 
 public class ListCucumber implements ConcurrentEventListener {
@@ -26,9 +18,14 @@ public class ListCucumber implements ConcurrentEventListener {
     private final EventHandler<TestStepStarted> testStepStartedHandler = new EventHandler<TestStepStarted>() {
         @Override
         public void receive(TestStepStarted event) {
-            PickleStepTestStep testStep = (PickleStepTestStep) event.testStep;
-            System.out.println("BDD> "+((PickleStepTestStep) event.testStep).getStepText());
-            Instances.setExecutionActionTimer(Calendar.getInstance().getTimeInMillis());
+            try {
+                PickleStepTestStep testStep = (PickleStepTestStep) event.testStep;
+                System.out.println("BDD> " + ((PickleStepTestStep) event.testStep).getStepText());
+                Instances.getReportClassInstance().createBDD(((PickleStepTestStep) event.testStep).getStepText());
+                Instances.setExecutionActionTimer(Calendar.getInstance().getTimeInMillis());
+            }catch (Exception e){
+                e.printStackTrace();
+            }
         }
     };
 
@@ -41,11 +38,11 @@ public class ListCucumber implements ConcurrentEventListener {
 
     private void removeLog4J()
     {
-        List<Logger> loggers = Collections.<org.testng.log4testng.Logger>list(LogManager.getCurrentLoggers());
-        loggers.add(LogManager.getRootLogger());
-        for (org.apache.log4j.Logger logger : loggers) {
-            logger.setLevel(Level.OFF);
-        }
+        //List<Logger> loggers = Collections.<org.testng.log4testng.Logger>list(LogManager.getCurrentLoggers());
+        //loggers.add(LogManager.getRootLogger());
+        //for (Logger logger : loggers) {
+        //    logger.setLevel(Level.OFF);
+        //}
     }
 
     private final EventHandler<TestCaseStarted> testCaseStartedHandler = new EventHandler<TestCaseStarted>() {
@@ -54,15 +51,15 @@ public class ListCucumber implements ConcurrentEventListener {
             removeLog4J();
             System.out.println("===== INICIANDO CASO DE TESTE: "+event.testCase.getName()+" ==============");
 
+            System.out.println("pacote: "+event.testCase.getUri());
 
             String title = "Não definido";
             String author = "Não definido";
             String category = "Não definido";
             String environment = "Não definido";
-
             String[] path = event.testCase.getUri().split("/");
 
-            String[] productPathArray = event.testCase.getUri().split("/products/");
+            String[] productPathArray = event.testCase.getUri().split("/produtos/");
             String[] productNameArray = productPathArray[1].split("/");
             Instances.setProduct(productNameArray[0]);
 
@@ -103,6 +100,8 @@ public class ListCucumber implements ConcurrentEventListener {
             if(!Instances.getFeature().equals(path[path.length-1].replace(".feature", ""))){
                 Instances.setFeature(path[path.length-1].replace(".feature", ""));
                 Instances.createFeatureSection();
+                Instances.scenario = "";
+                Instances.step = "";
             }
 
             if(!Instances.getScenario().equals(title)) {
@@ -115,10 +114,8 @@ public class ListCucumber implements ConcurrentEventListener {
     private final EventHandler<TestRunStarted> testTestRunStarted = new EventHandler<TestRunStarted>() {
         @Override
         public void receive(TestRunStarted event) {
-
             System.out.println("-------INICIANDO TESTES-------");
             System.out.println("Usuário de execução: "+System.getProperty("user.name"));
-
         }
     };
 
@@ -126,23 +123,39 @@ public class ListCucumber implements ConcurrentEventListener {
         @Override
         public void receive(TestCaseFinished event) {
             System.out.println("===== FINALIZANDO CASO DE TESTE: "+event.testCase.getName()+" ==============");
-
+            //System.out.println("ah");
             //System.out.println("ct: "+ event.testCase.getName());
             if(!Instances.getTestsKilled()){
                 if(
                         event.result.getStatus().toString().equals("FAILED")
                                 && !event.result.getErrorMessage().contains("[FALHA]")
+                                && !event.result.getErrorMessage().contains("[ALERTA]")
                                 && !event.result.getErrorMessage().contains("[AMBIENTE]")
                 ){
-                    Instances.getReportClass().stepError(event.result.getError());
+                    //System.out.println("~~~~");
+                    System.out.println(event.result.getErrorMessage());
+                    //System.out.println("~~~~");
+                    //System.out.println("aqui");
+                    Instances.getReportClassInstance().stepError(event.result.getError());
                 }
                 if(event.result.getStatus().toString().equals("UNDEFINED")){
-                    Instances.getReportClass().stepError(event.result.getError());
+                    Instances.getReportClassInstance().stepError(event.result.getError());
                 }
             }
-            //Instances.setTestsKilled(false);
+            //System.out.println("fim");
+            Instances.setTestsKilled(false);
             System.out.println("result: "+event.result.getStatus());
-            //Instances.killWebDriver();
+            Instances.killWebDriver();
+        }
+    };
+
+    private EventHandler<TestRunStarted> runStartHandler = new EventHandler<TestRunStarted>() {
+
+        @Override
+        public void receive(TestRunStarted event) {
+            System.out.println("start--");
+            System.out.println(event.getClass());
+            System.out.println("--start");
         }
     };
 
@@ -152,7 +165,7 @@ public class ListCucumber implements ConcurrentEventListener {
         public void receive(TestRunFinished event) {
             System.out.println("-------FINALIZANDO TESTES-------");
             System.out.println("Removendo processos remanescentes do chromedriver");
-            //Instances.commandEx("taskkill /F /IM \"chromedriver.exe\" /T");
+            Instances.commandEx("taskkill /F /IM \"chromedriver.exe\" /T");
             System.out.println("--------------------------------");
         }
     };
@@ -165,5 +178,6 @@ public class ListCucumber implements ConcurrentEventListener {
         publisher.registerHandlerFor(TestStepStarted.class, testStepStartedHandler);
         publisher.registerHandlerFor(TestStepFinished.class, testStepFinishedHandler);
         publisher.registerHandlerFor(TestRunFinished.class, runFinishHandler);
+        publisher.registerHandlerFor(TestRunStarted.class, runStartHandler);
     }
 }

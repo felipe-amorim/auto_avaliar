@@ -1,55 +1,66 @@
 package support;
 
 import intern.Instances;
-import support.convert.Converter;
 import support.db.Db;
-import support.error.Error;
-import support.log.Log;
-import support.web.driver.Driver;
-import support.web.find.ActionsWeb;
+import support.web.driver.WebDriver;
 import support.web.find.AssertThat;
-import support.web.find.Scroll;
-import support.web.find.exceptionals.Exceptionals;
 import support.web.sleep.SleepWeb;
+import support.convert.Converter;
+import support.error.Error;
+import support.web.find.exceptionals.ExceptionalsWeb;
+import support.log.Log;
+import support.web.find.ActionsWeb;
+import support.web.ScrollWeb;
 
 public abstract class CoreWeb {
 
     //region NAVIGATION CLASSES
     public ActionsWeb find(String xpath){
-        Instances.setLastXpath(xpath);
-        return Instances.getActionsClass();
+        Instances.setWebDriver();
+        Instances.setWebLastXpath(xpath);
+        return Instances.getActionsClassInstance();
     }
 
-    public Exceptionals find(){
-        return Instances.getExceptionalsClass();
+    public ExceptionalsWeb find(){
+        Instances.setWebDriver();
+        return Instances.getExceptionalsWebClassInstance();
     }
 
     public Converter convert(){
-        return Instances.getConverterClass();
+        return Instances.getConverterClassInstance();
     }
 
-    public Scroll scroll(){
-        return Instances.getScrollClass();
+    public ScrollWeb scroll(){
+        Instances.setWebDriver();
+        return Instances.getScrollWebClassInstance();
     }
 
     public SleepWeb sleep(){
-        return Instances.getWaitClass();
+        Instances.setWebDriver();
+        return Instances.getSleepWebClassInstance();
     }
 
-    public Driver driver(){
-        return Instances.getDriverClass();
+    public WebDriver webDriver(){
+        Instances.setWebDriver();
+        return Instances.getWebDriverClassInstance();
     }
 
     public Log log(){
-        return Instances.getLogClass();
+        return Instances.getLogClassInstance();
+    }
+
+    public void evidence(String complemento){
+        Instances.setWebDriver();
+        Instances.getScreenshotClassInstance().print();
+        Instances.getReportClassInstance().stepPass(Instances.getMessageScreenshotForced()+complemento);
     }
 
     public Error error(){
-        return Instances.getErrorClass();
+        return Instances.getErrorClassInstance();
     }
 
     public Db db(){
-        return Instances.getDbClass();
+        return Instances.getDbClassInstance();
     }
     //endregion
 
@@ -58,7 +69,8 @@ public abstract class CoreWeb {
     }
 
     public AssertThat assertThat(String text){
+        Instances.setWebDriver();
         Instances.setAssertionText(text);
-        return Instances.getAssertThatClass();
+        return Instances.getAssertThatClassInstance();
     }
 }

@@ -4,14 +4,22 @@ import intern.Instances;
 
 public class PopUps {
     public void accept(){
-        Instances.getWebDriver().switchTo().alert().accept();
+        Instances.getExecuteClassInstance().execute(()->{
+            //Instances.getWebLastElements().get(0).click();
+            Instances.getWebDriver().switchTo().alert().accept();
+        });
+        //Instances.getWebDriver().switchTo().alert().accept();
     }
 
     public void deny(){
-        Instances.getWebDriver().switchTo().alert().dismiss();
+        Instances.getExecuteClassInstance().execute(()->{
+            //Instances.getWebLastElements().get(0).click();
+            Instances.getWebDriver().switchTo().alert().dismiss();
+        });
+        //Instances.getWebDriver().switchTo().alert().dismiss();
     }
 
     public GetterPopUps get(){
-        return Instances.getGetterPopUpsClass();
+        return Instances.getGetterPopUpsClassInstance();
     }
 }

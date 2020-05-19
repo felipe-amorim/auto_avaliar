@@ -7,7 +7,7 @@ import java.util.Date;
 
 public class Remover {
     public Date days(int amount){
-        Date date = Instances.getDateInstance();
+        Date date = Instances.getDateClassInstance();
         Calendar c = Calendar.getInstance();
         c.setTime(date);
         c.add(Calendar.DATE, -amount);
@@ -15,7 +15,7 @@ public class Remover {
     }
 
     public Date mins(int amount){
-        Date date = Instances.getDateInstance();
+        Date date = Instances.getDateClassInstance();
         long curTimeInMs = date.getTime();
         return new Date(curTimeInMs - (amount * 60000));
     }

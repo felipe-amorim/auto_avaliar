@@ -7,22 +7,22 @@ import org.openqa.selenium.support.ui.Select;
 public class SetterComboBox {
     public void byText(String text){
         if (!Instances.getEach()) {
-            //Select combobox = new Select(Instances.getLastElements().get(0));
+            //Select combobox = new Select(Instances.getWebLastElements().get(0));
             //combobox.selectByVisibleText(text);
-            Instances.getLocatorClass().execute(()->{
-                Select combobox = new Select(Instances.getLastElements().get(0));
+            Instances.getExecuteClassInstance().execute(()->{
+                Select combobox = new Select(Instances.getWebLastElements().get(0));
                 combobox.selectByVisibleText(text);});
-            Instances.getScreenshotClass().printSelenium();
-            Instances.getReportClass().stepPass(Instances.getMessageComboBoxText().replace("arg0", text) + Instances.getLastXpathLog());
+            Instances.getScreenshotClassInstance().print();
+            Instances.getReportClassInstance().stepPass(Instances.getMessageComboBoxText().replace("arg0", text) + Instances.getWebLastXpathLog());
         } else {
-            for (WebElement element : Instances.getLastElements()) {
+            for (WebElement element : Instances.getWebLastElements()) {
                 //Select combobox = new Select(element);
                 //combobox.selectByVisibleText(text);
-                Instances.getLocatorClass().execute(()->{
+                Instances.getExecuteClassInstance().execute(()->{
                     Select combobox = new Select(element);
                     combobox.selectByVisibleText(text);});
-                Instances.getScreenshotClass().printSelenium();
-                Instances.getReportClass().stepPass(Instances.getMessageComboBoxTextEach().replace("arg0", text) + Instances.getLastXpathLog());
+                Instances.getScreenshotClassInstance().print();
+                Instances.getReportClassInstance().stepPass(Instances.getMessageComboBoxTextEach().replace("arg0", text) + Instances.getWebLastXpathLog());
             }
             Instances.setEach(false);
         }
@@ -30,22 +30,22 @@ public class SetterComboBox {
 
     public void byValue(String value){
         if (!Instances.getEach()) {
-            //Select combobox = new Select(Instances.getLastElements().get(0));
+            //Select combobox = new Select(Instances.getWebLastElements().get(0));
             //combobox.selectByValue(value);
-            Instances.getLocatorClass().execute(()->{
-                Select combobox = new Select(Instances.getLastElements().get(0));
+            Instances.getExecuteClassInstance().execute(()->{
+                Select combobox = new Select(Instances.getWebLastElements().get(0));
                 combobox.selectByValue(value);});
-            Instances.getScreenshotClass().printSelenium();
-            Instances.getReportClass().stepPass(Instances.getMessageComboBoxValue().replace("arg0", value) + Instances.getLastXpathLog());
+            Instances.getScreenshotClassInstance().print();
+            Instances.getReportClassInstance().stepPass(Instances.getMessageComboBoxValue().replace("arg0", value) + Instances.getWebLastXpathLog());
         } else {
-            for (WebElement element : Instances.getLastElements()) {
+            for (WebElement element : Instances.getWebLastElements()) {
                 //Select combobox = new Select(element);
                 //combobox.selectByValue(value);
-                Instances.getLocatorClass().execute(()->{
+                Instances.getExecuteClassInstance().execute(()->{
                     Select combobox = new Select(element);
                     combobox.selectByValue(value);});
-                Instances.getScreenshotClass().printSelenium();
-                Instances.getReportClass().stepPass(Instances.getMessageComboBoxValueEach().replace("arg0", value) + Instances.getLastXpathLog());
+                Instances.getScreenshotClassInstance().print();
+                Instances.getReportClassInstance().stepPass(Instances.getMessageComboBoxValueEach().replace("arg0", value) + Instances.getWebLastXpathLog());
             }
             Instances.setEach(false);
         }
@@ -53,22 +53,22 @@ public class SetterComboBox {
 
     public void byIndex(int index){
         if (!Instances.getEach()) {
-            //Select combobox = new Select(Instances.getLastElements().get(0));
+            //Select combobox = new Select(Instances.getWebLastElements().get(0));
             //combobox.selectByIndex(index);
-            Instances.getLocatorClass().execute(()->{
-                Select combobox = new Select(Instances.getLastElements().get(0));
+            Instances.getExecuteClassInstance().execute(()->{
+                Select combobox = new Select(Instances.getWebLastElements().get(0));
                 combobox.selectByIndex(index);});
-            Instances.getScreenshotClass().printSelenium();
-            Instances.getReportClass().stepPass(Instances.getMessageComboBoxIndex().replace("arg0", String.valueOf(index)) + Instances.getLastXpathLog());
+            Instances.getScreenshotClassInstance().print();
+            Instances.getReportClassInstance().stepPass(Instances.getMessageComboBoxIndex().replace("arg0", String.valueOf(index)) + Instances.getWebLastXpathLog());
         } else {
-            for (WebElement element : Instances.getLastElements()) {
+            for (WebElement element : Instances.getWebLastElements()) {
                 //Select combobox = new Select(element);
                 //combobox.selectByIndex(index);
-                Instances.getLocatorClass().execute(()->{
+                Instances.getExecuteClassInstance().execute(()->{
                     Select combobox = new Select(element);
                     combobox.selectByIndex(index);});
-                Instances.getScreenshotClass().printSelenium();
-                Instances.getReportClass().stepPass(Instances.getMessageComboBoxIndexEach().replace("arg0", String.valueOf(index)) + Instances.getLastXpathLog());
+                Instances.getScreenshotClassInstance().print();
+                Instances.getReportClassInstance().stepPass(Instances.getMessageComboBoxIndexEach().replace("arg0", String.valueOf(index)) + Instances.getWebLastXpathLog());
 
             }
             Instances.setEach(false);

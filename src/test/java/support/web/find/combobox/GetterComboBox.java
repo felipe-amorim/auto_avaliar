@@ -8,24 +8,24 @@ import java.util.List;
 
 public class GetterComboBox {
     public int size(){
-        //Select combobox = new Select(Instances.getLastElements().get(0));
+        //Select combobox = new Select(Instances.getWebLastElements().get(0));
         //List<WebElement> elementos = combobox.getOptions();
         final int[] size = {0};
         if (!Instances.getEach()) {
-            Instances.getLocatorClass().execute(()->{
-                Select combobox = new Select(Instances.getLastElements().get(0));
+            Instances.getExecuteClassInstance().execute(()->{
+                Select combobox = new Select(Instances.getWebLastElements().get(0));
                 List<WebElement> elementos = combobox.getOptions();
                 size[0] = elementos.size();});
-            Instances.getScreenshotClass().printSelenium();
-            Instances.getReportClass().stepPass(Instances.getMessageComboBoxGetSize() + Instances.getLastXpath());
+            Instances.getScreenshotClassInstance().print();
+            Instances.getReportClassInstance().stepPass(Instances.getMessageComboBoxGetSize() + Instances.getWebLastXpath());
         } else {
-            for (WebElement element : Instances.getLastElements()) {
-                Instances.getLocatorClass().execute(()->{
+            for (WebElement element : Instances.getWebLastElements()) {
+                Instances.getExecuteClassInstance().execute(()->{
                     Select combobox = new Select(element);
                     List<WebElement> elementos = combobox.getOptions();
                     size[0] += elementos.size();});
-                Instances.getScreenshotClass().printSelenium();
-                Instances.getReportClass().stepPass(Instances.getMessageComboBoxGetSize() + Instances.getLastXpath());
+                Instances.getScreenshotClassInstance().print();
+                Instances.getReportClassInstance().stepPass(Instances.getMessageComboBoxGetSize() + Instances.getWebLastXpath());
             }
             Instances.setEach(false);
         }

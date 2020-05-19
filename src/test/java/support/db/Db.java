@@ -1,15 +1,19 @@
 package support.db;
 
+import com.mongodb.MongoClient;
+import com.mongodb.client.FindIterable;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
 import intern.Instances;
+import org.bson.Document;
+import org.json.JSONObject;
+//import org.postgresql.util.PSQLException;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Db {
     private static Connection connection = null;
@@ -24,7 +28,22 @@ public class Db {
                     Instances.getDbuser(),
                     Instances.getDbpassword());
         } catch (ClassNotFoundException | SQLException e) {
-            Instances.getReportClass().stepFatal(e);
+            Instances.getReportClassInstance().stepFatal(e);
+            e.printStackTrace();
+        }
+    }
+
+    private static void setConnectioPostgres() {
+        try {
+            String url = "jdbc:postgresql://"+
+                    Instances.getDbadress()+ ":" +
+                    Instances.getDbport()+ "/" +
+                    Instances.getDbname()+
+                    "?user="+Instances.getDbuser()+
+                    "&password="+Instances.getDbpassword();
+            connection = DriverManager.getConnection(url);
+        } catch (SQLException e) {
+            Instances.getReportClassInstance().stepFatal(e);
             e.printStackTrace();
         }
     }
@@ -42,7 +61,7 @@ public class Db {
 
     private static void setConnectionReportInfo() {
         List<String[]> dadosBanco = new ArrayList<>();
-        if (Instances.getDbtype().equals("mysql")) {
+        if (!Instances.getDbtype().equals("oracle")) {
             dadosBanco.add(new String[]{"Endereço: ", Instances.getDbadress()});
             dadosBanco.add(new String[]{"Porta: ", Instances.getDbport()});
         }
@@ -63,22 +82,37 @@ public class Db {
         new Thread().start();
     }
 
-    public List<List<String>> execute(String localizador){
-        return execute(localizador, null);
+    public List<List<String>> executeDate(String localizador){
+        return execute(localizador, null, true);
     }
 
-    public List<List<String>> execute(String localizador, LinkedHashMap<String, String> parametros) {
+    public List<List<String>> executeDate(String localizador, LinkedHashMap<String, String> parametros){
+        return execute(localizador, parametros, true);
+    }
+
+    public List<List<String>> execute(String localizador){
+        return execute(localizador, null, false);
+    }
+
+    public List<List<String>> execute(String localizador, LinkedHashMap<String, String> parametros){
+        return execute(localizador, parametros, false);
+    }
+
+    public List<List<String>> execute(String localizador, LinkedHashMap<String, String> parametros, boolean date) {
         if (Instances.getDbtype().equals("oracle")) {
             setConnectionOracle();
-        } else {
+        } else if (Instances.getDbtype().equals("mysql")) {
             setConnectionMySql();
+        } else {
+            setConnectioPostgres();
         }
         setConnectionReportInfo();
         List<List<String>> resultado = new ArrayList<>();
         try {
             String query = "";
             BufferedReader br = null;
-            try {
+            //try {
+            if (localizador.endsWith(".sql")) {
                 br = new BufferedReader(new FileReader(localizador));
                 StringBuilder sb = new StringBuilder();
                 String line = br.readLine();
@@ -87,9 +121,12 @@ public class Db {
                     line = br.readLine();
                 }
                 query = sb.toString();
-            }catch (FileNotFoundException e){
+            } else {
                 query = localizador;
             }
+            //}catch (FileNotFoundException e){
+            //    query = localizador;
+            //}
             if (parametros != null) {
                 for (Map.Entry<String, String> entry : parametros.entrySet()) {
                     query = query.replaceAll(entry.getKey().replace("=", ""), entry.getValue());
@@ -97,17 +134,19 @@ public class Db {
             }
             query = query.replaceAll(";", "");
             String[] localizadorPartes = localizador.split("/");
+            System.out.println("variavel   querye " + query);
+            System.out.println("localizadorPartes[localizadorPartes.length - 1]  "+localizadorPartes[localizadorPartes.length - 1]);
             if (!localizadorPartes[localizadorPartes.length - 1].startsWith("get")) {
                 resultado = getDataProgram(query);
             } else {
-                resultado = getData(query);
+                resultado = getData(query, date);
             }
             if (br != null) {
                 br.close();
             }
         }catch (Exception e){
             e.printStackTrace();
-            Instances.getErrorClass().Fail();
+            Instances.getErrorClassInstance().Fail();
         }
         return resultado;
     }
@@ -122,16 +161,21 @@ public class Db {
         return resultado;
     }
 
-    private static List<List<String>> getData(String sql) throws SQLException {
+    private static List<List<String>> getData(String sql, boolean date) throws SQLException {
         List<List<String>> resultado = new ArrayList<>();
         Statement stmt = connection.createStatement();
+        Calendar gmt = Calendar.getInstance(TimeZone.getTimeZone("GMT-3"));
         System.out.println(sql);
         ResultSet st = stmt.executeQuery(sql);
         int columnCount = st.getMetaData().getColumnCount();
         while (st.next()) {
             List<String> linha = new ArrayList<>();
             for (int i = 1; i <= columnCount; i++) {
-                linha.add(String.valueOf(st.getObject(i)));
+                if(!date) {
+                    linha.add(String.valueOf(st.getObject(i)));
+                }else {
+                    linha.add(String.valueOf(st.getDate(i, gmt)));
+                }
             }
             resultado.add(linha);
         }
@@ -140,6 +184,24 @@ public class Db {
     }
 
     public SetDb set() {
-        return Instances.getSetDbClass();
+        return Instances.getSetDbClassInstance();
+    }
+
+    private static MongoCollection<Document> getColletion(String colletion){
+        return getDatabase().getCollection(colletion);
+    }
+
+    public static List<JSONObject> getDocuments(String colletion){
+        FindIterable<Document> docs = getColletion(colletion).find();
+        List<JSONObject> result = new ArrayList<>();
+        for (Document doc : docs) {
+            result.add(new JSONObject(doc.toJson()));
+        }
+        return result;
+    }
+
+    private static MongoDatabase getDatabase(){
+        MongoClient mongoClient = new MongoClient(Instances.getDbadress(), Instances.getConverterClassInstance().toInt(Instances.getDbport()));
+        return mongoClient.getDatabase(Instances.getDbname());
     }
 }

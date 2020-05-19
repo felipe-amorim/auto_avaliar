@@ -29,6 +29,6 @@ public class SetDb {
     }
 
     public TypeDB type(){
-        return Instances.getTypeDBClass();
+        return Instances.getTypeDBClassInstance();
     }
 }

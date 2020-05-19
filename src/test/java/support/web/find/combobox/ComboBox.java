@@ -4,10 +4,10 @@ import intern.Instances;
 
 public class ComboBox {
     public SetterComboBox set(){
-        return Instances.getSetterComboBoxClass();
+        return Instances.getSetterComboBoxClassInstance();
     }
 
     public GetterComboBox get(){
-        return Instances.getGetterComboBoxClass();
+        return Instances.getGetterComboBoxClassInstance();
     }
 }

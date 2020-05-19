@@ -5,7 +5,7 @@ import intern.Instances;
 public class BrowserTypes {
     public ChromeCapabilities chrome(){
         Instances.setWebdriverType(Instances.chrome);
-        return Instances.getChromeCapabilitiesClass();
+        return Instances.getChromeCapabilitiesClassInstance();
     }
 
     public void fireFox(){
@@ -14,6 +14,6 @@ public class BrowserTypes {
 
     public IEOptions internetExplorer(){
         Instances.setWebdriverType(Instances.internetExplorer);
-        return Instances.getIEOptionsClass();
+        return Instances.getIEOptionsClassInstance();
     }
 }

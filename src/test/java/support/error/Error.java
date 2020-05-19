@@ -5,18 +5,23 @@ import intern.Instances;
 public class Error {
 
     public void Fail(){
-        Instances.getReportClass().stepFail(new NullPointerException(Instances.getMessageFailTests()));
+        Instances.getReportClassInstance().stepFail(new NullPointerException(Instances.getMessageFailTests()));
         throw new NullPointerException(Instances.getMessageFailTests());
     }
 
     public void Warning(String complemento){
-        Instances.getReportClass().stepWarning(Instances.getMessageWarning()+" - "+complemento);
-        throw new AssertionError(Instances.getMessageWarning()+" - "+complemento);
+        Instances.getReportClassInstance().stepWarning(complemento);
     }
 
     public void Environment(String complemento){
-        Instances.getReportClass().stepFatal(new NullPointerException(Instances.getMessageEnvironmentError()+" - "+complemento));
+        Instances.getReportClassInstance().stepFatal(new NullPointerException(complemento));
         throw new NullPointerException(Instances.getMessageEnvironmentError()+" - "+complemento);
+    }
+
+    public void Interrupt(){
+        Instances.getReportClassInstance().stepWarning(Instances.getMessageInterrupt());
+        Instances.setTestsKilled(true);
+        throw new AssertionError(Instances.getMessageInterrupt());
     }
 
 }

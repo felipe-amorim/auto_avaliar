@@ -4,10 +4,10 @@ import intern.Instances;
 
 public class Datter {
     public Adder add(){
-        return Instances.getAdderClass();
+        return Instances.getAdderClassInstance();
     }
 
     public Remover remove(){
-        return Instances.getRemoverClass();
+        return Instances.getRemoverClassInstance();
     }
 }

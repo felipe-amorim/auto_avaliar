@@ -14,10 +14,10 @@ public class GetterActionsWeb {
 
     public Object text(){
         if(!Instances.getEach()) {
-            return Instances.getLastElements().get(0).getText();
+            return Instances.getWebLastElements().get(0).getText();
         }else {
             List<String> ret = new ArrayList<>();
-            for (WebElement element: Instances.getLastElements()) {
+            for (WebElement element: Instances.getWebLastElements()) {
                 ret.add(element.getText());
             }
             Instances.setEach(false);
@@ -27,10 +27,10 @@ public class GetterActionsWeb {
 
     public Object value(){
         if(!Instances.getEach()) {
-            return Instances.getLastElements().get(0).getAttribute("value");
+            return Instances.getWebLastElements().get(0).getAttribute("value");
         }else {
             List<String> ret = new ArrayList<>();
-            for (WebElement element: Instances.getLastElements()) {
+            for (WebElement element: Instances.getWebLastElements()) {
                 ret.add(element.getAttribute("value"));
             }
             Instances.setEach(false);
@@ -40,10 +40,10 @@ public class GetterActionsWeb {
 
     public Object attribute(String attribute){
         if(!Instances.getEach()) {
-            return Instances.getLastElements().get(0).getAttribute(attribute);
+            return Instances.getWebLastElements().get(0).getAttribute(attribute);
         }else {
             List<String> ret = new ArrayList<>();
-            for (WebElement element: Instances.getLastElements()) {
+            for (WebElement element: Instances.getWebLastElements()) {
                 ret.add(element.getAttribute(attribute));
             }
             Instances.setEach(false);

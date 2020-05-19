@@ -9,48 +9,50 @@ public class ActionsWeb {
     public ClicksWeb click() {
         throwExceptionNoElement();
         if (!Instances.getEach()) {
-            //Instances.getLastElements().get(0).click();
-            Instances.getLocatorClass().execute(()->{
-                Instances.getLastElements().get(0).click();});
-            Instances.getScreenshotClass().printSelenium();
-            Instances.getReportClass().stepPass(Instances.getMessageClick() + Instances.getLastXpathLog());
+            //Instances.getWebLastElements().get(0).click();
+            Instances.getExecuteClassInstance().execute(()->{
+                Instances.getWebLastElements().get(0).click();});
+            Instances.getScreenshotClassInstance().print();
+            Instances.getReportClassInstance().stepPass(Instances.getMessageClick() + Instances.getWebLastXpathLog());
         } else {
-            for (WebElement element : Instances.getLastElements()) {
+            for (WebElement element : Instances.getWebLastElements()) {
                 //element.click();
-                Instances.getLocatorClass().execute(element::click);
-                Instances.getScreenshotClass().printSelenium();
-                Instances.getReportClass().stepPass(Instances.getMessageClickEach() + Instances.getLastXpathLog());
+                Instances.getExecuteClassInstance().execute(element::click);
+                Instances.getScreenshotClassInstance().print();
+                Instances.getReportClassInstance().stepPass(Instances.getMessageClickEach() + Instances.getWebLastXpathLog());
             }
             Instances.setEach(false);
         }
-        return Instances.getClicksClass();
+        return Instances.getClicksClassInstance();
     }
 
     private void throwExceptionNoElement(){
-        if (Instances.getLastElements().size()<=0) {
-            Instances.getReportClass().stepError(new NoSuchElementException("O xpath " + Instances.getLastXpath() + " não retornou nenhum elemento"));
+        if (Instances.getWebLastElements().size()<=0) {
+            Instances.getReportClassInstance().stepError(new NoSuchElementException("O xpath " + Instances.getWebLastXpath() + " não retornou nenhum elemento"));
         }
     }
 
     public boolean exists(){
         boolean exist = false;
-        if (Instances.getLastElements().size()>0){
+        if (Instances.getWebLastElements().size()>0){
             exist = true;
         }
+        Instances.getScreenshotClassInstance().print();
+        Instances.getReportClassInstance().stepPass(Instances.getMessageExists() + Instances.getWebLastXpathLog());
         return exist;
     }
 
     public int count(){
-        return Instances.getLastElements().size();
+        return Instances.getWebLastElements().size();
     }
 
     public boolean isAvailable(){
         if (!Instances.getEach()) {
-            Instances.getLocatorClass().execute(()->{
-                Instances.getLastElements().get(0).clear();}, true);
+            Instances.getExecuteClassInstance().execute(()->{
+                Instances.getWebLastElements().get(0).clear();}, true);
         } else {
-            for (WebElement element : Instances.getLastElements()) {
-                Instances.getLocatorClass().execute(element::clear, true);
+            for (WebElement element : Instances.getWebLastElements()) {
+                Instances.getExecuteClassInstance().execute(element::clear, true);
             }
             Instances.setEach(false);
         }
@@ -60,23 +62,23 @@ public class ActionsWeb {
 
     public SendsWeb send() {
         throwExceptionNoElement();
-        return Instances.getSendsClass();
+        return Instances.getSendsClassInstance();
     }
 
     public void clear() {
         throwExceptionNoElement();
         if (!Instances.getEach()) {
-            //Instances.getLastElements().get(0).clear();
-            Instances.getLocatorClass().execute(()->{
-                Instances.getLastElements().get(0).clear();});
-            Instances.getScreenshotClass().printSelenium();
-            Instances.getReportClass().stepPass(Instances.getMessageClear() + Instances.getLastXpathLog());
+            //Instances.getWebLastElements().get(0).clear();
+            Instances.getExecuteClassInstance().execute(()->{
+                Instances.getWebLastElements().get(0).clear();});
+            Instances.getScreenshotClassInstance().print();
+            Instances.getReportClassInstance().stepPass(Instances.getMessageClear() + Instances.getWebLastXpathLog());
         } else {
-            for (WebElement element : Instances.getLastElements()) {
+            for (WebElement element : Instances.getWebLastElements()) {
                 //element.clear();
-                Instances.getLocatorClass().execute(element::clear);
-                Instances.getScreenshotClass().printSelenium();
-                Instances.getReportClass().stepPass(Instances.getMessageClearEach() + Instances.getLastXpathLog());
+                Instances.getExecuteClassInstance().execute(element::clear);
+                Instances.getScreenshotClassInstance().print();
+                Instances.getReportClassInstance().stepPass(Instances.getMessageClearEach() + Instances.getWebLastXpathLog());
             }
             Instances.setEach(false);
         }
@@ -86,21 +88,21 @@ public class ActionsWeb {
         throwExceptionNoElement();
         if (!Instances.getEach()) {
             //org.openqa.selenium.interactions.Actions action = new org.openqa.selenium.interactions.Actions(Instances.getWebDriver());
-            //action.moveToElement(Instances.getLastElements().get(0)).perform();
-            Instances.getLocatorClass().execute(()->{
+            //action.moveToElement(Instances.getWebLastElements().get(0)).perform();
+            Instances.getExecuteClassInstance().execute(()->{
                 org.openqa.selenium.interactions.Actions action = new org.openqa.selenium.interactions.Actions(Instances.getWebDriver());
-                action.moveToElement(Instances.getLastElements().get(0)).perform();});
-            Instances.getScreenshotClass().printSelenium();
-            Instances.getReportClass().stepPass(Instances.getMessageMove() + Instances.getLastXpathLog());
+                action.moveToElement(Instances.getWebLastElements().get(0)).perform();});
+            Instances.getScreenshotClassInstance().print();
+            Instances.getReportClassInstance().stepPass(Instances.getMessageMove() + Instances.getWebLastXpathLog());
         } else {
-            for (WebElement element : Instances.getLastElements()) {
+            for (WebElement element : Instances.getWebLastElements()) {
                 //org.openqa.selenium.interactions.Actions action = new org.openqa.selenium.interactions.Actions(Instances.getWebDriver());
                 //action.moveToElement(element).perform();
-                Instances.getLocatorClass().execute(()->{
+                Instances.getExecuteClassInstance().execute(()->{
                     org.openqa.selenium.interactions.Actions action = new org.openqa.selenium.interactions.Actions(Instances.getWebDriver());
                     action.moveToElement(element).perform();});
-                Instances.getScreenshotClass().printSelenium();
-                Instances.getReportClass().stepPass(Instances.getMessageMoveEach() + Instances.getLastXpathLog());
+                Instances.getScreenshotClassInstance().print();
+                Instances.getReportClassInstance().stepPass(Instances.getMessageMoveEach() + Instances.getWebLastXpathLog());
             }
             Instances.setEach(false);
         }
@@ -110,7 +112,7 @@ public class ActionsWeb {
 
     public ComboBox comboBox() {
         throwExceptionNoElement();
-        return Instances.getComboBoxClass();
+        return Instances.getComboBoxClassInstance();
     }
 
     public ActionsWeb each() {
@@ -120,7 +122,7 @@ public class ActionsWeb {
 
     public GetterActionsWeb get() {
         throwExceptionNoElement();
-        return Instances.getFindGetterClass();
+        return Instances.getFindGetterClassInstance();
     }
 
 }

@@ -4,10 +4,8 @@ import intern.Instances;
 
 public class SleepWeb {
     public void until(int milis){
-        System.out.println("sleep"+milis);
         try {
             Thread.sleep(milis);
-            System.out.println("milis"+milis);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -25,20 +23,20 @@ public class SleepWeb {
         long localWait = Instances.getDefaultWaitMilis();
         Instances.setDefaultWaitMilis(0);
         while (true){
-            Instances.setLastXpath(xpath);
-            if(Instances.getLastElements().size()<=0){
+            Instances.setWebLastXpath(xpath);
+            if(Instances.getWebLastElements().size()<=0){
                 break;
             }
             until(100);
             localWait = localWait-100;
             if(localWait<=0){
-                Instances.getReportClass().stepFail(new NullPointerException(Instances.getMessageWaitDisapearStillHasElement()));
+                Instances.getReportClassInstance().stepFail(new NullPointerException(Instances.getMessageWaitDisapearStillHasElement()));
                 break;
             }
         }
         Instances.setDefaultWaitMilisBackUp();
-        Instances.getScreenshotClass().printSelenium();
-        Instances.getReportClass().stepPass(Instances.getMessageWaitDisapear() + Instances.getLastXpathLog());
+        Instances.getScreenshotClassInstance().print();
+        Instances.getReportClassInstance().stepPass(Instances.getMessageWaitDisapear() + Instances.getWebLastXpathLog());
     }
 
     public void untilAppear(String xpath){
@@ -46,21 +44,21 @@ public class SleepWeb {
         System.out.println("localwait: "+Instances.getDefaultWaitMilis());
         Instances.setDefaultWaitMilis(0);
         while (true){
-            Instances.setLastXpath(xpath);
-            if(Instances.getLastElements().size()>0){
+            Instances.setWebLastXpath(xpath);
+            if(Instances.getWebLastElements().size()>0){
                 break;
             }
             until(100);
             localWait = localWait-100;
             if(localWait<=0){
-                Instances.getReportClass().stepFail(new NullPointerException(Instances.getMessageWaitAppearStillHasElement()));
+                Instances.getReportClassInstance().stepFail(new NullPointerException(Instances.getMessageWaitAppearStillHasElement()));
                 break;
             }
         }
         Instances.setDefaultWaitMilisBackUp();
         System.out.println("localwaitup: "+Instances.getDefaultWaitMilis());
-        Instances.getScreenshotClass().printSelenium();
-        Instances.getReportClass().stepPass(Instances.getMessageWaitAppear() + Instances.getLastXpathLog());
+        Instances.getScreenshotClassInstance().print();
+        Instances.getReportClassInstance().stepPass(Instances.getMessageWaitAppear() + Instances.getWebLastXpathLog());
     }
 
     public void untilThreadsFinish(){

@@ -14,6 +14,6 @@ public class Log {
     }
 
     public void type(String text){
-        Instances.getReportClass().stepPass(text);
+        Instances.getReportClassInstance().stepPass(text);
     }
 }

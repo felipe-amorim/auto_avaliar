@@ -42,7 +42,7 @@ public class Converter {
         Date date = null;
         try {
             date = new SimpleDateFormat("dd/MM/yyyy").parse(data);
-            Instances.setDateInstance(date);
+            Instances.setDateClassInstance(date);
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -50,7 +50,7 @@ public class Converter {
     }
 
     public Datter date(Date date){
-        return Instances.getDatterClass();
+        return Instances.getDatterClassInstance();
     }
 
 }
