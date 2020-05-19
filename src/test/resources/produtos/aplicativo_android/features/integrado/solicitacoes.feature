@@ -2,7 +2,7 @@ Feature: Realizar nova solicitação
 
   @NovaSolicitacao
   Scenario: Realizar nova solicitacao, Author: Felipe Amorim, Category: Nova Solicitacao, Environment: Galaxy S9 - Android 10 - App 1.0
-    Given O usuario abre o aplicativo HANB com o dispositivo "AA Galaxy S9 10" e versao do OS "10"
+    Given O usuario abre o aplicativo HANB com o dispositivo "Samsung Galaxy S9 API 29" e versao do OS "10"
     And O usuario acessa o menu brasil
     And O usuario preenche o campo email como timeqa
     And O usuario preenche o campo senha com a senha padrao
