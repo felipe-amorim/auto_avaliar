@@ -4,3 +4,5 @@ target/
 fabrica_automacao.iml
 src/test/resources/jenkins/
 src/test/resources/downloads/
+src/test/resources/jenkins/anexos/Relatorio_detalhado_testes.html
+.idea/workspace.xml
